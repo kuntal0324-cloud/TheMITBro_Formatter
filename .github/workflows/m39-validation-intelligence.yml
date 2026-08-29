@@ -1,0 +1,66 @@
+name: TheMITbro M39 Answer Solver Validation Intelligence
+on:
+  push: {branches: [main, master]}
+  pull_request: {branches: [main, master]}
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  m39:
+    name: M39 - Answer Solver Validation Intelligence
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: pip}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M39 modules
+        env: {PYTHONPATH: .}
+        run: |
+          python -m py_compile src/answer_parser.py
+          python -m py_compile src/math_verification.py
+          python -m py_compile src/unit_dimensions.py
+          python -m py_compile src/answer_validation.py
+          python -m py_compile src/domain_validation.py
+          python -m py_compile src/diagram_text_validator.py
+          python -m py_compile src/solution_validation.py
+          python -m py_compile src/question_quality_validator.py
+          python -m py_compile src/validation_intelligence.py
+          python -m py_compile src/question_ingest.py
+      - name: M39 focused tests
+        env: {PYTHONPATH: .}
+        run: |
+          python -m pytest -q \
+            tests/test_milestone39_math_verification.py \
+            tests/test_milestone39_units.py \
+            tests/test_milestone39_answers.py \
+            tests/test_milestone39_domain_models.py \
+            tests/test_milestone39_diagram_text.py \
+            tests/test_milestone39_solution_quality.py \
+            tests/test_milestone39_ingestion.py
+      - name: Complete historical regression
+        env: {PYTHONPATH: .}
+        run: python -m pytest -q
+      - name: M39 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 39"
+          echo "Answer Solver Validation Intelligence"
+          echo "================================================"
+          echo "Symbolic mathematics verification: PASSED"
+          echo "Numerical verification/tolerance: PASSED"
+          echo "Units/dimensional consistency: PASSED"
+          echo "MCQ/MSQ/NAT answer-key validation: PASSED"
+          echo "Option integrity: PASSED"
+          echo "Independent answer verification: PASSED"
+          echo "EE deterministic model checks: PASSED"
+          echo "Physics deterministic model checks: PASSED"
+          echo "Diagram-text consistency: PASSED"
+          echo "Solution-final-answer consistency: PASSED"
+          echo "Ambiguity/impossibility detection: PASSED"
+          echo "Conservative UNKNOWN/REVIEW gating: PASSED"
+          echo "Question Bank integration: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 39 CI VALIDATION PASSED"
+          echo "================================================"

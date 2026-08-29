@@ -1,0 +1,81 @@
+name: TheMITbro M34 Ingestion Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m34:
+    name: M34 - OCR Preprocess Router Catalog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          set -e
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+
+      - name: Compile M34 modules
+        run: |
+          set -e
+          python -m py_compile src/image_preprocessor.py
+          python -m py_compile src/question_ocr.py
+          python -m py_compile src/question_router.py
+          python -m py_compile src/question_duplicate_detector.py
+          python -m py_compile src/question_catalog.py
+          python -m py_compile src/question_bulk_import.py
+
+      - name: Run M34 tests
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m pytest -q \
+            tests/test_milestone34_preprocessor.py \
+            tests/test_milestone34_ocr.py \
+            tests/test_milestone34_duplicate.py \
+            tests/test_milestone34_router.py \
+            tests/test_milestone34_catalog.py \
+            tests/test_milestone34_bulk_import.py
+
+      - name: Run complete regression
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m pytest -q
+
+      - name: M34 acceptance
+        run: |
+          echo "=============================================="
+          echo "TheMITbro Milestone 34"
+          echo "OCR Pipeline Integration"
+          echo "=============================================="
+          echo "Image preprocessing: PASSED"
+          echo "TXT/MD ingestion: PASSED"
+          echo "JPG/JPEG/PNG OCR path: PASSED"
+          echo "Question routing: PASSED"
+          echo "Duplicate detection: PASSED"
+          echo "Catalog search: PASSED"
+          echo "Bulk import: PASSED"
+          echo "Complete regression: PASSED"
+          echo "=============================================="
+          echo "MILESTONE 34 CI VALIDATION PASSED"
+          echo "=============================================="

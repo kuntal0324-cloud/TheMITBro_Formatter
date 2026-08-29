@@ -1,0 +1,72 @@
+name: TheMITbro M41 Intelligent Mock Paper Generator
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m41:
+    name: M41 - Intelligent Mock Paper Generator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M41
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m py_compile src/paper_blueprint.py
+          python -m py_compile src/paper_candidates.py
+          python -m py_compile src/paper_metrics.py
+          python -m py_compile src/paper_constraints.py
+          python -m py_compile src/mock_paper_generator.py
+          python -m py_compile src/mock_paper_bridge.py
+          python -m py_compile src/question_bank_production.py
+      - name: Focused M41 tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m pytest -q \
+            tests/test_milestone41_blueprint.py \
+            tests/test_milestone41_generator.py \
+            tests/test_milestone41_distribution.py \
+            tests/test_milestone41_duplicates_time.py \
+            tests/test_milestone41_bridge.py \
+            tests/test_milestone41_quality_filter.py
+      - name: Complete historical regression
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q
+      - name: M41 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 41 - Intelligent Mock-Paper Generator"
+          echo "================================================"
+          echo "Blueprint engine: PASSED"
+          echo "Syllabus/subject/topic distribution: PASSED"
+          echo "Difficulty curve: PASSED"
+          echo "MCQ/MSQ/NAT mix: PASSED"
+          echo "Marks budget: PASSED"
+          echo "Conceptual/numerical balance: PASSED"
+          echo "Visual-question balance: PASSED"
+          echo "Expected-time budget: PASSED"
+          echo "Question-family duplicate avoidance: PASSED"
+          echo "Near-duplicate avoidance: PASSED"
+          echo "Quality/lifecycle filtering: PASSED"
+          echo "Deterministic generation: PASSED"
+          echo "PaperSpec bridge: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 41 CI VALIDATION PASSED"
+          echo "================================================"

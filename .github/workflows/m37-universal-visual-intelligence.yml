@@ -1,0 +1,39 @@
+name: TheMITbro M37 Universal Visual Intelligence
+on:
+  push: {branches: [main, master]}
+  pull_request: {branches: [main, master]}
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  m37:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: pip}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M37
+        env: {PYTHONPATH: .}
+        run: |
+          python -m py_compile src/visual_structure.py src/universal_visual_intelligence.py src/diagram_intelligence.py src/question_ingest.py
+      - name: M37 focused tests
+        env: {PYTHONPATH: .}
+        run: |
+          python -m pytest -q tests/test_milestone37_visual_structure.py tests/test_milestone37_engineering_structure.py tests/test_milestone37_math_physics_structure.py tests/test_milestone37_ingestion.py
+      - name: Complete regression
+        env: {PYTHONPATH: .}
+        run: python -m pytest -q
+      - name: M37 acceptance
+        run: |
+          echo "=============================================="
+          echo "TheMITbro M37 Universal Visual Intelligence"
+          echo "Structural Visual IR: PASSED"
+          echo "EE Circuit/Phasor/Control/Waveform: PASSED"
+          echo "Mathematical Visual Structure: PASSED"
+          echo "Physics Visual Structure: PASSED"
+          echo "No Fabricated Unknown Topology: PASSED"
+          echo "Question Bank Integration: PASSED"
+          echo "Complete Regression: PASSED"
+          echo "MILESTONE 37 CI VALIDATION PASSED"
+          echo "=============================================="

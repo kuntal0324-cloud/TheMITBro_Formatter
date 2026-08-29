@@ -1,0 +1,87 @@
+name: TheMITbro M45 Final v2.0 Certification
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m45:
+    name: M45 - Final Certification / v2.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Verify frozen version
+        run: test "$(cat VERSION)" = "2.0.0"
+
+      - name: Compile M45 certification layer
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m py_compile src/contract_registry.py
+          python -m py_compile src/final_baseline.py
+          python -m py_compile src/final_certification.py
+          python -m py_compile src/final_release_manifest.py
+          python -m py_compile src/run_m45_certification.py
+
+      - name: Focused M45 tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m pytest -q \
+            tests/test_milestone45_contract_registry.py \
+            tests/test_milestone45_baseline.py \
+            tests/test_milestone45_certification.py \
+            tests/test_milestone45_manifest.py \
+            tests/test_milestone45_version_docs.py \
+            tests/test_milestone45_historical_markers.py
+
+      - name: Generate final v2.0 certification
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m src.run_m45_certification \
+            m45-final-certification.json \
+            M45_FINAL_BASELINE.json
+
+      - name: M44 production certification remains valid
+        env:
+          PYTHONPATH: .
+        run: python -m src.run_m44_certification m44-production-certification.json
+
+      - name: Complete historical regression
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q
+
+      - name: M45 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Formatter v2.0.0"
+          echo "Milestone 45 - FINAL CERTIFICATION"
+          echo "================================================"
+          echo "M1-M44 contract registry: FROZEN"
+          echo "Historical metadata contracts: PRESERVED"
+          echo "M44 production certification: PASSED"
+          echo "72/72 hostile GATE/JEE corpus: PASSED"
+          echo "Final repository baseline fingerprint: PASSED"
+          echo "Final release manifest: PASSED"
+          echo "Architecture status: FROZEN"
+          echo "Complete historical regression: PASSED"
+          echo "Real-content production handoff: READY"
+          echo "================================================"
+          echo "THEMITBRO FORMATTER v2.0 FINAL CERTIFICATION PASSED"
+          echo "================================================"

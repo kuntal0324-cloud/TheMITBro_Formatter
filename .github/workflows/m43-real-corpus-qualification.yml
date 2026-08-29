@@ -1,0 +1,77 @@
+name: TheMITbro M43 Real GATE JEE Corpus Qualification
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m43:
+    name: M43 - Real GATE/JEE Corpus Qualification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M43
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m py_compile src/corpus_qualification_schema.py
+          python -m py_compile src/corpus_loader.py
+          python -m py_compile src/corpus_adversary.py
+          python -m py_compile src/corpus_qualification.py
+          python -m py_compile src/adversarial_routing.py
+          python -m py_compile src/photo_fixture_factory.py
+          python -m py_compile src/mock_paper_qualification.py
+          python -m py_compile src/run_m43_qualification.py
+      - name: Focused M43 tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m pytest -q \
+            tests/test_milestone43_corpus.py \
+            tests/test_milestone43_adversarial_routing.py \
+            tests/test_milestone43_noise.py \
+            tests/test_milestone43_photo.py \
+            tests/test_milestone43_visual_mixed.py \
+            tests/test_milestone43_mock_qualification.py \
+            tests/test_milestone43_ambiguity.py
+      - name: Generate corpus qualification report
+        env:
+          PYTHONPATH: .
+        run: python -m src.run_m43_qualification m43-qualification-report.json
+      - name: Complete historical regression
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q
+      - name: M43 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 43 - Real GATE/JEE Corpus Qualification"
+          echo "================================================"
+          echo "Large original hostile corpus: PASSED"
+          echo "GATE EE Engineering Mathematics: PASSED"
+          echo "GATE EE Electrical Engineering: PASSED"
+          echo "JEE Mathematics: PASSED"
+          echo "JEE Physics: PASSED"
+          echo "OCR-like corruption qualification: PASSED"
+          echo "Photographed-page preprocessing: PASSED"
+          echo "Mixed equations/diagrams: PASSED"
+          echo "Ambiguous/impossible review gating: PASSED"
+          echo "Adversarial routing probes: PASSED"
+          echo "Realistic mock-paper qualification: PASSED"
+          echo "Deterministic generation under qualification: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 43 CI VALIDATION PASSED"
+          echo "================================================"

@@ -1,0 +1,57 @@
+name: TheMITbro M42 Professional Publishing Engine
+on:
+  push: {branches: [main, master]}
+  pull_request: {branches: [main, master]}
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  m42:
+    name: M42 - Professional Publishing Engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: pip}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M42
+        env: {PYTHONPATH: .}
+        run: |
+          python -m py_compile src/publication_identity.py src/publication_content.py
+          python -m py_compile src/professional_markdown.py src/professional_html.py src/publication_print.py src/professional_pdf.py
+          python -m py_compile src/answer_solution_pdf.py src/publication_manifest.py
+          python -m py_compile src/professional_publisher.py src/mock_paper_bridge.py
+          python -m py_compile src/question_paper_renderer.py
+      - name: Focused M42 tests
+        env: {PYTHONPATH: .}
+        run: |
+          python -m pytest -q \
+            tests/test_milestone42_identity.py tests/test_milestone42_markdown.py \
+            tests/test_milestone42_html.py tests/test_milestone42_pdf.py \
+            tests/test_milestone42_diagrams.py tests/test_milestone42_bridge_answers.py \
+            tests/test_milestone42_release.py tests/test_milestone42_headers_footers.py
+      - name: Complete historical regression
+        env: {PYTHONPATH: .}
+        run: python -m pytest -q
+      - name: M42 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 42 - Professional Publishing Engine"
+          echo "================================================"
+          echo "Professional Markdown: PASSED"
+          echo "Self-contained print HTML: PASSED"
+          echo "Print PDF: PASSED"
+          echo "Equations/matrices/tables: PASSED"
+          echo "Circuits/graphs/structured diagrams: PASSED"
+          echo "Pagination/sections/instructions: PASSED"
+          echo "Answer keys: PASSED"
+          echo "Detailed solution publications: PASSED"
+          echo "Paper identity/versioning: PASSED"
+          echo "Headers/footers: PASSED"
+          echo "Release manifest/hashes: PASSED"
+          echo "Release ZIP packaging: PASSED"
+          echo "M41 bridge integration: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 42 CI VALIDATION PASSED"
+          echo "================================================"

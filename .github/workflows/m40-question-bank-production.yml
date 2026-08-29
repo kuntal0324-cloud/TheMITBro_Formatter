@@ -1,0 +1,55 @@
+name: TheMITbro M40 Question Bank Production Engine
+on:
+  push: {branches: [main, master]}
+  pull_request: {branches: [main, master]}
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  m40:
+    name: M40 - Question Bank Production Engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: pip}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile M40
+        env: {PYTHONPATH: .}
+        run: |
+          python -m py_compile src/production_schema.py src/semantic_duplicate_detector.py
+          python -m py_compile src/question_family.py src/question_quality_score.py
+          python -m py_compile src/question_versioning.py src/production_search.py
+          python -m py_compile src/review_queue.py src/question_migrations.py
+          python -m py_compile src/question_integrity.py src/question_bank_production.py
+          python -m py_compile src/production_bulk_import.py
+      - name: Focused M40 tests
+        env: {PYTHONPATH: .}
+        run: |
+          python -m pytest -q \
+            tests/test_milestone40_schema.py tests/test_milestone40_duplicates.py \
+            tests/test_milestone40_quality_family.py tests/test_milestone40_integrity.py \
+            tests/test_milestone40_search_review.py tests/test_milestone40_migration.py \
+            tests/test_milestone40_bulk.py tests/test_milestone40_versioning.py
+      - name: Complete historical regression
+        env: {PYTHONPATH: .}
+        run: python -m pytest -q
+      - name: M40 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 40 - Question Bank Production Engine"
+          echo "================================================"
+          echo "Canonical production schema: PASSED"
+          echo "Production bulk import: PASSED"
+          echo "Semantic/near duplicate intelligence: PASSED"
+          echo "Question-family detection: PASSED"
+          echo "Quality scoring: PASSED"
+          echo "Provenance/versioning: PASSED"
+          echo "Search/indexing: PASSED"
+          echo "Review queues: PASSED"
+          echo "Schema migrations: PASSED"
+          echo "Corruption/integrity protection: PASSED"
+          echo "Historical compatibility: PASSED"
+          echo "================================================"
+          echo "MILESTONE 40 CI VALIDATION PASSED"
+          echo "================================================"

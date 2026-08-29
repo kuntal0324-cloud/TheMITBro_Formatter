@@ -1,0 +1,140 @@
+name: TheMITbro M33 OCR Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m33:
+    name: M33 - OCR Foundation
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ============================================================
+      # 1. CHECKOUT
+      # ============================================================
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # ============================================================
+      # 2. PYTHON
+      # ============================================================
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # ============================================================
+      # 3. DEPENDENCIES
+      # ============================================================
+
+      - name: Install dependencies
+        run: |
+          set -e
+
+          python -m pip install --upgrade pip
+
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+
+          python -m pip install pytest pytest-cov pillow pytesseract
+
+      # ============================================================
+      # 4. VERIFY M33 FILES
+      # ============================================================
+
+      - name: Verify M33 required files
+        run: |
+          set -e
+
+          test -f src/question_ocr.py
+          test -f src/question_duplicate_detector.py
+          test -f src/question_catalog.py
+
+          test -f tests/test_milestone33_ocr.py
+          test -f tests/test_milestone33_router.py
+          test -f tests/test_milestone33_duplicate.py
+          test -f tests/test_milestone33_catalog.py
+
+          echo "M33 required files: PASSED"
+
+      # ============================================================
+      # 5. SOURCE INTEGRITY
+      # ============================================================
+
+      - name: Compile M33 Python modules
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+
+          python -m py_compile src/question_ocr.py
+          python -m py_compile src/question_duplicate_detector.py
+          python -m py_compile src/question_catalog.py
+
+          echo "M33 source integrity: PASSED"
+
+      # ============================================================
+      # 6. M33 TESTS
+      # ============================================================
+
+      - name: Run M33 OCR tests
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+
+          python -m pytest -q \
+            tests/test_milestone33_ocr.py \
+            tests/test_milestone33_router.py \
+            tests/test_milestone33_duplicate.py \
+            tests/test_milestone33_catalog.py
+
+      # ============================================================
+      # 7. FULL REGRESSION
+      # ============================================================
+
+      - name: Run complete regression suite
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m pytest -q
+
+      # ============================================================
+      # 8. FINAL ACCEPTANCE
+      # ============================================================
+
+      - name: M33 acceptance
+        run: |
+          echo "=============================================="
+          echo "TheMITbro Milestone 33"
+          echo "OCR Foundation"
+          echo "=============================================="
+          echo "Required files: PASSED"
+          echo "Source integrity: PASSED"
+          echo "OCR tests: PASSED"
+          echo "Router tests: PASSED"
+          echo "Duplicate tests: PASSED"
+          echo "Catalog tests: PASSED"
+          echo "Complete regression: PASSED"
+          echo "=============================================="
+          echo "MILESTONE 33 CI VALIDATION PASSED"
+          echo "=============================================="

@@ -1,0 +1,19 @@
+{
+  "corpus_total": 72,
+  "corpus_passed": 72,
+  "corpus_pass_rate": 1.0,
+  "historical_contracts": [
+    "M35",
+    "M36",
+    "M37",
+    "M38",
+    "M39",
+    "M40",
+    "M41",
+    "M42",
+    "M43",
+    "M44"
+  ],
+  "ready_for_final_certification": true,
+  "contract": "M44"
+}

@@ -1,0 +1,334 @@
+{
+  "product": "TheMITbro Formatter",
+  "release": "v2.0.0",
+  "milestone": "M45",
+  "architecture_status": "FROZEN",
+  "content_production_status": "READY",
+  "baseline_sha256": "ba363a096b44361d01a41bb24be8f2134107d7f3d47360ea88fe5aa3c8d908f7",
+  "contracts": {
+    "contract": "M45",
+    "milestones": [
+      {
+        "milestone": 1,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 2,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 3,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 4,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 5,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 6,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 7,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 8,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 9,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 10,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 11,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 12,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 13,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 14,
+        "phase": "Foundation / solver evolution",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": "Protected by historical regression; no later contract overwrite."
+      },
+      {
+        "milestone": 15,
+        "phase": "Full mathematical solver",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 16,
+        "phase": "Diagram representation",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 17,
+        "phase": "Mathematical diagram generation",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 18,
+        "phase": "Engineering diagram generation",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 19,
+        "phase": "Layout engine",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 20,
+        "phase": "Question-paper renderer",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 21,
+        "phase": "PDF / HTML production",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 22,
+        "phase": "Large-scale regression",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 23,
+        "phase": "Production hardening",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 24,
+        "phase": "Release contracts",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 25,
+        "phase": "Reproducibility",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 26,
+        "phase": "End-to-end quality",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 27,
+        "phase": "Corpus compatibility",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 28,
+        "phase": "Formatter completeness",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 29,
+        "phase": "Pre-release quality",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 30,
+        "phase": "Release candidate",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 31,
+        "phase": "Formatter v1.0 certification",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 32,
+        "phase": "Question classification / routing",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 33,
+        "phase": "OCR foundation",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 34,
+        "phase": "Integrated ingestion",
+        "status": "FROZEN",
+        "contract_marker": null,
+        "notes": ""
+      },
+      {
+        "milestone": 35,
+        "phase": "Mathematics recognition",
+        "status": "FROZEN",
+        "contract_marker": "M35",
+        "notes": ""
+      },
+      {
+        "milestone": 36,
+        "phase": "Diagram intelligence",
+        "status": "FROZEN",
+        "contract_marker": "M36",
+        "notes": ""
+      },
+      {
+        "milestone": 37,
+        "phase": "Universal visual intelligence",
+        "status": "FROZEN",
+        "contract_marker": "M37",
+        "notes": ""
+      },
+      {
+        "milestone": 38,
+        "phase": "Universal question intelligence",
+        "status": "FROZEN",
+        "contract_marker": "M38",
+        "notes": ""
+      },
+      {
+        "milestone": 39,
+        "phase": "Answer / solver validation intelligence",
+        "status": "FROZEN",
+        "contract_marker": "M39",
+        "notes": ""
+      },
+      {
+        "milestone": 40,
+        "phase": "Question Bank production engine",
+        "status": "FROZEN",
+        "contract_marker": "M40",
+        "notes": ""
+      },
+      {
+        "milestone": 41,
+        "phase": "Intelligent mock-paper generator",
+        "status": "FROZEN",
+        "contract_marker": "M41",
+        "notes": ""
+      },
+      {
+        "milestone": 42,
+        "phase": "Professional publishing engine",
+        "status": "FROZEN",
+        "contract_marker": "M42",
+        "notes": ""
+      },
+      {
+        "milestone": 43,
+        "phase": "Real GATE/JEE corpus qualification",
+        "status": "FROZEN",
+        "contract_marker": "M43",
+        "notes": ""
+      },
+      {
+        "milestone": 44,
+        "phase": "Production hardening / end-to-end platform",
+        "status": "FROZEN",
+        "contract_marker": "M44",
+        "notes": ""
+      }
+    ]
+  },
+  "historical_contract_markers": [
+    "M35",
+    "M36",
+    "M37",
+    "M38",
+    "M39",
+    "M40",
+    "M41",
+    "M42",
+    "M43",
+    "M44"
+  ],
+  "next_operational_phase": "Real GATE EE / IIT-JEE content production"
+}

@@ -1,0 +1,970 @@
+{
+  "total": 72,
+  "passed": 68,
+  "failed": 4,
+  "pass_rate": 0.9444,
+  "by_subject": {
+    "Engineering Mathematics": {
+      "total": 8,
+      "passed": 8,
+      "pass_rate": 1.0
+    },
+    "Electrical Engineering": {
+      "total": 16,
+      "passed": 13,
+      "pass_rate": 0.8125
+    },
+    "Mathematics": {
+      "total": 24,
+      "passed": 23,
+      "pass_rate": 0.9583
+    },
+    "Physics": {
+      "total": 24,
+      "passed": 24,
+      "pass_rate": 1.0
+    }
+  },
+  "by_tag": {
+    "math": {
+      "total": 52,
+      "passed": 51,
+      "pass_rate": 0.9808
+    },
+    "matrix": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "circuit": {
+      "total": 3,
+      "passed": 2,
+      "pass_rate": 0.6667
+    },
+    "diagram": {
+      "total": 11,
+      "passed": 9,
+      "pass_rate": 0.8182
+    },
+    "waveform": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "numeric": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "mcq": {
+      "total": 2,
+      "passed": 2,
+      "pass_rate": 1.0
+    },
+    "msq": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "adversarial": {
+      "total": 8,
+      "passed": 7,
+      "pass_rate": 0.875
+    },
+    "phasor": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "fbd": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    },
+    "ray": {
+      "total": 2,
+      "passed": 2,
+      "pass_rate": 1.0
+    },
+    "graph": {
+      "total": 1,
+      "passed": 1,
+      "pass_rate": 1.0
+    }
+  },
+  "results": [
+    {
+      "case_id": "GATE-01",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Matrices",
+      "actual_topic": "Linear Algebra",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-02",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Calculus",
+      "actual_topic": "Calculus",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-03",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Differential Equations",
+      "actual_topic": "Differential Equations",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-04",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Probability and Statistics",
+      "actual_topic": "Probability and Statistics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-05",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Complex Variables",
+      "actual_topic": "Complex Variables",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-06",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Transforms",
+      "actual_topic": "Transforms",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-07",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Vector Calculus",
+      "actual_topic": "Vector Calculus",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-08",
+      "passed": false,
+      "classification_ok": false,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Network Theory",
+      "actual_topic": "Review Required",
+      "diagnostics": [
+        "topic:Review Required"
+      ]
+    },
+    {
+      "case_id": "GATE-09",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Signals and Systems",
+      "actual_topic": "Signals and Systems",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-10",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electrical Machines",
+      "actual_topic": "Electrical Machines",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-11",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Power Systems",
+      "actual_topic": "Power Systems",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-12",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Control Systems",
+      "actual_topic": "Control Systems",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-13",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Power Electronics",
+      "actual_topic": "Power Electronics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-14",
+      "passed": false,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": false,
+      "expected_topic": "Measurements",
+      "actual_topic": "Electrical Measurements",
+      "diagnostics": [
+        "visual_detection"
+      ]
+    },
+    {
+      "case_id": "GATE-15",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electromagnetic Fields",
+      "actual_topic": "Electromagnetic Fields",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-16",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Analog Electronics",
+      "actual_topic": "Analog Electronics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-17",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Digital Electronics",
+      "actual_topic": "Digital Electronics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-18",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electrical Machines",
+      "actual_topic": "Electrical Machines",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-19",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Control Systems",
+      "actual_topic": "Control Systems",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-20",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Power Electronics",
+      "actual_topic": "Power Electronics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-21",
+      "passed": false,
+      "classification_ok": false,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Power Systems",
+      "actual_topic": "Review Required",
+      "diagnostics": [
+        "topic:Review Required"
+      ]
+    },
+    {
+      "case_id": "GATE-22",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Network Theory",
+      "actual_topic": "Electric Circuits",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-23",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Matrices",
+      "actual_topic": "Linear Algebra",
+      "diagnostics": []
+    },
+    {
+      "case_id": "GATE-24",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electromagnetic Fields",
+      "actual_topic": "Electromagnetic Fields",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-01",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Complex Numbers and Quadratic Equations",
+      "actual_topic": "Complex Numbers and Quadratic Equations",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-02",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Matrices and Determinants",
+      "actual_topic": "Matrices and Determinants",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-03",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Permutations and Combinations",
+      "actual_topic": "Permutations and Combinations",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-04",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Binomial Theorem",
+      "actual_topic": "Binomial Theorem",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-05",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Sequence and Series",
+      "actual_topic": "Sequence and Series",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-06",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Limits Continuity and Differentiability",
+      "actual_topic": "Limits Continuity and Differentiability",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-07",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Integral Calculus",
+      "actual_topic": "Integral Calculus",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-08",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Differential Equations",
+      "actual_topic": "Differential Equations",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-09",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Coordinate Geometry",
+      "actual_topic": "Coordinate Geometry",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-10",
+      "passed": false,
+      "classification_ok": false,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Three Dimensional Geometry",
+      "actual_topic": "Vector Algebra",
+      "diagnostics": [
+        "topic:Vector Algebra"
+      ]
+    },
+    {
+      "case_id": "JEEM-11",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Vector Algebra",
+      "actual_topic": "Vector Algebra",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-12",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Trigonometry",
+      "actual_topic": "Trigonometry",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-13",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Probability and Statistics",
+      "actual_topic": "Probability and Statistics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-14",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Sets Relations and Functions",
+      "actual_topic": "Sets Relations and Functions",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-15",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Coordinate Geometry",
+      "actual_topic": "Coordinate Geometry",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-16",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Matrices and Determinants",
+      "actual_topic": "Matrices and Determinants",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-17",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Integral Calculus",
+      "actual_topic": "Integral Calculus",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-18",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Limits Continuity and Differentiability",
+      "actual_topic": "Limits Continuity and Differentiability",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-19",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Vector Algebra",
+      "actual_topic": "Vector Algebra",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-20",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Probability and Statistics",
+      "actual_topic": "Probability and Statistics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-21",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Trigonometry",
+      "actual_topic": "Trigonometry",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-22",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Complex Numbers and Quadratic Equations",
+      "actual_topic": "Complex Numbers and Quadratic Equations",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-23",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Sequence and Series",
+      "actual_topic": "Sequence and Series",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEM-24",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Binomial Theorem",
+      "actual_topic": "Binomial Theorem",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-01",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Units and Measurements",
+      "actual_topic": "Units and Measurements",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-02",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Kinematics",
+      "actual_topic": "Kinematics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-03",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Laws of Motion",
+      "actual_topic": "Laws of Motion",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-04",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Work Energy and Power",
+      "actual_topic": "Work Energy and Power",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-05",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Rotational Motion",
+      "actual_topic": "Rotational Motion",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-06",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Gravitation",
+      "actual_topic": "Gravitation",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-07",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Properties of Matter",
+      "actual_topic": "Properties of Matter",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-08",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Thermodynamics",
+      "actual_topic": "Thermodynamics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-09",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Kinetic Theory",
+      "actual_topic": "Kinetic Theory",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-10",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Oscillations and Waves",
+      "actual_topic": "Oscillations and Waves",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-11",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electrostatics",
+      "actual_topic": "Electrostatics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-12",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Current Electricity",
+      "actual_topic": "Current Electricity",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-13",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Magnetic Effects of Current",
+      "actual_topic": "Magnetic Effects of Current",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-14",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electromagnetic Induction",
+      "actual_topic": "Electromagnetic Induction",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-15",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Alternating Current",
+      "actual_topic": "Alternating Current",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-16",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Electromagnetic Waves",
+      "actual_topic": "Electromagnetic Waves",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-17",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Ray Optics",
+      "actual_topic": "Ray Optics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-18",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Wave Optics",
+      "actual_topic": "Wave Optics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-19",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Dual Nature",
+      "actual_topic": "Dual Nature",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-20",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Atoms and Nuclei",
+      "actual_topic": "Atoms and Nuclei",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-21",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Semiconductor Electronics",
+      "actual_topic": "Semiconductor Electronics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-22",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Kinematics",
+      "actual_topic": "Kinematics",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-23",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Current Electricity",
+      "actual_topic": "Current Electricity",
+      "diagnostics": []
+    },
+    {
+      "case_id": "JEEP-24",
+      "passed": true,
+      "classification_ok": true,
+      "type_ok": true,
+      "review_ok": true,
+      "math_ok": true,
+      "visual_ok": true,
+      "expected_topic": "Ray Optics",
+      "actual_topic": "Ray Optics",
+      "diagnostics": []
+    }
+  ],
+  "contract": "M43"
+}

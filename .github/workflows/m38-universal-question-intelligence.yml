@@ -1,0 +1,89 @@
+name: TheMITbro M38 Universal Question Intelligence
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m38:
+    name: M38 - Universal Question Intelligence
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          set -e
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Compile M38 modules
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m py_compile src/question_taxonomy.py
+          python -m py_compile src/question_intelligence.py
+          python -m py_compile src/concept_graph.py
+          python -m py_compile src/syllabus_index.py
+          python -m py_compile src/question_ingest.py
+          echo "M38 source integrity: PASSED"
+
+      - name: Run M38 focused tests
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m pytest -q \
+            tests/test_milestone38_taxonomy.py \
+            tests/test_milestone38_question_types.py \
+            tests/test_milestone38_complexity.py \
+            tests/test_milestone38_concept_graph.py \
+            tests/test_milestone38_ingestion.py \
+            tests/test_milestone38_review.py
+
+      - name: Run complete historical regression
+        env:
+          PYTHONPATH: .
+        run: |
+          set -e
+          python -m pytest -q
+
+      - name: M38 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 38"
+          echo "Universal Question Intelligence"
+          echo "================================================"
+          echo "GATE EE taxonomy: PASSED"
+          echo "JEE Mathematics taxonomy: PASSED"
+          echo "JEE Physics taxonomy: PASSED"
+          echo "Topic/subtopic/concept recognition: PASSED"
+          echo "MCQ/MSQ/NAT intelligence: PASSED"
+          echo "Marks extraction: PASSED"
+          echo "Difficulty intelligence: PASSED"
+          echo "Reasoning-depth intelligence: PASSED"
+          echo "Calculation-load intelligence: PASSED"
+          echo "Expected solving-time model: PASSED"
+          echo "Syllabus mapping: PASSED"
+          echo "Prerequisite/concept graph: PASSED"
+          echo "Review gating: PASSED"
+          echo "Question Bank integration: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 38 CI VALIDATION PASSED"
+          echo "================================================"

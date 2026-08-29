@@ -1,0 +1,91 @@
+name: TheMITbro M44 Production Hardening and End-to-End Platform
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  m44:
+    name: M44 - Production Hardening & End-to-End Platform
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Compile M44
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m py_compile src/production_runtime.py
+          python -m py_compile src/secure_io.py
+          python -m py_compile src/recovery_manager.py
+          python -m py_compile src/integrity_audit.py
+          python -m py_compile src/deterministic_build.py
+          python -m py_compile src/deterministic_zip.py
+          python -m py_compile src/migration_hardening.py
+          python -m py_compile src/performance_qualification.py
+          python -m py_compile src/end_to_end_platform.py
+          python -m py_compile src/production_certification.py
+          python -m py_compile src/run_m44_certification.py
+
+      - name: Focused M44 tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m pytest -q \
+            tests/test_milestone44_corpus_hardening.py \
+            tests/test_milestone44_security_integrity.py \
+            tests/test_milestone44_recovery.py \
+            tests/test_milestone44_migration.py \
+            tests/test_milestone44_performance.py \
+            tests/test_milestone44_determinism.py \
+            tests/test_milestone44_deterministic_release.py \
+            tests/test_milestone44_end_to_end.py \
+            tests/test_milestone44_release_zip.py \
+            tests/test_milestone44_contract_docs.py
+
+      - name: Generate M44 production certification
+        env:
+          PYTHONPATH: .
+        run: python -m src.run_m44_certification m44-production-certification.json
+
+      - name: Complete historical regression
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q
+
+      - name: M44 acceptance
+        run: |
+          echo "================================================"
+          echo "TheMITbro Milestone 44 - Production Hardening & End-to-End Platform"
+          echo "================================================"
+          echo "M43 corpus failure hardening: PASSED"
+          echo ">=95% hostile corpus qualification: PASSED"
+          echo "Production runtime limits: PASSED"
+          echo "Deterministic content IDs/build fingerprints: PASSED"
+          echo "Byte-deterministic release ZIP packaging: PASSED"
+          echo "Bulk/scale qualification: PASSED"
+          echo "Secure path/symlink guards: PASSED"
+          echo "Atomic persistence/integrity audit: PASSED"
+          echo "Recovery/restore: PASSED"
+          echo "Migration safety: PASSED"
+          echo "Question Bank integrity: PASSED"
+          echo "Release ZIP integrity/security: PASSED"
+          echo "Complete input-to-paper-to-release workflow: PASSED"
+          echo "Historical documentation contracts: PASSED"
+          echo "Complete historical regression: PASSED"
+          echo "================================================"
+          echo "MILESTONE 44 CI VALIDATION PASSED"
+          echo "================================================"
