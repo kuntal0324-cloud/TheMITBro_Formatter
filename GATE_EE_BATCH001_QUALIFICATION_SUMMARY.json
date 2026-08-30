@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "question_count": 20,
+  "formatter_pass_count": 18,
+  "formatter_review_count": 2,
+  "paper_eligible_count": 0,
+  "release_gate": "BLOCKED"
+}

@@ -1,0 +1,32 @@
+name: GATE EE Batch 001 Formatter Qualification
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qualify-batch-001:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Qualification tests
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q tests/test_gate_ee_batch001_qualification.py
+      - name: Generate qualification report
+        env:
+          PYTHONPATH: .
+        run: python -m src.run_gate_ee_batch_qualification
+      - name: Complete frozen regression
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q

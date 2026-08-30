@@ -1,0 +1,32 @@
+{
+  "handoff_version": "1.0.0",
+  "handoff_id": "GATE_EE_BATCH_001_TO_FORMATTER_V2",
+  "source_repository": "TheMITbro_Question_Bank",
+  "target_repository": "TheMITBro_Formatter",
+  "formatter_required_version": "2.0.0",
+  "batch_id": "BATCH_001",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "question_count": 20,
+  "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.jsonl",
+  "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.md",
+  "source_sha256": "caca8a04e4af09995af0c03a6486812ba7a92f333093da0a6c669aee44a02ca0",
+  "required_formatter_checks": [
+    "schema/ingestion compatibility",
+    "question intelligence classification",
+    "mathematics normalization/recognition where applicable",
+    "answer/solution validation where supported",
+    "duplicate/family detection",
+    "quality scoring",
+    "professional rendering smoke test"
+  ],
+  "required_result_per_question": [
+    "formatter_status",
+    "classification_result",
+    "validation_result",
+    "quality_result",
+    "review_required",
+    "render_result"
+  ],
+  "promotion_rule": "No question may become PAPER_ELIGIBLE until Formatter v2.0 validation is recorded and independent human review is complete.",
+  "release_gate": "BLOCKED"
+}
