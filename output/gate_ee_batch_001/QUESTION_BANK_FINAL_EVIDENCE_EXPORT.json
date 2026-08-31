@@ -1,11 +1,14 @@
 {
-  "status": "PASS",
+  "export_contract": "FORMATTER_V2_BATCH001_FINAL_EVIDENCE_V1",
+  "formatter_version": "2.0.0",
+  "batch_id": "BATCH_001",
+  "source_sha256": "2c218be6055cfa977da0842a6bdbc1edb61fe1712bf88794dc461052ae050b9e",
   "question_count": 20,
   "formatter_pass_count": 20,
   "formatter_review_count": 0,
+  "status": "PASS",
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
   "release_gate": "BLOCKED_PENDING_HUMAN_SIGNOFF",
-  "source_sha256": "2c218be6055cfa977da0842a6bdbc1edb61fe1712bf88794dc461052ae050b9e",
   "qualification_report_sha256": "a58d9bdf7508bb6910e290fc089c2d7460d3cbe5911722a47063d5597980b6e9"
 }
