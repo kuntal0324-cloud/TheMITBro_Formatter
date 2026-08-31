@@ -1,5 +1,5 @@
 {
-  "handoff_version": "1.0.0",
+  "handoff_version": "1.1.0",
   "handoff_id": "GATE_EE_BATCH_001_TO_FORMATTER_V2",
   "source_repository": "TheMITbro_Question_Bank",
   "target_repository": "TheMITBro_Formatter",
@@ -9,7 +9,7 @@
   "question_count": 20,
   "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.jsonl",
   "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.md",
-  "source_sha256": "caca8a04e4af09995af0c03a6486812ba7a92f333093da0a6c669aee44a02ca0",
+  "source_sha256": "2c218be6055cfa977da0842a6bdbc1edb61fe1712bf88794dc461052ae050b9e",
   "required_formatter_checks": [
     "schema/ingestion compatibility",
     "question intelligence classification",
@@ -28,5 +28,9 @@
     "render_result"
   ],
   "promotion_rule": "No question may become PAPER_ELIGIBLE until Formatter v2.0 validation is recorded and independent human review is complete.",
-  "release_gate": "BLOCKED"
+  "release_gate": "BLOCKED",
+  "revision_notes": [
+    "TMB-GATE-EE-EM-005 revision 2: clarified calculus task wording.",
+    "TMB-GATE-EE-EM-016 revision 2: clarified linear-algebra task wording."
+  ]
 }

@@ -1,10 +1,10 @@
 {
   "qualification_contract": "GATE_EE_BATCH001_FORMATTER_V2_Q1",
   "formatter_version": "2.0.0",
-  "source_sha256": "caca8a04e4af09995af0c03a6486812ba7a92f333093da0a6c669aee44a02ca0",
+  "source_sha256": "2c218be6055cfa977da0842a6bdbc1edb61fe1712bf88794dc461052ae050b9e",
   "question_count": 20,
-  "formatter_pass_count": 18,
-  "formatter_review_count": 2,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
   "release_gate": "BLOCKED",
@@ -60,7 +60,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.698,
@@ -137,7 +154,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -212,7 +246,18 @@
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.742,
@@ -289,7 +334,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -320,68 +382,83 @@
     },
     {
       "question_id": "TMB-GATE-EE-EM-005",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
-        "exam": "GENERAL",
-        "subject": "Unclassified",
-        "topic": "Review Required",
-        "status": "REVIEW",
-        "confidence": 0.0
+        "exam": "GATE_EE",
+        "subject": "Engineering Mathematics",
+        "topic": "Calculus",
+        "status": "AUTO",
+        "confidence": 0.7
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Review Required",
-        "topic": "Review Required",
-        "subtopic": "Review Required",
-        "concept": "Review Required",
-        "taxonomy_confidence": 0.0,
+        "subject": "Engineering Mathematics",
+        "topic": "Calculus",
+        "subtopic": "Differential calculus",
+        "concept": "Differentiation",
+        "taxonomy_confidence": 0.66,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.745,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 213,
+        "expected_time_seconds": 257,
         "syllabus_path": [
           "GATE_EE",
-          "Review Required"
+          "Engineering Mathematics",
+          "Calculus",
+          "Differential calculus",
+          "Differentiation"
         ],
         "prerequisites": [],
-        "signals": [],
-        "review_required": true
+        "signals": [
+          "derivative"
+        ],
+        "review_required": false
       },
       "validation": {
         "status": "REVIEW",
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
-        "score": 0.282,
-        "grade": "D",
+        "score": 0.635,
+        "grade": "C",
         "components": {
-          "classification": 0,
+          "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0,
+          "taxonomy": 0.66,
           "validation": 0.55
         },
         "blockers": [
-          "classification_review",
           "validation_review"
         ]
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3182,
+        "similarity": 0.3266,
         "matched_id": "TMB-GATE-EE-EM-004"
       },
       "render": {
         "status": "PASS",
-        "bytes": 534
+        "bytes": 582
       },
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
@@ -436,7 +513,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.681,
@@ -516,7 +610,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -534,7 +645,7 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3188,
+        "similarity": 0.3272,
         "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
@@ -589,7 +700,18 @@
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.64,
@@ -666,7 +788,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.64,
@@ -743,7 +882,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -761,8 +917,8 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3202,
-        "matched_id": "TMB-GATE-EE-EM-005"
+        "similarity": 0.3167,
+        "matched_id": "TMB-GATE-EE-EM-009"
       },
       "render": {
         "status": "PASS",
@@ -820,7 +976,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -897,7 +1070,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.664,
@@ -971,7 +1161,18 @@
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.759,
@@ -1042,7 +1243,26 @@
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [
+            {
+              "status": "UNKNOWN",
+              "model": "Newton second law",
+              "expected": null,
+              "supplied": null,
+              "message": "F, m and a were not all explicit."
+            }
+          ],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.64,
@@ -1060,8 +1280,8 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3161,
-        "matched_id": "TMB-GATE-EE-EM-012"
+        "similarity": 0.3336,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
@@ -1119,7 +1339,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -1137,8 +1374,8 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3298,
-        "matched_id": "TMB-GATE-EE-EM-004"
+        "similarity": 0.3422,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
@@ -1150,35 +1387,40 @@
     },
     {
       "question_id": "TMB-GATE-EE-EM-016",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
-        "exam": "GENERAL",
-        "subject": "Unclassified",
-        "topic": "Review Required",
-        "status": "REVIEW",
-        "confidence": 0.0
+        "exam": "GATE_EE",
+        "subject": "Engineering Mathematics",
+        "topic": "Matrices",
+        "status": "AUTO",
+        "confidence": 0.7
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Review Required",
-        "topic": "Review Required",
-        "subtopic": "Review Required",
-        "concept": "Review Required",
-        "taxonomy_confidence": 0.0,
+        "subject": "Engineering Mathematics",
+        "topic": "Linear Algebra",
+        "subtopic": "Matrices",
+        "concept": "Matrix operations",
+        "taxonomy_confidence": 0.66,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.78,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 239,
+        "expected_time_seconds": 246,
         "syllabus_path": [
           "GATE_EE",
-          "Review Required"
+          "Engineering Mathematics",
+          "Linear Algebra",
+          "Matrices",
+          "Matrix operations"
         ],
         "prerequisites": [],
-        "signals": [],
-        "review_required": true
+        "signals": [
+          "matrix"
+        ],
+        "review_required": false
       },
       "validation": {
         "status": "REVIEW",
@@ -1191,33 +1433,49 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
-        "score": 0.282,
-        "grade": "D",
+        "score": 0.635,
+        "grade": "C",
         "components": {
-          "classification": 0,
+          "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0,
+          "taxonomy": 0.66,
           "validation": 0.55
         },
         "blockers": [
-          "classification_review",
           "validation_review"
         ]
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3467,
+        "similarity": 0.33,
         "matched_id": "TMB-GATE-EE-EM-002"
       },
       "render": {
         "status": "PASS",
-        "bytes": 496
+        "bytes": 572
       },
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
@@ -1269,7 +1527,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
@@ -1342,7 +1617,18 @@
         "answer_status": "PASS",
         "solution_status": "UNKNOWN",
         "review_required": true,
-        "findings": []
+        "findings": [],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.537,
@@ -1423,7 +1709,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.742,
@@ -1502,7 +1805,24 @@
             "severity": "REVIEW",
             "message": "No clear task/instruction was detected."
           }
-        ]
+        ],
+        "raw": {
+          "status": "REVIEW",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "UNKNOWN",
+          "diagram_text_status": "UNKNOWN",
+          "domain_checks": [],
+          "quality_status": "REVIEW",
+          "findings": [
+            {
+              "code": "NO_TASK",
+              "severity": "REVIEW",
+              "message": "No clear task/instruction was detected."
+            }
+          ],
+          "review_required": true
+        }
       },
       "quality": {
         "score": 0.635,
