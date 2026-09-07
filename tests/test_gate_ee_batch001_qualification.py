@@ -7,10 +7,11 @@ HANDOFF = Path("input/gate_ee_batch_001/BATCH_001_FORMATTER_V2_HANDOFF.json")
 
 def test_batch001_handoff_checksum_and_count():
     r = qualify_batch(JSONL, HANDOFF)
-    assert r["status"] == "REVIEW_REQUIRED"
+    assert r["status"] == "PASS"
     assert r["question_count"] == 20
-    assert r["formatter_pass_count"] == 0
-    assert r["formatter_review_count"] == 20
+    assert r["formatter_pass_count"] == 20
+    assert r["formatter_review_count"] == 0
+    assert r["invalid_count"] == 0
 
 def test_batch001_never_claims_human_review():
     r = qualify_batch(JSONL, HANDOFF)
@@ -26,6 +27,15 @@ def test_batch001_unique_formatter_results():
     assert len(ids) == 20
     assert len(set(ids)) == 20
     assert all(q["duplicate"]["status"] == "ACCEPT" for q in r["questions"])
+
+def test_batch001_content_and_quality_gates_all_pass():
+    r = qualify_batch(JSONL, HANDOFF)
+    assert all(q["validation"]["status"] == "PASS" for q in r["questions"])
+    assert all(q["validation"]["answer_status"] == "PASS" for q in r["questions"])
+    assert all(q["validation"]["solution_status"] == "PASS" for q in r["questions"])
+    assert all(q["quality"]["grade"] == "A" for q in r["questions"])
+    assert all(not q["quality"]["blockers"] for q in r["questions"])
+    assert all(q["formatter_qualification"] == "PASS" for q in r["questions"])
 
 def test_batch001_render_smoke():
     r = qualify_batch(JSONL, HANDOFF)

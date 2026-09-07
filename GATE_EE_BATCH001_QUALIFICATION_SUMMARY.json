@@ -1,17 +1,20 @@
 {
-  "status": "REVIEW_REQUIRED",
+  "status": "PASS",
   "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
   "question_count": 20,
-  "formatter_pass_count": 0,
-  "formatter_review_count": 20,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
   "render_pass_count": 20,
-  "validation_review_count": 20,
+  "source_markup_exposed_count": 0,
+  "validation_pass_count": 20,
+  "quality_grade_a_count": 20,
   "syllabus_match_count": 20,
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
   "release_gate": "BLOCKED",
-  "source_sha256": "745b01ddfa9e14ed7bfd6582fa8d76d728eeeea84cc6b1fa804fe1321b791bd3",
+  "source_sha256": "cf815b061af0d357df02796f34021b69c3e2465835a1ab1caab7d1ae16d61256",
   "qualification_report": "output/gate_ee_batch_001/FORMATTER_V2_STRICT_REQUALIFICATION.json",
-  "qualification_report_sha256": "751c68db8cce127d2a449af5969b494229e0d1502a87bad2a5c8d67c0b9c2878",
-  "note": "A render smoke test is not a content qualification. Every validation REVIEW remains REVIEW."
+  "qualification_report_sha256": "ea12ea1c9806ca46600b474f67981e8092d3239eef7d93ce790798102cbd8c39",
+  "note": "Formatter qualification passed; named independent human review is still required before paper eligibility."
 }

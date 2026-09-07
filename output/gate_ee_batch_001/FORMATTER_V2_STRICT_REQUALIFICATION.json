@@ -1,18 +1,19 @@
 {
   "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
   "formatter_version": "2.0.0",
-  "source_sha256": "745b01ddfa9e14ed7bfd6582fa8d76d728eeeea84cc6b1fa804fe1321b791bd3",
+  "source_sha256": "cf815b061af0d357df02796f34021b69c3e2465835a1ab1caab7d1ae16d61256",
   "question_count": 20,
-  "formatter_pass_count": 0,
-  "formatter_review_count": 20,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
   "release_gate": "BLOCKED",
-  "status": "REVIEW_REQUIRED",
+  "status": "PASS",
   "questions": [
     {
       "question_id": "TMB-GATE-EE-EM-001",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -24,74 +25,61 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
-        "subtopic": "Determinants",
-        "concept": "Determinants and rank",
-        "taxonomy_confidence": 0.688,
+        "subtopic": "Eigen systems",
+        "concept": "Eigenvalues and eigenvectors",
+        "taxonomy_confidence": 0.798,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
-        "difficulty_score": 0.75,
+        "difficulty_score": 0.785,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 248,
+        "expected_time_seconds": 254,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
           "Linear Algebra",
-          "Determinants",
-          "Determinants and rank"
+          "Eigen systems",
+          "Eigenvalues and eigenvectors"
         ],
         "prerequisites": [
-          "Matrix operations"
+          "Determinants and rank"
         ],
         "signals": [
-          "det("
+          "eigenvalue",
+          "characteristic equation"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.698,
-        "grade": "C",
+        "score": 0.958,
+        "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.688,
-          "validation": 0.55
+          "taxonomy": 0.798,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
@@ -100,17 +88,17 @@
       },
       "render": {
         "status": "PASS",
-        "bytes": 438,
+        "bytes": 464,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-002",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -124,14 +112,14 @@
         "topic": "Linear Algebra",
         "subtopic": "Matrices",
         "concept": "Matrix operations",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.907,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.745,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 212,
+        "expected_time_seconds": 255,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -141,72 +129,60 @@
         ],
         "prerequisites": [],
         "signals": [
-          "matrix"
+          "matrix",
+          "matrix inverse",
+          "trace"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.921,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.907,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3895,
+        "similarity": 0.3982,
         "matched_id": "TMB-GATE-EE-EM-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 389,
+        "bytes": 435,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-003",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -227,7 +203,7 @@
         "difficulty_score": 0.895,
         "reasoning_depth": "Deep",
         "calculation_load": "High",
-        "expected_time_seconds": 353,
+        "expected_time_seconds": 357,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -246,55 +222,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
+        "solution_status": "PASS",
+        "review_required": false,
         "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
           "quality_status": "PASS",
           "findings": [],
-          "review_required": true
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.742,
-        "grade": "C",
+        "score": 0.979,
+        "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.907,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.25,
+        "similarity": 0.2571,
         "matched_id": "TMB-GATE-EE-EM-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 849,
+        "bytes": 871,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-004",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -308,14 +282,14 @@
         "topic": "Calculus",
         "subtopic": "Limits and continuity",
         "concept": "Limits and continuity",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.798,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Medium",
         "difficulty_score": 0.6,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 212,
+        "expected_time_seconds": 215,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -325,72 +299,59 @@
         ],
         "prerequisites": [],
         "signals": [
-          "limit"
+          "limit",
+          "exponential limit"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.9,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.798,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3992,
+        "similarity": 0.4229,
         "matched_id": "TMB-GATE-EE-EM-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 429,
+        "bytes": 461,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-005",
-      "source_revision": 2,
+      "source_revision": 3,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -404,14 +365,14 @@
         "topic": "Calculus",
         "subtopic": "Differential calculus",
         "concept": "Differentiation",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.78,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 257,
+        "expected_time_seconds": 259,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -421,60 +382,61 @@
         ],
         "prerequisites": [],
         "signals": [
-          "derivative"
+          "derivative",
+          "minimum",
+          "optimization",
+          "critical point"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
+        "solution_status": "PASS",
+        "review_required": false,
         "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
           "quality_status": "PASS",
           "findings": [],
-          "review_required": true
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.938,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.99,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3266,
+        "similarity": 0.3339,
         "matched_id": "TMB-GATE-EE-EM-004"
       },
       "render": {
         "status": "PASS",
-        "bytes": 513,
+        "bytes": 530,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-006",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -513,67 +475,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.681,
-        "grade": "C",
+        "score": 0.918,
+        "grade": "A",
         "components": {
           "classification": 0.82,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.77,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.4299,
+        "similarity": 0.4259,
         "matched_id": "TMB-GATE-EE-EM-004"
       },
       "render": {
         "status": "PASS",
-        "bytes": 416,
+        "bytes": 426,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-007",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -587,14 +535,14 @@
         "topic": "Differential Equations",
         "subtopic": "Ordinary differential equations",
         "concept": "ODE solution",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.86,
-        "reasoning_depth": "Multi-step",
+        "difficulty_score": 0.93,
+        "reasoning_depth": "Deep",
         "calculation_load": "High",
-        "expected_time_seconds": 248,
+        "expected_time_seconds": 308,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -607,158 +555,150 @@
           "Integration"
         ],
         "signals": [
-          "ode"
+          "ode",
+          "linear ode",
+          "first-order",
+          "initial-value problem"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.938,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.99,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3272,
+        "similarity": 0.3416,
         "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 415,
+        "bytes": 464,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-008",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.82
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "subtopic": "Eigen systems",
-        "concept": "Eigenvalues and eigenvectors",
-        "taxonomy_confidence": 0.688,
+        "topic": "Differential Equations",
+        "subtopic": "Ordinary differential equations",
+        "concept": "ODE solution",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.785,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 260,
+        "expected_time_seconds": 269,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
-          "Linear Algebra",
-          "Eigen systems",
-          "Eigenvalues and eigenvectors"
+          "Differential Equations",
+          "Ordinary differential equations",
+          "ODE solution"
         ],
         "prerequisites": [
-          "Determinants and rank"
+          "Differentiation",
+          "Integration"
         ],
         "signals": [
-          "characteristic equation"
+          "differential equation",
+          "ordinary differential equation",
+          "ode",
+          "linear ode",
+          "second-order"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
+        "solution_status": "PASS",
+        "review_required": false,
         "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
           "quality_status": "PASS",
           "findings": [],
-          "review_required": true
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.64,
-        "grade": "C",
+        "score": 0.962,
+        "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.82,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.688,
-          "validation": 0.55
+          "taxonomy": 0.99,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3161,
+        "similarity": 0.402,
         "matched_id": "TMB-GATE-EE-EM-007"
       },
       "render": {
         "status": "PASS",
-        "bytes": 549,
+        "bytes": 636,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-009",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -772,7 +712,7 @@
         "topic": "Complex Variables",
         "subtopic": "Complex algebra",
         "concept": "Complex numbers",
-        "taxonomy_confidence": 0.688,
+        "taxonomy_confidence": 0.825,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -789,72 +729,59 @@
         ],
         "prerequisites": [],
         "signals": [
-          "complex number"
+          "complex number",
+          "complex algebra"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.64,
-        "grade": "C",
+        "score": 0.905,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.688,
-          "validation": 0.55
+          "taxonomy": 0.825,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.4586,
+        "similarity": 0.455,
         "matched_id": "TMB-GATE-EE-EM-004"
       },
       "render": {
         "status": "PASS",
-        "bytes": 327,
+        "bytes": 337,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-010",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -868,14 +795,14 @@
         "topic": "Complex Variables",
         "subtopic": "Complex algebra",
         "concept": "Complex numbers",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.935,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.775,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 241,
+        "expected_time_seconds": 246,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -885,72 +812,60 @@
         ],
         "prerequisites": [],
         "signals": [
+          "complex roots",
+          "quadratic roots",
           "conjugate"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.927,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.935,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3167,
+        "similarity": 0.3101,
         "matched_id": "TMB-GATE-EE-EM-009"
       },
       "render": {
         "status": "PASS",
-        "bytes": 413,
+        "bytes": 463,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-011",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -964,14 +879,14 @@
         "topic": "Probability and Statistics",
         "subtopic": "Probability",
         "concept": "Conditional probability",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.935,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
         "difficulty_score": 0.78,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 258,
+        "expected_time_seconds": 260,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -981,72 +896,60 @@
         ],
         "prerequisites": [],
         "signals": [
-          "probability"
+          "probability",
+          "probability axioms",
+          "independent events"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.927,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.935,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3177,
-        "matched_id": "TMB-GATE-EE-EM-004"
+        "similarity": 0.3249,
+        "matched_id": "TMB-GATE-EE-EM-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 453,
+        "bytes": 468,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-012",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1063,8 +966,8 @@
         "taxonomy_confidence": 0.688,
         "question_type": "NAT",
         "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.635,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
         "expected_time_seconds": 205,
@@ -1082,67 +985,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.664,
-        "grade": "C",
+        "score": 0.902,
+        "grade": "A",
         "components": {
           "classification": 0.82,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.688,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.365,
-        "matched_id": "TMB-GATE-EE-EM-011"
+        "similarity": 0.3438,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 397,
+        "bytes": 406,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-013",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1163,7 +1052,7 @@
         "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 249,
+        "expected_time_seconds": 253,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -1181,55 +1070,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
+        "solution_status": "PASS",
+        "review_required": false,
         "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
           "quality_status": "PASS",
           "findings": [],
-          "review_required": true
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.759,
-        "grade": "B",
+        "score": 0.996,
+        "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3922,
+        "similarity": 0.4114,
         "matched_id": "TMB-GATE-EE-EM-012"
       },
       "render": {
         "status": "PASS",
-        "bytes": 694,
+        "bytes": 719,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-014",
-      "source_revision": 2,
+      "source_revision": 3,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1247,7 +1134,7 @@
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.825,
+        "difficulty_score": 0.86,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
         "expected_time_seconds": 275,
@@ -1267,67 +1154,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.688,
-        "grade": "C",
+        "score": 0.926,
+        "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.688,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3118,
-        "matched_id": "TMB-GATE-EE-EM-010"
+        "similarity": 0.3065,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 603,
+        "bytes": 612,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-015",
-      "source_revision": 2,
+      "source_revision": 3,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1364,68 +1237,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.953,
+        "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.825,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review",
-          "visual_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3277,
-        "matched_id": "TMB-GATE-EE-EM-004"
+        "similarity": 0.2979,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 547,
+        "bytes": 558,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-016",
-      "source_revision": 2,
+      "source_revision": 3,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1439,14 +1297,14 @@
         "topic": "Linear Algebra",
         "subtopic": "Matrices",
         "concept": "Matrix operations",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.78,
+        "difficulty_score": 0.81,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 246,
+        "expected_time_seconds": 251,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -1456,72 +1314,61 @@
         ],
         "prerequisites": [],
         "signals": [
-          "matrix"
+          "matrix",
+          "linear system",
+          "coefficient matrix",
+          "proportional rows"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.938,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.99,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.33,
-        "matched_id": "TMB-GATE-EE-EM-002"
+        "similarity": 0.3076,
+        "matched_id": "TMB-GATE-EE-EM-008"
       },
       "render": {
         "status": "PASS",
-        "bytes": 507,
+        "bytes": 548,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-017",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1535,14 +1382,14 @@
         "topic": "Calculus",
         "subtopic": "Differential calculus",
         "concept": "Differentiation",
-        "taxonomy_confidence": 0.66,
+        "taxonomy_confidence": 0.798,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.74,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.775,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 227,
+        "expected_time_seconds": 267,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -1552,72 +1399,59 @@
         ],
         "prerequisites": [],
         "signals": [
-          "derivative"
+          "derivative",
+          "directional derivative"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.635,
-        "grade": "C",
+        "score": 0.9,
+        "grade": "A",
         "components": {
           "classification": 0.7,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
-          "validation": 0.55
+          "taxonomy": 0.798,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3224,
-        "matched_id": "TMB-GATE-EE-EM-001"
+        "similarity": 0.3364,
+        "matched_id": "TMB-GATE-EE-EM-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 527,
+        "bytes": 537,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-018",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1629,82 +1463,82 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Vector Calculus",
-        "subtopic": "Vector differential operators",
+        "subtopic": "Vector calculus",
         "concept": "Gradient divergence curl",
-        "taxonomy_confidence": 0.88,
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.71,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 256,
+        "expected_time_seconds": 261,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
           "Vector Calculus",
-          "Vector differential operators",
+          "Vector calculus",
           "Gradient divergence curl"
         ],
         "prerequisites": [],
         "signals": [
+          "vector calculus",
+          "vector field",
           "divergence",
           "curl",
-          "nabla"
+          "nabla",
+          "green's theorem"
         ],
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
+        "solution_status": "PASS",
+        "review_required": false,
         "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
+          "solution_status": "PASS",
           "diagram_text_status": "PASS",
           "domain_checks": [],
           "quality_status": "PASS",
           "findings": [],
-          "review_required": true
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.646,
-        "grade": "C",
+        "score": 0.986,
+        "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.88,
-          "validation": 0.55
+          "taxonomy": 0.99,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review",
-          "visual_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2977,
+        "similarity": 0.3041,
         "matched_id": "TMB-GATE-EE-EM-017"
       },
       "render": {
         "status": "PASS",
-        "bytes": 773,
+        "bytes": 789,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-019",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1722,10 +1556,10 @@
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.693,
+        "difficulty_score": 0.705,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 203,
+        "expected_time_seconds": 205,
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
@@ -1742,67 +1576,53 @@
         "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.742,
-        "grade": "C",
+        "score": 0.979,
+        "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.907,
-          "validation": 0.55
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3555,
-        "matched_id": "TMB-GATE-EE-EM-011"
+        "similarity": 0.3485,
+        "matched_id": "TMB-GATE-EE-EM-013"
       },
       "render": {
         "status": "PASS",
-        "bytes": 431,
+        "bytes": 449,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     },
     {
       "question_id": "TMB-GATE-EE-EM-020",
-      "source_revision": 2,
+      "source_revision": 3,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
@@ -1812,82 +1632,77 @@
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Review Required",
-        "topic": "Review Required",
-        "subtopic": "Review Required",
-        "concept": "Review Required",
-        "taxonomy_confidence": 0.0,
+        "subject": "Engineering Mathematics",
+        "topic": "Differential Equations",
+        "subtopic": "Partial differential equations",
+        "concept": "PDE solution",
+        "taxonomy_confidence": 0.825,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.905,
-        "reasoning_depth": "Multi-step",
+        "difficulty_score": 0.94,
+        "reasoning_depth": "Deep",
         "calculation_load": "High",
-        "expected_time_seconds": 272,
+        "expected_time_seconds": 333,
         "syllabus_path": [
           "GATE_EE",
-          "Review Required"
+          "Engineering Mathematics",
+          "Differential Equations",
+          "Partial differential equations",
+          "PDE solution"
         ],
-        "prerequisites": [],
-        "signals": [],
-        "review_required": true
+        "prerequisites": [
+          "Differentiation",
+          "Integration"
+        ],
+        "signals": [
+          "partial differential equation",
+          "heat equation"
+        ],
+        "review_required": false
       },
       "validation": {
-        "status": "REVIEW",
+        "status": "PASS",
         "answer_status": "PASS",
-        "solution_status": "UNKNOWN",
-        "review_required": true,
-        "findings": [
-          {
-            "code": "NO_TASK",
-            "severity": "REVIEW",
-            "message": "No clear task/instruction was detected."
-          }
-        ],
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
         "raw": {
-          "status": "REVIEW",
+          "status": "PASS",
           "answer_status": "PASS",
           "option_status": "PASS",
-          "solution_status": "UNKNOWN",
-          "diagram_text_status": "UNKNOWN",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
           "domain_checks": [],
-          "quality_status": "REVIEW",
-          "findings": [
-            {
-              "code": "NO_TASK",
-              "severity": "REVIEW",
-              "message": "No clear task/instruction was detected."
-            }
-          ],
-          "review_required": true
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
         }
       },
       "quality": {
-        "score": 0.551,
-        "grade": "D",
+        "score": 0.953,
+        "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0,
-          "validation": 0.55
+          "taxonomy": 0.825,
+          "validation": 1.0
         },
-        "blockers": [
-          "validation_review"
-        ]
+        "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2768,
+        "similarity": 0.2779,
         "matched_id": "TMB-GATE-EE-EM-007"
       },
       "render": {
         "status": "PASS",
-        "bytes": 580,
+        "bytes": 650,
         "source_markup_exposed": false
       },
       "syllabus_match": true,
-      "formatter_qualification": "REVIEW",
+      "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
       "paper_eligible": false
     }
