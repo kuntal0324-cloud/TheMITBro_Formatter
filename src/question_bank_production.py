@@ -8,7 +8,8 @@ from .question_versioning import make_revision
 
 def promote(record)->ProductionQuestion:
     q=score_question(record);m=record.metadata;c=record.classification
-    lifecycle="APPROVED" if q.grade=="A" and not q.blockers else "REVIEW"
+    # Automation may recommend a record, but APPROVED is a named human action.
+    lifecycle="REVIEW"
     contracts=tuple(x for x in ("M35","M36","M37","M38","M39") if x in {
         m.get("ingestion_contract"),m.get("diagram_contract"),m.get("visual_intelligence_contract"),
         m.get("question_intelligence_contract"),m.get("validation_intelligence_contract")})
@@ -19,6 +20,7 @@ def promote(record)->ProductionQuestion:
         family_id=family_id(record),
         provenance=Provenance(record.source_name,record.source_sha256,utc_now(),contracts),
         metadata={"quality":q.to_dict(),"legacy_schema_version":record.schema_version,
+                  "automation_recommendation":"READY_FOR_HUMAN_REVIEW" if q.grade=="A" and not q.blockers else "REVISE",
                   "validation_status":m.get("validation_status"),"difficulty":m.get("difficulty"),
                   "difficulty_score":m.get("difficulty_score"),
                   "reasoning_depth":m.get("reasoning_depth"),

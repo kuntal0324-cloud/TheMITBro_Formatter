@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .question_ingest import SUPPORTED
-from .question_router import route_source
+from .question_router import route_source_many
 
 
 @dataclass(frozen=True)
@@ -14,6 +14,7 @@ class BulkImportSummary:
     review: int
     duplicates: int
     failed: int
+    source_files: int = 0
 
 
 def import_directory(
@@ -26,24 +27,25 @@ def import_directory(
     if not base.is_dir():
         raise NotADirectoryError(base)
 
-    processed = auto = review = duplicates = failed = 0
+    processed = auto = review = duplicates = failed = source_files = 0
 
     for path in sorted(p for p in base.rglob("*") if p.is_file()):
         if path.suffix.lower() not in SUPPORTED:
             continue
-        processed += 1
+        source_files += 1
         try:
-            result = route_source(path, root=root, exam_hint=exam_hint)
+            results = route_source_many(path, root=root, exam_hint=exam_hint)
         except Exception:
             failed += 1
             continue
-
-        if result.status == "DUPLICATE":
-            duplicates += 1
-        elif result.status == "AUTO":
-            auto += 1
-        else:
-            review += 1
+        for result in results:
+            processed += 1
+            if result.status == "DUPLICATE":
+                duplicates += 1
+            elif result.status == "AUTO":
+                auto += 1
+            else:
+                review += 1
 
     return BulkImportSummary(
         processed=processed,
@@ -51,4 +53,5 @@ def import_directory(
         review=review,
         duplicates=duplicates,
         failed=failed,
+        source_files=source_files,
     )

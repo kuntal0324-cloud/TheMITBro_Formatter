@@ -7,7 +7,7 @@ def test_route_matrix_question(tmp_path: Path):
     result = route_source(source, root=tmp_path/"bank", exam_hint="GATE EE")
     assert result.path is not None
     assert "Engineering_Mathematics" in str(result.path)
-    assert "Matrices" in str(result.path)
+    assert "Linear_Algebra" in str(result.path)
 
 def test_duplicate_is_not_stored_twice(tmp_path: Path):
     source = tmp_path / "q.txt"

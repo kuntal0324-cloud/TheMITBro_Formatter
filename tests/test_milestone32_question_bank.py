@@ -13,7 +13,7 @@ def test_gate_matrix_question_routes_to_matrices():
     )
     assert c.exam == "GATE_EE"
     assert c.subject == "Engineering Mathematics"
-    assert c.topic == "Matrices"
+    assert c.topic == "Linear Algebra"
     assert c.status == "AUTO"
     assert c.confidence >= 0.70
 
@@ -47,7 +47,7 @@ def test_text_ingestion_and_routing(tmp_path: Path):
 
     assert out.exists()
     assert "Engineering_Mathematics" in str(out)
-    assert "Matrices" in str(out)
+    assert "Linear_Algebra" in str(out)
 
     catalog = json.loads(
         (tmp_path / "question_bank/catalog.json").read_text(encoding="utf-8")

@@ -7,8 +7,10 @@ HANDOFF = Path("input/gate_ee_batch_001/BATCH_001_FORMATTER_V2_HANDOFF.json")
 
 def test_batch001_handoff_checksum_and_count():
     r = qualify_batch(JSONL, HANDOFF)
-    assert r["status"] == "PASS"
+    assert r["status"] == "REVIEW_REQUIRED"
     assert r["question_count"] == 20
+    assert r["formatter_pass_count"] == 0
+    assert r["formatter_review_count"] == 20
 
 def test_batch001_never_claims_human_review():
     r = qualify_batch(JSONL, HANDOFF)

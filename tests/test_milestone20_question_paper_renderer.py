@@ -68,8 +68,8 @@ def test_m19_layout_contract_is_consumed():
 def test_math_text_is_formatted_without_wrapping_entire_prose():
     result = QuestionPaperRenderer().render(simple_paper())
     svg = result.pages[0].svg
-    assert "For $z=2+3i$, find $|z|$." in svg
-    assert "For $z=2+3i$, find $|z|$." in svg or "For z=2+3i, find |z|." in svg
+    assert "For z=2+3i, find |z|." in svg
+    assert "$" not in svg
 
 
 def test_options_are_rendered():

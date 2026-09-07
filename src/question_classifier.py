@@ -17,11 +17,24 @@ class TopicRule:
 # The taxonomy is intentionally explicit and conservative. It can be expanded
 # without changing the question-bank record format.
 RULES = (
+    # GATE General Aptitude (common to every paper)
+    TopicRule(
+        "GATE_EE", "General Aptitude", "Verbal Aptitude",
+        ("sentence completion", "verbal analogy", "word groups", "reading comprehension", "verbal deduction"),
+    ),
+    TopicRule(
+        "GATE_EE", "General Aptitude", "Quantitative Aptitude",
+        ("data interpretation", "numerical computation", "numerical estimation", "mensuration", "percentage change"),
+    ),
+    TopicRule(
+        "GATE_EE", "General Aptitude", "Analytical Aptitude",
+        ("logic deduction", "analytical aptitude", "spatial aptitude", "paper folding", "paper cutting"),
+    ),
     # GATE EE / Engineering Mathematics
     TopicRule(
         "GATE_EE",
         "Engineering Mathematics",
-        "Matrices",
+        "Linear Algebra",
         (
             "matrix",
             "matrices",
@@ -39,13 +52,13 @@ RULES = (
         "GATE_EE",
         "Engineering Mathematics",
         "Calculus",
-        ("derivative", "differentiate", "integration", "integral", "limit", "continuity"),
+        ("derivative", "differentiate", "integration", "integral", "limit", "continuity", "fourier series"),
     ),
     TopicRule(
         "GATE_EE",
         "Engineering Mathematics",
         "Differential Equations",
-        ("differential equation", "ode", "pde", "laplace equation"),
+        ("differential equation", "ode", "pde", "partial differential equation", "heat equation"),
     ),
     TopicRule(
         "GATE_EE",
@@ -57,24 +70,18 @@ RULES = (
         "GATE_EE",
         "Engineering Mathematics",
         "Complex Variables",
-        ("complex number", "complex variable", "modulus", "argument", "conjugate"),
+        ("complex number", "complex variable", "modulus", "argument", "conjugate", "analytic function", "cauchy theorem", "residue theorem", "contour integral"),
+    ),
+    TopicRule(
+        "GATE_EE",
+        "Electrical Engineering",
+        "Signals and Systems",
+        ("fourier transform", "laplace transform", "z-transform", "z transform"),
     ),
     TopicRule(
         "GATE_EE",
         "Engineering Mathematics",
-        "Transforms",
-        ("fourier", "laplace transform", "z-transform", "z transform"),
-    ),
-    TopicRule(
-        "GATE_EE",
-        "Engineering Mathematics",
-        "Numerical Methods",
-        ("newton-raphson", "newton raphson", "interpolation", "numerical method", "trapezoidal rule"),
-    ),
-    TopicRule(
-        "GATE_EE",
-        "Engineering Mathematics",
-        "Vector Calculus",
+        "Calculus",
         ("gradient", "divergence", "curl", "vector calculus", "line integral"),
     ),
 
@@ -82,14 +89,14 @@ RULES = (
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
-        "Network Theory",
+        "Electric Circuits",
         ("kirchhoff", "thevenin", "norton", "network", "impedance", "admittance", "rc circuit", "rl circuit", "ohm law", "resistor", "voltage source"),
     ),
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
         "Signals and Systems",
-        ("signal", "convolution", "sampling", "system response", "impulse response"),
+        ("signal", "convolution", "sampling", "system response", "impulse response", "fourier transform", "laplace transform", "z-transform", "z transform"),
     ),
     TopicRule(
         "GATE_EE",
@@ -118,17 +125,9 @@ RULES = (
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
-        "Measurements",
-        ("measurement", "instrumentation", "wheatstone", "transducer", "oscilloscope"),
+        "Electrical and Electronic Measurements",
+        ("measurement", "instrumentation", "wheatstone", "bridge measurement", "oscilloscope", "digital voltmeter"),
     ),
-    TopicRule(
-        "GATE_EE",
-        "Electrical Engineering",
-        "Electronics",
-        ("diode", "transistor", "op-amp", "operational amplifier", "amplifier", "bjt"),
-    ),
-
-
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
@@ -142,7 +141,7 @@ RULES = (
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
-        "Analog Electronics",
+        "Analog and Digital Electronics",
         (
             "operational amplifier", "op-amp", "bjt", "mosfet",
             "amplifier", "biasing", "small signal", "frequency response",
@@ -151,7 +150,7 @@ RULES = (
     TopicRule(
         "GATE_EE",
         "Electrical Engineering",
-        "Digital Electronics",
+        "Analog and Digital Electronics",
         (
             "logic gate", "boolean", "flip flop", "flip-flop",
             "counter", "register", "multiplexer", "demultiplexer",
@@ -347,6 +346,30 @@ def classify_question(
     exam_hint: str | None = None,
 ) -> Classification:
     t = _normalize(text)
+    ee_hint = bool(exam_hint and exam_hint.lower().replace(" ", "_") in {"gate", "gate_ee", "gate-ee"})
+
+    # Explicit GATE 2027 EE scope guards.  Numerical Methods belongs to XE,
+    # while Laplace/Fourier/Z transforms belong to EE Signals and Systems.
+    if ee_hint and re.search(r"\b(?:newton[- ]raphson|bisection|numerical method|trapezoidal rule|simpson(?:'s)? rule|interpolation)\b", t):
+        if "load flow" not in t:
+            return Classification("GATE_EE", "Engineering Mathematics", "Review Required", 0.99,
+                                  ["out_of_syllabus:numerical_methods"], "REVIEW")
+    if ee_hint and re.search(r"\b(?:laplace transform|fourier transform|z[- ]transform)\b", t):
+        return Classification("GATE_EE", "Electrical Engineering", "Signals and Systems", 0.94,
+                              ["signal transform"], "AUTO")
+    if ee_hint and "fourier series" in t:
+        return Classification("GATE_EE", "Engineering Mathematics", "Calculus", 0.94,
+                              ["fourier series"], "AUTO")
+    if ee_hint and re.search(r"\b(?:contour integral|residue theorem|cauchy theorem|analytic function)\b", t):
+        return Classification("GATE_EE", "Engineering Mathematics", "Complex Variables", 0.94,
+                              ["complex-variable theorem"], "AUTO")
+    if ee_hint and re.search(r"\b(?:partial differential equations?|heat equation|wave equation)\b", t):
+        return Classification("GATE_EE", "Engineering Mathematics", "Differential Equations", 0.94,
+                              ["partial differential equation"], "AUTO")
+    if ee_hint and re.search(r"\b(?:vector calculus|divergence|curl)\b", t) and not re.search(r"\b(?:electric field|magnetic field|electromagnetic)\b", t):
+        return Classification("GATE_EE", "Engineering Mathematics", "Calculus", 0.94,
+                              ["vector calculus"], "AUTO")
+
     candidates = []
 
     for rule in RULES:
@@ -369,7 +392,7 @@ def classify_question(
 
     if not candidates:
         return Classification(
-            "GENERAL",
+            "GATE_EE" if ee_hint else "GENERAL",
             "Unclassified",
             "Review Required",
             0.0,
