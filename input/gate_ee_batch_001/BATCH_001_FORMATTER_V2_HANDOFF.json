@@ -1,5 +1,5 @@
 {
-  "handoff_version": "1.2.0",
+  "handoff_version": "1.3.0",
   "handoff_id": "GATE_EE_BATCH_001_TO_FORMATTER_V2",
   "source_repository": "TheMITbro_Question_Bank",
   "target_repository": "TheMITBro_Formatter",
@@ -9,7 +9,7 @@
   "question_count": 20,
   "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.jsonl",
   "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_001_ENGINEERING_MATHEMATICS.md",
-  "source_sha256": "745b01ddfa9e14ed7bfd6582fa8d76d728eeeea84cc6b1fa804fe1321b791bd3",
+  "source_sha256": "cf815b061af0d357df02796f34021b69c3e2465835a1ab1caab7d1ae16d61256",
   "required_formatter_checks": [
     "schema/ingestion compatibility",
     "question intelligence classification",
@@ -30,10 +30,9 @@
   "promotion_rule": "No question may become PAPER_ELIGIBLE until Formatter v2.0 validation is recorded and independent human review is complete.",
   "release_gate": "BLOCKED",
   "revision_notes": [
-    "TMB-GATE-EE-EM-005 revision 2: clarified calculus task wording.",
-    "TMB-GATE-EE-EM-016 revision 2: clarified linear-algebra task wording.",
-    "TMB-GATE-EE-EM-014 revision 2: replaced out-of-syllabus Numerical Methods item with Fourier-series Calculus item.",
-    "TMB-GATE-EE-EM-015 revision 2: replaced out-of-syllabus Numerical Methods item with a Complex Variables contour-integral item.",
-    "TMB-GATE-EE-EM-020 revision 2: replaced out-of-syllabus Numerical Methods item with a Differential Equations PDE item."
+    "Phase 4: all 20 solutions now end with a plain-text Final answer marker verified against the structured key.",
+    "Phase 4: declarative stems were rewritten as explicit tasks without changing their mathematics.",
+    "Phase 4: EM-015 and EM-018 wording no longer creates false diagram requirements.",
+    "Phase 4: every question revision was incremented; named independent human review remains pending."
   ]
 }

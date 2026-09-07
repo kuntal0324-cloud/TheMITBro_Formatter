@@ -23,3 +23,9 @@ Formatter qualification is **not independent human review**. This bridge therefo
 
 ## Run
 `python -m src.run_gate_ee_batch_qualification`
+
+Generate the checked, checksum-bound strict report and Question Bank export with:
+
+`python scripts/export_gate_ee_batch001_evidence.py`
+
+The export command exits successfully only for a complete PASS with zero REVIEW and zero invalid records. It never changes the human-review or release gates.

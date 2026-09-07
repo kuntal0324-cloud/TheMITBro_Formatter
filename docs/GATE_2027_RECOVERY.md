@@ -14,15 +14,18 @@
 
 ## Current Batch 001 result
 
-The revised 20-question source renders without exposed source markup, but it is **not qualified**:
+The Phase 4 source passed the complete strict Formatter gate:
 
-- Formatter pass: 0
-- Formatter review: 20
-- Content validation review: 20
+- Formatter pass: 20
+- Formatter review: 0
+- Invalid: 0
+- Content validation pass: 20
+- Quality grade A: 20
 - Syllabus route match: 20
+- Render without exposed source markup: 20
 - Paper eligible: 0
 
-This result is intentionally conservative. All syllabus routes now match; the 20 content-validation reviews must be resolved before human final QA.
+The Formatter result is complete, but named independent human review is still pending. The release gate therefore remains blocked.
 
 ## Input APIs
 

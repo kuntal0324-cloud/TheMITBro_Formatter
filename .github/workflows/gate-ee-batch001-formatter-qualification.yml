@@ -29,13 +29,15 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          set +e
           python -m src.run_gate_ee_batch_qualification
-          rc=$?
-          set -e
-          test "$rc" -eq 1
-          python -c 'import json; p=json.load(open("output/gate_ee_batch_001/FORMATTER_V2_QUALIFICATION.json")); assert p["status"] == "REVIEW_REQUIRED"; assert p["release_gate"] == "BLOCKED"; assert p["paper_eligible_count"] == 0'
-          echo "Expected REVIEW_REQUIRED state verified; release remains BLOCKED."
+          python -c 'import json; p=json.load(open("output/gate_ee_batch_001/FORMATTER_V2_QUALIFICATION.json")); assert p["status"] == "PASS"; assert p["formatter_pass_count"] == 20; assert p["formatter_review_count"] == 0; assert p["invalid_count"] == 0; assert p["release_gate"] == "BLOCKED"; assert p["paper_eligible_count"] == 0; assert p["independent_human_review_required"] is True'
+          echo "20 PASS / 0 REVIEW / 0 invalid verified; human review and release gates remain blocked."
+      - name: Confirm checked strict evidence is reproducible
+        env:
+          PYTHONPATH: .
+        run: |
+          python scripts/export_gate_ee_batch001_evidence.py
+          git diff --exit-code -- GATE_EE_BATCH001_QUALIFICATION_SUMMARY.json output/gate_ee_batch_001/FORMATTER_V2_STRICT_REQUALIFICATION.json output/gate_ee_batch_001/QUESTION_BANK_FINAL_EVIDENCE_EXPORT.json
       - name: Confirm frozen v2.0 regression
         env:
           PYTHONPATH: .

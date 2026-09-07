@@ -7,7 +7,13 @@ class DiagramTextCheck:
     status:str; message:str; missing:tuple[str,...]=()
 
 def validate_diagram_text(text:str,visual_structure:dict|None)->DiagramTextCheck:
-    if not visual_structure:return DiagramTextCheck("UNKNOWN","No visual structure available.")
+    # Text-only questions with no visual cues have no diagram contract to
+    # validate.  Treat that state as satisfied; actual image uncertainty is
+    # tracked separately by ``requires_visual_review`` during ingestion.
+    if not visual_structure:
+        if re.search(r"\b(?:diagram|figure|shown\s+(?:below|above|in)|as\s+shown)\b",text,re.I):
+            return DiagramTextCheck("UNKNOWN","Question references a visual that was not recovered.")
+        return DiagramTextCheck("PASS","No diagram is required.")
     typ=visual_structure.get("diagram_type")
     entities=visual_structure.get("entities") or []
     kinds={str(e.get("kind","")).lower() for e in entities}

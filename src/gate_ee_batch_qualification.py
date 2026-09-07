@@ -90,8 +90,14 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                 and record.classification.topic == q["topic"]
             )
             render_pass = bool(formatted.strip()) and not has_source_math_markup(formatted)
+            invalid = (
+                record.metadata.get("validation_status") == "FAIL"
+                or dup.status == "REJECT"
+                or not render_pass
+            )
             formatter_pass = (
-                syllabus_match
+                not invalid
+                and syllabus_match
                 and record.classification.status == "AUTO"
                 and record.metadata.get("validation_status") == "PASS"
                 and quality.grade == "A"
@@ -127,14 +133,17 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                     "source_markup_exposed": has_source_math_markup(formatted),
                 },
                 "syllabus_match": syllabus_match,
-                "formatter_qualification": "PASS" if formatter_pass else "REVIEW",
+                "formatter_qualification": (
+                    "PASS" if formatter_pass else "INVALID" if invalid else "REVIEW"
+                ),
                 "independent_human_review": "PENDING",
                 "paper_eligible": False,
             })
             prior.append({"id":q["id"], "text":md})
 
     passed = sum(r["formatter_qualification"] == "PASS" for r in results)
-    review = len(results) - passed
+    review = sum(r["formatter_qualification"] == "REVIEW" for r in results)
+    invalid = sum(r["formatter_qualification"] == "INVALID" for r in results)
     return {
         "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
         "formatter_version": "2.0.0",
@@ -142,11 +151,12 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
         "question_count": len(results),
         "formatter_pass_count": passed,
         "formatter_review_count": review,
+        "invalid_count": invalid,
         "paper_eligible_count": 0,
         "independent_human_review_required": True,
         "release_gate": "BLOCKED",
         "status": (
-            "BLOCKED" if len(results) != handoff.get("question_count")
+            "BLOCKED" if len(results) != handoff.get("question_count") or invalid
             else "REVIEW_REQUIRED" if review
             else "PASS"
         ),
