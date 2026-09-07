@@ -33,9 +33,14 @@ class QuestionBankStore:
     def add(self, record: QuestionRecord, source_path: Path | None = None) -> Path:
         data = self._load()
 
-        # Idempotency is based on source SHA-256.
+        # A mixed source can legitimately contain many questions.  Segment-level
+        # ingest keys provide idempotency without collapsing them into one row.
+        ingest_key = record.metadata.get("ingest_key")
         for existing in data["questions"]:
-            if existing.get("source_sha256") == record.source_sha256:
+            existing_key = (existing.get("metadata") or {}).get("ingest_key")
+            if ingest_key and existing_key == ingest_key:
+                return Path(existing["record_path"])
+            if not ingest_key and existing.get("source_sha256") == record.source_sha256:
                 return Path(existing["record_path"])
 
         c = record.classification

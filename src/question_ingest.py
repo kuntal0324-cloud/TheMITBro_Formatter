@@ -13,6 +13,8 @@ from .visual_question_analyzer import analyze_visual_question
 from .universal_visual_intelligence import understand_visual
 from .question_intelligence import analyze_question
 from .validation_intelligence import validate_question_content
+from .question_splitter import split_questions
+from .question_structure import parse_question_structure
 
 
 SUPPORTED = {".txt", ".md", ".jpg", ".jpeg", ".png"}
@@ -35,12 +37,17 @@ def extract_text(path: Path) -> tuple[str, str, float]:
     return result.text, result.source_type, result.confidence
 
 
-def ingest(path: str | Path, *, exam_hint: str | None = None) -> QuestionRecord:
-    source = Path(path)
-    if not source.is_file():
-        raise FileNotFoundError(source)
-
-    text, source_type, confidence = extract_text(source)
+def _build_record(
+    source: Path,
+    text: str,
+    source_type: str,
+    confidence: float,
+    source_sha: str,
+    *,
+    exam_hint: str | None,
+    segment_index: int,
+    segment_count: int,
+) -> QuestionRecord:
     text = text.strip()
     if not text:
         raise ValueError("Question source contains no readable text.")
@@ -88,11 +95,19 @@ def ingest(path: str | Path, *, exam_hint: str | None = None) -> QuestionRecord:
         id="QB-" + uuid.uuid4().hex[:12].upper(),
         schema_version="1.1",
         source_type=source_type,
-        source_sha256=sha256_file(source),
+        source_sha256=source_sha,
         source_name=source.name,
         text=text,
         classification=classification,
         metadata={
+            "source_document_sha256": source_sha,
+            "source_segment_index": segment_index,
+            "source_segment_count": segment_count,
+            "ingest_key": hashlib.sha256(
+                f"{source_sha}:{segment_index}:{text}".encode("utf-8")
+            ).hexdigest(),
+            "structured_question": parse_question_structure(text),
+            "structure_contract": "G27-R1",
             "ocr_confidence": confidence,
             "math_confidence": recognition.math_confidence,
             "math_features": list(recognition.features),
@@ -134,6 +149,45 @@ def ingest(path: str | Path, *, exam_hint: str | None = None) -> QuestionRecord:
             "validation_intelligence_contract": "M39",
         },
     )
+
+
+def ingest_many(path: str | Path, *, exam_hint: str | None = None) -> list[QuestionRecord]:
+    """Extract, split and independently classify every question in a source."""
+    source = Path(path)
+    if not source.is_file():
+        raise FileNotFoundError(source)
+    text, source_type, confidence = extract_text(source)
+    blocks = split_questions(text)
+    if not blocks:
+        raise ValueError("Question source contains no readable text.")
+    source_sha = sha256_file(source)
+    return [
+        _build_record(
+            source,
+            block,
+            source_type,
+            confidence,
+            source_sha,
+            exam_hint=exam_hint,
+            segment_index=index,
+            segment_count=len(blocks),
+        )
+        for index, block in enumerate(blocks, start=1)
+    ]
+
+
+def ingest(path: str | Path, *, exam_hint: str | None = None) -> QuestionRecord:
+    """Compatibility API for a single-question source.
+
+    Mixed inputs must use :func:`ingest_many`; refusing to drop later segments
+    is intentional.
+    """
+    records = ingest_many(path, exam_hint=exam_hint)
+    if len(records) != 1:
+        raise ValueError(
+            f"Source contains {len(records)} questions; use ingest_many() or route_source_many()."
+        )
+    return records[0]
 
 
 def copy_original_image(

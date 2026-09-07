@@ -1,11 +1,17 @@
 {
-  "status": "PASS",
+  "status": "REVIEW_REQUIRED",
+  "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
   "question_count": 20,
-  "formatter_pass_count": 20,
-  "formatter_review_count": 0,
+  "formatter_pass_count": 0,
+  "formatter_review_count": 20,
+  "render_pass_count": 20,
+  "validation_review_count": 20,
+  "syllabus_match_count": 20,
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
-  "release_gate": "BLOCKED_PENDING_HUMAN_SIGNOFF",
-  "source_sha256": "2c218be6055cfa977da0842a6bdbc1edb61fe1712bf88794dc461052ae050b9e",
-  "qualification_report_sha256": "a58d9bdf7508bb6910e290fc089c2d7460d3cbe5911722a47063d5597980b6e9"
+  "release_gate": "BLOCKED",
+  "source_sha256": "745b01ddfa9e14ed7bfd6582fa8d76d728eeeea84cc6b1fa804fe1321b791bd3",
+  "qualification_report": "output/gate_ee_batch_001/FORMATTER_V2_STRICT_REQUALIFICATION.json",
+  "qualification_report_sha256": "751c68db8cce127d2a449af5969b494229e0d1502a87bad2a5c8d67c0b9c2878",
+  "note": "A render smoke test is not a content qualification. Every validation REVIEW remains REVIEW."
 }

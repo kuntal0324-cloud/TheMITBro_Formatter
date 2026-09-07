@@ -12,6 +12,7 @@ from .layout_engine import layout_question_blocks
 from .layout_ir import LayoutItem, Rect
 from .question_formatter import format_document
 from .question_paper_ir import PaperSpec, QuestionSpec
+from .human_math import humanize_math
 
 
 @dataclass(frozen=True)
@@ -76,11 +77,7 @@ class RenderedPaper:
 
 
 def _plain_text(value: str) -> str:
-    s = str(value)
-    s = re.sub(r"\*\*(.*?)\*\*", r"\1", s)
-    s = re.sub(r"__(.*?)__", r"\1", s)
-    s = re.sub(r"`(.*?)`", r"\1", s)
-    return s
+    return humanize_math(value)
 
 
 def _wrap_text(text: str, max_chars: int) -> List[str]:
@@ -256,18 +253,23 @@ class QuestionPaperRenderer:
     def _header_svg(self, paper: PaperSpec, page_no: int) -> str:
         o = self.options
         x = o.margin
-        title = escape(paper.title)
+        title_lines = _wrap_text(paper.title, 58)[:2]
         meta = " · ".join(x for x in [paper.exam, paper.subject] if x)
         duration = f"Time: {int(paper.duration_minutes)} min" if paper.duration_minutes else ""
         marks = f"Max Marks: {paper.resolved_total_marks():g}" if paper.total_marks is not None or any(q.marks is not None for q in paper.questions) else ""
         right = " · ".join(x for x in [meta, duration, marks] if x)
-        lines = [f'<text x="{x:g}" y="30" font-family="sans-serif" font-size="{o.title_font_size:g}" font-weight="700">{title}</text>']
+        lines = []
+        y = 28
+        for title_line in title_lines:
+            lines.append(f'<text x="{x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="{o.title_font_size:g}" font-weight="700">{escape(title_line)}</text>')
+            y += o.title_font_size + 4
         if right:
-            lines.append(f'<text x="{x:g}" y="49" font-family="sans-serif" font-size="10.5">{escape(right)}</text>')
-        y = 66
+            lines.append(f'<text x="{x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="10.5">{escape(_plain_text(right))}</text>')
+            y += 16
         for instruction in paper.instructions[:2]:
-            lines.append(f'<text x="{x:g}" y="{y:g}" font-family="sans-serif" font-size="10.5">{escape(_plain_text(instruction))}</text>')
-            y += 14
+            for instruction_line in _wrap_text(instruction, 105)[:2]:
+                lines.append(f'<text x="{x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="10.5">{escape(instruction_line)}</text>')
+                y += 13
         lines.append(f'<line x1="{x:g}" y1="{o.margin+o.header_height-10:g}" x2="{o.width-o.margin:g}" y2="{o.margin+o.header_height-10:g}" stroke="#333" stroke-width="1"/>')
         return "".join(lines)
 
@@ -278,8 +280,8 @@ class QuestionPaperRenderer:
         left = " · ".join(x for x in (identity, f"v{version}" if version else "") if x)
         parts = []
         if left:
-            parts.append(f'<text x="{self.options.margin:g}" y="{y:g}" font-family="sans-serif" font-size="9">{escape(left)}</text>')
-        parts.append(f'<text x="{self.options.width/2:g}" y="{y:g}" text-anchor="middle" font-family="sans-serif" font-size="10">Page {page_no} of {page_count}</text>')
+            parts.append(f'<text x="{self.options.margin:g}" y="{y:g}" font-family="DejaVu Sans" font-size="9">{escape(left)}</text>')
+        parts.append(f'<text x="{self.options.width/2:g}" y="{y:g}" text-anchor="middle" font-family="DejaVu Sans" font-size="10">Page {page_no} of {page_count}</text>')
         return "".join(parts)
 
     def _question_svg(self, row: Dict[str, Any], block: LayoutItem) -> str:
@@ -292,20 +294,20 @@ class QuestionPaperRenderer:
         mark_text = f" [{q.marks:g}]" if q.marks is not None else ""
         section = q.section
         if section:
-            parts.append(f'<text x="{x:g}" y="{y:g}" font-family="sans-serif" font-size="12" font-weight="700">{escape(section)}</text>')
+            parts.append(f'<text x="{x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="12" font-weight="700">{escape(section)}</text>')
             y += o.section_height
         label = f"{number}." if number != "" else f"{q.id}:"
-        parts.append(f'<text x="{x:g}" y="{y:g}" font-family="sans-serif" font-size="{o.body_font_size:g}" font-weight="700">{escape(label)}</text>')
+        parts.append(f'<text x="{x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="{o.body_font_size:g}" font-weight="700">{escape(label)}</text>')
         text_x = x + 24
         for line in row["text_lines"]:
             if line:
-                parts.append(f'<text x="{text_x:g}" y="{y:g}" font-family="sans-serif" font-size="{o.body_font_size:g}">{escape(line)}</text>')
+                parts.append(f'<text x="{text_x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="{o.body_font_size:g}">{escape(line)}</text>')
             y += o.line_height
         if mark_text:
-            parts.append(f'<text x="{block.rect.right:g}" y="{block.rect.y+18:g}" text-anchor="end" font-family="sans-serif" font-size="12">{escape(mark_text)}</text>')
+            parts.append(f'<text x="{block.rect.right:g}" y="{block.rect.y+18:g}" text-anchor="end" font-family="DejaVu Sans" font-size="12">{escape(mark_text)}</text>')
         for line in row["option_lines"]:
             if line:
-                parts.append(f'<text x="{text_x:g}" y="{y:g}" font-family="sans-serif" font-size="{o.body_font_size:g}">{escape(line)}</text>')
+                parts.append(f'<text x="{text_x:g}" y="{y:g}" font-family="DejaVu Sans" font-size="{o.body_font_size:g}">{escape(line)}</text>')
             y += o.line_height
         if q.diagrams:
             y += o.question_gap

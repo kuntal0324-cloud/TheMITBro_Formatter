@@ -6,6 +6,7 @@ from .question_paper_ir import PaperSpec
 from .question_paper_renderer import QuestionPaperRenderer
 from .publication_content import answer_entries
 from .publication_print import prepare_print_paper
+from .human_math import humanize_math
 
 CSS = r"""
 @page { size: A4; margin: 0; }
@@ -35,7 +36,7 @@ def render_professional_html(paper, identity, path, *, include_answers=True, inc
             '<section class="answer-section"><h1>Answer Key</h1>'
             f'<div class="release-meta">{html.escape(identity.release_label)}</div>'
             '<div class="answer-grid">' +
-            "".join(f'<div><b>{a.number}.</b> {html.escape(a.answer)}</div>' for a in entries) +
+            "".join(f'<div><b>{a.number}.</b> {html.escape(humanize_math(a.answer))}</div>' for a in entries) +
             '</div></section>'
         )
     solutions = ""
@@ -44,7 +45,7 @@ def render_professional_html(paper, identity, path, *, include_answers=True, inc
             '<section class="solution-section"><h1>Detailed Solutions</h1>'
             f'<div class="release-meta">{html.escape(identity.release_label)}</div>' +
             "".join(
-                f'<article class="solution"><h2>Q{a.number}</h2><p>{html.escape(a.solution or "Detailed solution not supplied.")}</p></article>'
+                f'<article class="solution"><h2>Q{a.number}</h2><p>{html.escape(humanize_math(a.solution or "Detailed solution not supplied."))}</p></article>'
                 for a in entries
             ) + '</section>'
         )

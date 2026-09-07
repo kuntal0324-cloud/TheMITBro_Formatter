@@ -15,8 +15,12 @@ def qualify_case(case,text=None):
 
     actual_topic = qi.topic if qi.topic!="Review Required" else c.topic
     topic_aliases = {
+        "Matrices": {"Matrices", "Linear Algebra"},
+        "Transforms": {"Transforms", "Signals and Systems"},
         "Network Theory": {"Network Theory", "Electric Circuits"},
-        "Measurements": {"Measurements", "Electrical Measurements"},
+        "Measurements": {"Measurements", "Electrical Measurements", "Electrical and Electronic Measurements"},
+        "Analog Electronics": {"Analog Electronics", "Analog and Digital Electronics"},
+        "Digital Electronics": {"Digital Electronics", "Analog and Digital Electronics"},
     }
     accepted_topics = topic_aliases.get(case.expected_topic, {case.expected_topic})
     classification_ok = actual_topic in accepted_topics or c.topic in accepted_topics

@@ -10,6 +10,7 @@ from .question_ingest import ingest
 from .question_duplicate_detector import find_duplicate
 from .question_quality_score import score_question
 from .question_formatter import format_document
+from .human_math import humanize_math, has_source_math_markup
 
 
 def _sha256(path: Path) -> str:
@@ -76,19 +77,27 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
             record = ingest(path, exam_hint="GATE_EE")
             quality = score_question(record)
             dup = find_duplicate(md, prior)
-            formatted = format_document(md)
+            formatted = humanize_math(format_document(md))
 
             intelligence = record.metadata.get("question_intelligence", {})
             validation = record.metadata.get("validation_intelligence", {})
 
             # This qualification deliberately reports what Formatter v2.0 can
             # establish. It never invents independent human review.
-            formatter_pass = (
+            syllabus_match = (
                 record.classification.exam == "GATE_EE"
-                and record.classification.subject == "Engineering Mathematics"
-                and record.classification.status in {"AUTO","REVIEW"}
+                and record.classification.subject == q["subject"]
+                and record.classification.topic == q["topic"]
+            )
+            render_pass = bool(formatted.strip()) and not has_source_math_markup(formatted)
+            formatter_pass = (
+                syllabus_match
+                and record.classification.status == "AUTO"
+                and record.metadata.get("validation_status") == "PASS"
+                and quality.grade == "A"
+                and not quality.blockers
                 and dup.status == "ACCEPT"
-                and bool(formatted.strip())
+                and render_pass
             )
 
             results.append({
@@ -113,9 +122,11 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                 "quality": quality.to_dict(),
                 "duplicate": asdict(dup),
                 "render": {
-                    "status": "PASS" if formatted.strip() else "FAIL",
+                    "status": "PASS" if render_pass else "FAIL",
                     "bytes": len(formatted.encode("utf-8")),
+                    "source_markup_exposed": has_source_math_markup(formatted),
                 },
+                "syllabus_match": syllabus_match,
                 "formatter_qualification": "PASS" if formatter_pass else "REVIEW",
                 "independent_human_review": "PENDING",
                 "paper_eligible": False,
@@ -125,7 +136,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
     passed = sum(r["formatter_qualification"] == "PASS" for r in results)
     review = len(results) - passed
     return {
-        "qualification_contract": "GATE_EE_BATCH001_FORMATTER_V2_Q1",
+        "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
         "formatter_version": "2.0.0",
         "source_sha256": _sha256(jsonl_path),
         "question_count": len(results),
@@ -134,7 +145,11 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
         "paper_eligible_count": 0,
         "independent_human_review_required": True,
         "release_gate": "BLOCKED",
-        "status": "PASS" if len(results) == handoff.get("question_count") else "BLOCKED",
+        "status": (
+            "BLOCKED" if len(results) != handoff.get("question_count")
+            else "REVIEW_REQUIRED" if review
+            else "PASS"
+        ),
         "questions": results,
     }
 

@@ -34,9 +34,17 @@ def _ocr_image(path: Path) -> OCRResult:
         preprocess(path, output_path=processed)
 
         try:
+            # image_to_string preserves line boundaries used to distinguish
+            # stems, options and separate numbered questions.  Confidence is
+            # still computed from image_to_data below.
+            layout_text = pytesseract.image_to_string(
+                Image.open(processed),
+                config="--psm 6",
+            )
             data = pytesseract.image_to_data(
                 Image.open(processed),
                 output_type=pytesseract.Output.DICT,
+                config="--psm 6",
             )
         except Exception as exc:
             raise RuntimeError(f"OCR failed for {path.name}: {exc}") from exc
@@ -56,7 +64,7 @@ def _ocr_image(path: Path) -> OCRResult:
             if conf >= 0:
                 confidences.append(conf)
 
-        text = " ".join(words).strip()
+        text = layout_text.strip() or " ".join(words).strip()
         confidence = (
             sum(confidences) / len(confidences) / 100.0
             if confidences
