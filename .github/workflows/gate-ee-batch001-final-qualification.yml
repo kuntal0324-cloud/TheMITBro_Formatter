@@ -28,7 +28,14 @@ jobs:
       - name: Generate final qualification
         env:
           PYTHONPATH: .
-        run: python -m src.run_gate_ee_batch_qualification
+        run: |
+          set +e
+          python -m src.run_gate_ee_batch_qualification
+          rc=$?
+          set -e
+          test "$rc" -eq 1
+          python -c 'import json; p=json.load(open("output/gate_ee_batch_001/FORMATTER_V2_QUALIFICATION.json")); assert p["status"] == "REVIEW_REQUIRED"; assert p["release_gate"] == "BLOCKED"; assert p["paper_eligible_count"] == 0'
+          echo "Expected REVIEW_REQUIRED state verified; release remains BLOCKED."
       - name: Preserve frozen Formatter regression
         env:
           PYTHONPATH: .
