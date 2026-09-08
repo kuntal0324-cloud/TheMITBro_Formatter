@@ -1,0 +1,1811 @@
+{
+  "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+  "batch_id": "BATCH_002",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "Electric Circuits",
+  "formatter_version": "2.0.0",
+  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
+  "question_count": 20,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
+  "paper_eligible_count": 0,
+  "independent_human_review_required": true,
+  "release_gate": "BLOCKED",
+  "status": "PASS",
+  "questions": [
+    {
+      "question_id": "TMB-GATE-EE-NT-001",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.82
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
+        "taxonomy_confidence": 0.798,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 222,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "capacitor",
+          "stored energy"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.924,
+        "grade": "A",
+        "components": {
+          "classification": 0.82,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.0,
+        "matched_id": null
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 589,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-002",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
+        "taxonomy_confidence": 0.825,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.745,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 222,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "mutual inductance",
+          "coupled inductors"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.953,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3151,
+        "matched_id": "TMB-GATE-EE-NT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 550,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-003",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "Dependent-source port analysis",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.72,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 318,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "Dependent-source port analysis"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "dependent source",
+          "dependent current source",
+          "driving-point resistance",
+          "test voltage",
+          "input port"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.986,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2434,
+        "matched_id": "TMB-GATE-EE-NT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 759,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-004",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.565,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 288,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "capacitor",
+          "inductor"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3084,
+        "matched_id": "TMB-GATE-EE-NT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 873,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-005",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.83,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 309,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3178,
+        "matched_id": "TMB-GATE-EE-NT-003"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 675,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-006",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.795,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 267,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3246,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 678,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-007",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.795,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 261,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kvl",
+          "mesh current"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3447,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 620,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-008",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.508,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 285,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2568,
+        "matched_id": "TMB-GATE-EE-NT-007"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 942,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-009",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.86,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 312,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2808,
+        "matched_id": "TMB-GATE-EE-NT-007"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 728,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-010",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.6,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 221,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.388,
+        "matched_id": "TMB-GATE-EE-NT-009"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 559,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-011",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.798,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 213,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "maximum power transfer"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3711,
+        "matched_id": "TMB-GATE-EE-NT-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 556,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-012",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.88,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.484,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 290,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton",
+          "superposition"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.964,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.88,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.306,
+        "matched_id": "TMB-GATE-EE-NT-008"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1047,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-013",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Transient analysis",
+        "concept": "First-order RC and RL response",
+        "taxonomy_confidence": 0.963,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.815,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 267,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Transient analysis",
+          "First-order RC and RL response"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "rc network",
+          "time constant",
+          "steady-state value"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.981,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.963,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3604,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 626,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-014",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Transient analysis",
+        "concept": "First-order RC and RL response",
+        "taxonomy_confidence": 0.825,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 269,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Transient analysis",
+          "First-order RC and RL response"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "rl network",
+          "time constant"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.953,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.4194,
+        "matched_id": "TMB-GATE-EE-NT-013"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 577,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-015",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 218,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "resonance",
+          "rlc"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3376,
+        "matched_id": "TMB-GATE-EE-NT-011"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 564,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-016",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 213,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "resonance",
+          "rlc"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3524,
+        "matched_id": "TMB-GATE-EE-NT-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 527,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-017",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.705,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 306,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "impedance",
+          "power factor"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2677,
+        "matched_id": "TMB-GATE-EE-NT-012"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 928,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-018",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Three-phase circuits",
+        "concept": "Balanced loads and complex power",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 234,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Three-phase circuits",
+          "Balanced loads and complex power"
+        ],
+        "prerequisites": [
+          "Phasor impedance and resonance"
+        ],
+        "signals": [
+          "three-phase",
+          "star-connected",
+          "complex power",
+          "line voltage"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.986,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2857,
+        "matched_id": "TMB-GATE-EE-NT-014"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 662,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-019",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Two-port networks",
+        "concept": "Network parameters",
+        "taxonomy_confidence": 0.825,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 262,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Two-port networks",
+          "Network parameters"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "two-port",
+          "z-parameter"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.953,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3788,
+        "matched_id": "TMB-GATE-EE-NT-016"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 575,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-020",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Three-phase circuits",
+        "concept": "Balanced loads and complex power",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 240,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Three-phase circuits",
+          "Balanced loads and complex power"
+        ],
+        "prerequisites": [
+          "Phasor impedance and resonance"
+        ],
+        "signals": [
+          "three-phase",
+          "delta-connected",
+          "complex power",
+          "line voltage",
+          "phase voltage"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.986,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3896,
+        "matched_id": "TMB-GATE-EE-NT-018"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 714,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    }
+  ]
+}

@@ -90,7 +90,13 @@ RULES = (
         "GATE_EE",
         "Electrical Engineering",
         "Electric Circuits",
-        ("kirchhoff", "thevenin", "norton", "network", "impedance", "admittance", "rc circuit", "rl circuit", "ohm law", "resistor", "voltage source"),
+        (
+            "kirchhoff", "thevenin", "norton", "network", "impedance",
+            "admittance", "rc circuit", "rl circuit", "ohm law",
+            "resistor", "capacitor", "inductor", "voltage source",
+            "current source", "time constant", "two-port", "three-phase",
+            "node voltage", "mesh current", "superposition", "resonance",
+        ),
     ),
     TopicRule(
         "GATE_EE",
@@ -369,6 +375,19 @@ def classify_question(
     if ee_hint and re.search(r"\b(?:vector calculus|divergence|curl)\b", t) and not re.search(r"\b(?:electric field|magnetic field|electromagnetic)\b", t):
         return Classification("GATE_EE", "Engineering Mathematics", "Calculus", 0.94,
                               ["vector calculus"], "AUTO")
+    if ee_hint and re.search(
+        r"\b(?:thevenin|norton|superposition|kcl|kvl|supernode|"
+        r"node[- ]voltage|mesh current|two-port|z-parameter|"
+        r"coupled inductors?|driving-point resistance|dependent current source|"
+        r"rc network|rl network|series rlc|ideal passive network elements|"
+        r"balanced three-phase|star-connected|delta-connected|"
+        r"single-phase impedance)\b",
+        t,
+    ):
+        return Classification(
+            "GATE_EE", "Electrical Engineering", "Electric Circuits", 0.94,
+            ["official electric-circuits cue"], "AUTO",
+        )
 
     candidates = []
 
@@ -487,4 +506,3 @@ def classify_question(
         sorted(set(best_hits)),
         "AUTO" if best_score >= 0.70 else "REVIEW",
     )
-    

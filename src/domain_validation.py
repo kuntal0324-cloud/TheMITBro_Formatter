@@ -37,8 +37,20 @@ def validate_kinematics_v_uat(text:str)->DomainCheck:
 
 def run_domain_checks(text:str):
     low=text.lower(); out=[]
-    if re.search(r"\bohm|resistor|resistance\b",low):out.append(validate_ohms_law(text))
-    if re.search(r"\bpower\b",low) and "v" in low and "i" in low:out.append(validate_electric_power(text))
-    if re.search(r"\bnewton|force\b",low):out.append(validate_newton_second_law(text))
-    if re.search(r"\bkinematic|velocity|acceleration\b",low):out.append(validate_kinematics_v_uat(text))
+
+    # Domain identities are verification models, not keyword classifiers.  A
+    # normal network-theory question may mention a resistor, voltage or power
+    # without supplying the complete V/I/R or P/V/I tuple expected by these
+    # narrow models.  Running a partial model used to turn such valid content
+    # into UNKNOWN and therefore force a false REVIEW result.  Invoke a model
+    # only when every value that it verifies is explicitly present.
+    has=lambda label: _num(text,label) is not None
+    if re.search(r"\bohm|resistor|resistance\b",low) and all(has(x) for x in ("V","I","R")):
+        out.append(validate_ohms_law(text))
+    if re.search(r"\bpower\b",low) and all(has(x) for x in ("P","V","I")):
+        out.append(validate_electric_power(text))
+    if re.search(r"\bnewton|force\b",low) and all(has(x) for x in ("F","m","a")):
+        out.append(validate_newton_second_law(text))
+    if re.search(r"\bkinematic|velocity|acceleration\b",low) and all(has(x) for x in ("v","u","a","t")):
+        out.append(validate_kinematics_v_uat(text))
     return tuple(out)

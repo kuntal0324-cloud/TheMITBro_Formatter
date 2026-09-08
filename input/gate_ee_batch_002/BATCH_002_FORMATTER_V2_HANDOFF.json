@@ -1,0 +1,24 @@
+{
+  "handoff_version": "1.0.0",
+  "handoff_id": "GATE_EE_BATCH_002_TO_FORMATTER_V2",
+  "source_repository": "TheMITbro_Question_Bank",
+  "target_repository": "TheMITBro_Formatter",
+  "formatter_required_version": "2.0.0",
+  "batch_id": "BATCH_002",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "Electric Circuits",
+  "question_count": 20,
+  "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_002_ELECTRIC_CIRCUITS.jsonl",
+  "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_002_ELECTRIC_CIRCUITS.md",
+  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
+  "required_formatter_checks": [
+    "schema/ingestion compatibility",
+    "question intelligence classification",
+    "answer/solution structural validation",
+    "duplicate/family detection",
+    "quality scoring",
+    "professional rendering smoke test"
+  ],
+  "promotion_rule": "Formatter PASS is machine evidence only. Independent technical recomputation and named human final QA are required before PAPER_ELIGIBLE promotion.",
+  "release_gate": "BLOCKED"
+}
