@@ -1,5 +1,8 @@
 {
   "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+  "batch_id": "BATCH_001",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": null,
   "formatter_version": "2.0.0",
   "source_sha256": "cf815b061af0d357df02796f34021b69c3e2465835a1ab1caab7d1ae16d61256",
   "question_count": 20,
@@ -91,6 +94,11 @@
         "bytes": 464,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -174,6 +182,11 @@
         "status": "PASS",
         "bytes": 435,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -261,6 +274,11 @@
         "bytes": 871,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -343,6 +361,11 @@
         "status": "PASS",
         "bytes": 461,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -429,6 +452,11 @@
         "bytes": 530,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -513,6 +541,11 @@
         "status": "PASS",
         "bytes": 426,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -601,6 +634,11 @@
         "status": "PASS",
         "bytes": 464,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -691,6 +729,11 @@
         "bytes": 636,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -773,6 +816,11 @@
         "status": "PASS",
         "bytes": 337,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -858,6 +906,11 @@
         "bytes": 463,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -942,6 +995,11 @@
         "bytes": 468,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -1023,6 +1081,11 @@
         "status": "PASS",
         "bytes": 406,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -1109,6 +1172,11 @@
         "bytes": 719,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -1193,6 +1261,11 @@
         "bytes": 612,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -1275,6 +1348,11 @@
         "status": "PASS",
         "bytes": 558,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -1361,6 +1439,11 @@
         "bytes": 548,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -1443,6 +1526,11 @@
         "status": "PASS",
         "bytes": 537,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -1531,6 +1619,11 @@
         "bytes": 789,
         "source_markup_exposed": false
       },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
       "independent_human_review": "PENDING",
@@ -1614,6 +1707,11 @@
         "status": "PASS",
         "bytes": 449,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
@@ -1700,6 +1798,11 @@
         "status": "PASS",
         "bytes": 650,
         "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
       },
       "syllabus_match": true,
       "formatter_qualification": "PASS",
