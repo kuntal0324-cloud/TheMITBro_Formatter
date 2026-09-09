@@ -4,7 +4,7 @@
   "corpus": "GATE_EE_CORPUS_V1",
   "domain": "Electric Circuits",
   "formatter_version": "2.0.0",
-  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
+  "source_sha256": "2a2344b2ed353d0fb309ea98dada882b7371aaa7016e95ff6547d0dba6fb96e5",
   "question_count": 20,
   "formatter_pass_count": 20,
   "formatter_review_count": 0,
@@ -16,7 +16,7 @@
   "questions": [
     {
       "question_id": "TMB-GATE-EE-NT-001",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -34,10 +34,10 @@
         "question_type": "NAT",
         "marks": 1,
         "difficulty": "Hard",
-        "difficulty_score": 0.74,
+        "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 222,
+        "expected_time_seconds": 237,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -89,8 +89,13 @@
       },
       "render": {
         "status": "PASS",
-        "bytes": 589,
+        "bytes": 616,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 6,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -104,7 +109,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-002",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -125,7 +130,7 @@
         "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 222,
+        "expected_time_seconds": 227,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -172,13 +177,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3151,
+        "similarity": 0.2545,
         "matched_id": "TMB-GATE-EE-NT-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 550,
+        "bytes": 567,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -192,7 +202,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-003",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -210,10 +220,10 @@
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.72,
+        "difficulty_score": 0.825,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 318,
+        "expected_time_seconds": 327,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -265,13 +275,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2434,
-        "matched_id": "TMB-GATE-EE-NT-001"
+        "similarity": 0.1926,
+        "matched_id": "TMB-GATE-EE-NT-002"
       },
       "render": {
         "status": "PASS",
-        "bytes": 759,
+        "bytes": 810,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 12,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -285,7 +300,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-004",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -303,10 +318,10 @@
         "question_type": "MSQ",
         "marks": 1,
         "difficulty": "Medium",
-        "difficulty_score": 0.565,
+        "difficulty_score": 0.6,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 288,
+        "expected_time_seconds": 292,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -353,13 +368,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3084,
+        "similarity": 0.2787,
         "matched_id": "TMB-GATE-EE-NT-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 873,
+        "bytes": 900,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 5,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -373,7 +393,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-005",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -394,7 +414,7 @@
         "difficulty_score": 0.83,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 309,
+        "expected_time_seconds": 317,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -440,13 +460,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3178,
-        "matched_id": "TMB-GATE-EE-NT-003"
+        "similarity": 0.2581,
+        "matched_id": "TMB-GATE-EE-NT-002"
       },
       "render": {
         "status": "PASS",
-        "bytes": 675,
+        "bytes": 740,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 19,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -460,7 +485,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-006",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -481,7 +506,7 @@
         "difficulty_score": 0.795,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 267,
+        "expected_time_seconds": 275,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -527,13 +552,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3246,
+        "similarity": 0.2734,
         "matched_id": "TMB-GATE-EE-NT-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 678,
+        "bytes": 735,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 15,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -547,7 +577,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-007",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -568,7 +598,7 @@
         "difficulty_score": 0.795,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 261,
+        "expected_time_seconds": 265,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -615,13 +645,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3447,
-        "matched_id": "TMB-GATE-EE-NT-005"
+        "similarity": 0.3067,
+        "matched_id": "TMB-GATE-EE-NT-006"
       },
       "render": {
         "status": "PASS",
-        "bytes": 620,
+        "bytes": 630,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 13,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -635,7 +670,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-008",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -702,13 +737,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2568,
+        "similarity": 0.2384,
         "matched_id": "TMB-GATE-EE-NT-007"
       },
       "render": {
         "status": "PASS",
         "bytes": 942,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 3,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -722,7 +762,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-009",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -740,10 +780,10 @@
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.86,
+        "difficulty_score": 0.865,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 312,
+        "expected_time_seconds": 318,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -792,13 +832,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2808,
-        "matched_id": "TMB-GATE-EE-NT-007"
+        "similarity": 0.2638,
+        "matched_id": "TMB-GATE-EE-NT-002"
       },
       "render": {
         "status": "PASS",
-        "bytes": 728,
+        "bytes": 712,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 11,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -812,7 +857,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-010",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -830,10 +875,10 @@
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Medium",
-        "difficulty_score": 0.6,
+        "difficulty_score": 0.635,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 221,
+        "expected_time_seconds": 229,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -882,13 +927,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.388,
+        "similarity": 0.3707,
         "matched_id": "TMB-GATE-EE-NT-009"
       },
       "render": {
         "status": "PASS",
-        "bytes": 559,
+        "bytes": 573,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 11,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -902,7 +952,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-011",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -919,11 +969,11 @@
         "taxonomy_confidence": 0.798,
         "question_type": "NAT",
         "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.635,
+        "difficulty": "Hard",
+        "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 213,
+        "expected_time_seconds": 227,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -972,13 +1022,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3711,
-        "matched_id": "TMB-GATE-EE-NT-010"
+        "similarity": 0.2823,
+        "matched_id": "TMB-GATE-EE-NT-009"
       },
       "render": {
         "status": "PASS",
-        "bytes": 556,
+        "bytes": 617,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 5,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -992,7 +1047,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-012",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1063,13 +1118,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.306,
+        "similarity": 0.3051,
         "matched_id": "TMB-GATE-EE-NT-008"
       },
       "render": {
         "status": "PASS",
         "bytes": 1047,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1083,7 +1143,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-013",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1104,7 +1164,7 @@
         "difficulty_score": 0.815,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 267,
+        "expected_time_seconds": 276,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1154,13 +1214,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3604,
-        "matched_id": "TMB-GATE-EE-NT-005"
+        "similarity": 0.3203,
+        "matched_id": "TMB-GATE-EE-NT-007"
       },
       "render": {
         "status": "PASS",
-        "bytes": 626,
+        "bytes": 645,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 8,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1174,7 +1239,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-014",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1195,7 +1260,7 @@
         "difficulty_score": 0.78,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 269,
+        "expected_time_seconds": 286,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1244,13 +1309,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.4194,
+        "similarity": 0.3731,
         "matched_id": "TMB-GATE-EE-NT-013"
       },
       "render": {
         "status": "PASS",
-        "bytes": 577,
+        "bytes": 623,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1264,7 +1334,102 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-015",
-      "source_revision": 1,
+      "source_revision": 2,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.745,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 229,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "resonance",
+          "rlc"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.281,
+        "matched_id": "TMB-GATE-EE-NT-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 595,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-016",
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1285,7 +1450,7 @@
         "difficulty_score": 0.74,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 218,
+        "expected_time_seconds": 224,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1334,103 +1499,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3376,
-        "matched_id": "TMB-GATE-EE-NT-011"
+        "similarity": 0.4286,
+        "matched_id": "TMB-GATE-EE-NT-015"
       },
       "render": {
         "status": "PASS",
-        "bytes": 564,
+        "bytes": 553,
         "source_markup_exposed": false
       },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-NT-016",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Electrical Engineering",
-        "topic": "Electric Circuits",
-        "status": "AUTO",
-        "confidence": 0.94
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Electrical Engineering",
-        "topic": "Electric Circuits",
-        "subtopic": "AC circuits",
-        "concept": "Phasor impedance and resonance",
-        "taxonomy_confidence": 0.77,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Hard",
-        "difficulty_score": 0.67,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 213,
-        "syllabus_path": [
-          "GATE_EE",
-          "Electrical Engineering",
-          "Electric Circuits",
-          "AC circuits",
-          "Phasor impedance and resonance"
-        ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
-        "signals": [
-          "resonance",
-          "rlc"
-        ],
-        "review_required": false
-      },
-      "validation": {
+      "source_math_contract": {
         "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.942,
-        "grade": "A",
-        "components": {
-          "classification": 0.94,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.77,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3524,
-        "matched_id": "TMB-GATE-EE-NT-010"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 527,
-        "source_markup_exposed": false
+        "inline_math_segments": 7,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1444,7 +1524,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-017",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1462,10 +1542,10 @@
         "question_type": "MSQ",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.705,
+        "difficulty_score": 0.745,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 306,
+        "expected_time_seconds": 310,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1514,13 +1594,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2677,
+        "similarity": 0.2509,
         "matched_id": "TMB-GATE-EE-NT-012"
       },
       "render": {
         "status": "PASS",
-        "bytes": 928,
+        "bytes": 905,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1534,7 +1619,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-018",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1548,14 +1633,14 @@
         "topic": "Electric Circuits",
         "subtopic": "Three-phase circuits",
         "concept": "Balanced loads and complex power",
-        "taxonomy_confidence": 0.99,
+        "taxonomy_confidence": 0.963,
         "question_type": "NAT",
         "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.635,
+        "difficulty": "Hard",
+        "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 234,
+        "expected_time_seconds": 253,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1569,8 +1654,7 @@
         "signals": [
           "three-phase",
           "star-connected",
-          "complex power",
-          "line voltage"
+          "complex power"
         ],
         "review_required": false
       },
@@ -1593,26 +1677,31 @@
         }
       },
       "quality": {
-        "score": 0.986,
+        "score": 0.981,
         "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.99,
+          "taxonomy": 0.963,
           "validation": 1.0
         },
         "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2857,
-        "matched_id": "TMB-GATE-EE-NT-014"
+        "similarity": 0.3082,
+        "matched_id": "TMB-GATE-EE-NT-011"
       },
       "render": {
         "status": "PASS",
-        "bytes": 662,
+        "bytes": 747,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 6,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1626,7 +1715,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-019",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1647,7 +1736,7 @@
         "difficulty_score": 0.78,
         "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 262,
+        "expected_time_seconds": 274,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1696,13 +1785,18 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3788,
+        "similarity": 0.3254,
         "matched_id": "TMB-GATE-EE-NT-016"
       },
       "render": {
         "status": "PASS",
-        "bytes": 575,
+        "bytes": 646,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,
@@ -1716,7 +1810,7 @@
     },
     {
       "question_id": "TMB-GATE-EE-NT-020",
-      "source_revision": 1,
+      "source_revision": 2,
       "classification": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
@@ -1730,14 +1824,14 @@
         "topic": "Electric Circuits",
         "subtopic": "Three-phase circuits",
         "concept": "Balanced loads and complex power",
-        "taxonomy_confidence": 0.99,
+        "taxonomy_confidence": 0.963,
         "question_type": "MCQ",
         "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.635,
+        "difficulty": "Hard",
+        "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 240,
+        "expected_time_seconds": 254,
         "syllabus_path": [
           "GATE_EE",
           "Electrical Engineering",
@@ -1751,9 +1845,7 @@
         "signals": [
           "three-phase",
           "delta-connected",
-          "complex power",
-          "line voltage",
-          "phase voltage"
+          "complex power"
         ],
         "review_required": false
       },
@@ -1776,26 +1868,31 @@
         }
       },
       "quality": {
-        "score": 0.986,
+        "score": 0.981,
         "grade": "A",
         "components": {
           "classification": 0.94,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.99,
+          "taxonomy": 0.963,
           "validation": 1.0
         },
         "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3896,
+        "similarity": 0.5244,
         "matched_id": "TMB-GATE-EE-NT-018"
       },
       "render": {
         "status": "PASS",
-        "bytes": 714,
+        "bytes": 729,
         "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
       },
       "diagram_contract": {
         "declared": false,

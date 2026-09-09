@@ -1,4 +1,5 @@
 from pathlib import Path
+import hashlib
 import json
 
 from src.gate_ee_batch_qualification import qualify_batch
@@ -40,6 +41,24 @@ def test_batch002_records_are_auto_routed_and_render_cleanly():
         assert not row["quality"]["blockers"]
         assert row["render"]["status"] == "PASS"
         assert row["render"]["source_markup_exposed"] is False
+        assert row["source_math_contract"]["status"] == "PASS"
+        assert row["source_math_contract"]["violations"] == []
+
+
+def test_batch002_rejects_ascii_formula_fallback(tmp_path):
+    source = tmp_path / "batch.jsonl"
+    rows = [json.loads(line) for line in JSONL.read_text(encoding="utf-8").splitlines() if line]
+    rows[0]["solution"] = "C_eq=(6 x 3)/(6+3)=2 microfarads.\nFinal answer: 0.324"
+    source.write_text("\n".join(json.dumps(row) for row in rows) + "\n", encoding="utf-8")
+    handoff = json.loads(HANDOFF.read_text(encoding="utf-8"))
+    handoff["source_sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
+    handoff_path = tmp_path / "handoff.json"
+    handoff_path.write_text(json.dumps(handoff), encoding="utf-8")
+    result = qualify_batch(source, handoff_path)
+    first = result["questions"][0]
+    assert first["source_math_contract"]["status"] == "FAIL"
+    assert first["formatter_qualification"] == "INVALID"
+    assert result["status"] == "BLOCKED"
 
 
 def test_batch002_committed_evidence_is_reproducible():

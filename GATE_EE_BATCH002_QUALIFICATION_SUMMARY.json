@@ -3,13 +3,19 @@
   "batch_id": "BATCH_002",
   "domain": "Electric Circuits",
   "formatter_version": "2.0.0",
-  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
-  "evidence_sha256": "78bab267e0abc034fc0927952b39b0a6328bda0a82d32e1ce877e92c56eaa342",
+  "source_sha256": "2a2344b2ed353d0fb309ea98dada882b7371aaa7016e95ff6547d0dba6fb96e5",
+  "evidence_sha256": "223878974b5e5999113b8a9a0a87a28d77306cdc2cc1f880108b9cbbfddd4883",
   "question_count": 20,
   "formatter_pass_count": 20,
   "formatter_review_count": 0,
   "invalid_count": 0,
   "paper_eligible_count": 0,
   "independent_human_review_required": true,
-  "release_gate": "BLOCKED"
+  "release_gate": "BLOCKED",
+  "math_render_contract": {
+    "source": "canonical LaTeX",
+    "human_review_pdf": "Pandoc + XeLaTeX",
+    "math_font": "Latin Modern Math",
+    "ascii_formula_fallback_allowed": false
+  }
 }

@@ -19,6 +19,15 @@ _EXPLICIT_VISUAL_REFERENCE = re.compile(
     re.I,
 )
 
+_ASCII_MATH_PATTERNS = (
+    ("ASCII unit name", re.compile(r"\b(?:microfarads?|kilo-ohms?|ohms?)\b", re.I)),
+    ("ASCII math function", re.compile(r"\b(?:sqrt|sin|cos|tan|ln|exp)\s*\(", re.I)),
+    ("ASCII multiplication", re.compile(r"(?<=\d)\s+x\s+(?=\d)", re.I)),
+    ("ASCII fraction", re.compile(r"\b\d+\s*/\s*\d+\b")),
+    ("undelimited subscript/power", re.compile(r"[A-Za-z0-9][_^][A-Za-z0-9({-]")),
+    ("undelimited electrical value", re.compile(r"\b\d+(?:\.\d+)?\s*(?:V|A|H|F|W|J|kW|kVA|kVAr|mH|mJ|rad/s)\b")),
+)
+
 
 def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -55,6 +64,29 @@ def _question_markdown(q: dict) -> str:
         "",
     ]
     return "\n".join(lines)
+
+
+def _source_math_contract(q: dict) -> dict:
+    values = [str(q.get("stem", "")), str(q.get("solution", ""))]
+    values.extend(str(option) for option in q.get("options", []))
+    segments = 0
+    violations: list[str] = []
+    for value in values:
+        parts = re.split(r"(?<!\\)\$", value)
+        if len(parts) % 2 == 0:
+            violations.append("unbalanced inline-math delimiter")
+            continue
+        segments += (len(parts) - 1) // 2
+        outside_math = " ".join(parts[::2])
+        for label, pattern in _ASCII_MATH_PATTERNS:
+            if pattern.search(outside_math):
+                violations.append(label)
+    violations = sorted(set(violations))
+    return {
+        "status": "PASS" if not violations else "FAIL",
+        "inline_math_segments": segments,
+        "violations": violations,
+    }
 
 
 def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
@@ -109,6 +141,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
             quality = score_question(record)
             dup = find_duplicate(md, prior)
             formatted = humanize_math(format_document(md))
+            source_math = _source_math_contract(q)
 
             intelligence = record.metadata.get("question_intelligence", {})
             validation = record.metadata.get("validation_intelligence", {})
@@ -125,6 +158,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                 record.metadata.get("validation_status") == "FAIL"
                 or dup.status == "REJECT"
                 or not render_pass
+                or source_math["status"] != "PASS"
             )
             formatter_pass = (
                 not invalid
@@ -163,6 +197,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                     "bytes": len(formatted.encode("utf-8")),
                     "source_markup_exposed": has_source_math_markup(formatted),
                 },
+                "source_math_contract": source_math,
                 "diagram_contract": {
                     "declared": diagram_declared,
                     "explicitly_referenced": visual_referenced,

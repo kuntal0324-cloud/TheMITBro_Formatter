@@ -1,5 +1,5 @@
 {
-  "handoff_version": "1.0.0",
+  "handoff_version": "1.1.0",
   "handoff_id": "GATE_EE_BATCH_002_TO_FORMATTER_V2",
   "source_repository": "TheMITbro_Question_Bank",
   "target_repository": "TheMITBro_Formatter",
@@ -10,15 +10,23 @@
   "question_count": 20,
   "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_002_ELECTRIC_CIRCUITS.jsonl",
   "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_002_ELECTRIC_CIRCUITS.md",
-  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
+  "source_sha256": "2a2344b2ed353d0fb309ea98dada882b7371aaa7016e95ff6547d0dba6fb96e5",
   "required_formatter_checks": [
     "schema/ingestion compatibility",
     "question intelligence classification",
     "answer/solution structural validation",
     "duplicate/family detection",
     "quality scoring",
-    "professional rendering smoke test"
+    "canonical LaTeX mathematics source contract",
+    "professional rendering smoke test",
+    "XeLaTeX human-review PDF rendering"
   ],
+  "math_render_contract": {
+    "canonical_source": "LaTeX math delimited with $...$",
+    "pdf_engine": "Pandoc + XeLaTeX",
+    "math_font": "Latin Modern Math",
+    "ascii_formula_fallback_allowed": false
+  },
   "promotion_rule": "Formatter PASS is machine evidence only. Independent technical recomputation and named human final QA are required before PAPER_ELIGIBLE promotion.",
   "release_gate": "BLOCKED"
 }
