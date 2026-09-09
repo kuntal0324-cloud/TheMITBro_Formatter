@@ -39,6 +39,10 @@ See:
 - [Release Process](docs/RELEASE_PROCESS.md)
 - [Milestone 45 Acceptance](docs/milestones/M45/ACCEPTANCE.md)
 
+## Current production integration
+
+The frozen v2.0 architecture now has checksum-bound production coverage for two GATE 2027 EE source batches. Batch 001 Engineering Mathematics and Batch 002 Electric Circuits each reproduce 20 PASS / 0 REVIEW / 0 invalid. Formatter PASS is machine evidence only: Batch 002 remains blocked pending independent technical recomputation and named human final QA.
+
 ## Historical milestone notes
 
 The following sections preserve historical implementation notes from earlier milestones. The authoritative milestone records are organized under `docs/milestones/`.
@@ -154,7 +158,7 @@ pytest
 PASS / FAIL
 ```
 
-GitHub Actions workflows are stored under `.github/workflows` and can run on pushes, pull requests, or manual dispatch. See the official GitHub Actions documentation for the workflow model and CI behavior. 
+GitHub Actions workflows are stored under `.github/workflows` and can run on pushes, pull requests, or manual dispatch. See the official GitHub Actions documentation for the workflow model and CI behavior.
 
 ## Acceptance condition
 

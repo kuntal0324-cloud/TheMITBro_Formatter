@@ -1,0 +1,31 @@
+name: GATE EE Batch 002 Formatter Qualification
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qualify-batch-002:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install Formatter dependencies
+        run: pip install -r requirements.txt
+      - name: Run Electric Circuits production regressions
+        run: python -m pytest -q tests/test_gate_ee_electric_circuits_production.py tests/test_gate_ee_batch002_qualification.py
+      - name: Reproduce strict Batch 002 qualification
+        run: |
+          python -m src.run_gate_ee_batch_qualification \
+            --jsonl input/gate_ee_batch_002/BATCH_002_ELECTRIC_CIRCUITS.jsonl \
+            --handoff input/gate_ee_batch_002/BATCH_002_FORMATTER_V2_HANDOFF.json \
+            --output output/gate_ee_batch_002/FORMATTER_V2_QUALIFICATION.json
+          git diff --exit-code -- output/gate_ee_batch_002/FORMATTER_V2_QUALIFICATION.json
