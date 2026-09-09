@@ -1,10 +1,10 @@
 {
   "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
-  "batch_id": "BATCH_001",
+  "batch_id": "BATCH_002",
   "corpus": "GATE_EE_CORPUS_V1",
-  "domain": null,
+  "domain": "Electric Circuits",
   "formatter_version": "2.0.0",
-  "source_sha256": "cf815b061af0d357df02796f34021b69c3e2465835a1ab1caab7d1ae16d61256",
+  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
   "question_count": 20,
   "formatter_pass_count": 20,
   "formatter_review_count": 0,
@@ -15,42 +15,40 @@
   "status": "PASS",
   "questions": [
     {
-      "question_id": "TMB-GATE-EE-EM-001",
-      "source_revision": 2,
+      "question_id": "TMB-GATE-EE-NT-001",
+      "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.99
+        "confidence": 0.82
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "subtopic": "Eigen systems",
-        "concept": "Eigenvalues and eigenvectors",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
         "taxonomy_confidence": 0.798,
-        "question_type": "MCQ",
+        "question_type": "NAT",
         "marks": 1,
         "difficulty": "Hard",
-        "difficulty_score": 0.785,
-        "reasoning_depth": "Multi-step",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 254,
+        "expected_time_seconds": 222,
         "syllabus_path": [
           "GATE_EE",
-          "Engineering Mathematics",
-          "Linear Algebra",
-          "Eigen systems",
-          "Eigenvalues and eigenvectors"
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
         ],
-        "prerequisites": [
-          "Determinants and rank"
-        ],
+        "prerequisites": [],
         "signals": [
-          "eigenvalue",
-          "characteristic equation"
+          "capacitor",
+          "stored energy"
         ],
         "review_required": false
       },
@@ -73,10 +71,10 @@
         }
       },
       "quality": {
-        "score": 0.958,
+        "score": 0.924,
         "grade": "A",
         "components": {
-          "classification": 0.99,
+          "classification": 0.82,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.798,
@@ -91,7 +89,7 @@
       },
       "render": {
         "status": "PASS",
-        "bytes": 464,
+        "bytes": 589,
         "source_markup_exposed": false
       },
       "diagram_contract": {
@@ -105,1207 +103,40 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-EM-002",
-      "source_revision": 2,
+      "question_id": "TMB-GATE-EE-NT-002",
+      "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.94
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "subtopic": "Matrices",
-        "concept": "Matrix operations",
-        "taxonomy_confidence": 0.907,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.78,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 255,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Linear Algebra",
-          "Matrices",
-          "Matrix operations"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "matrix",
-          "matrix inverse",
-          "trace"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.921,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.907,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3982,
-        "matched_id": "TMB-GATE-EE-EM-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 435,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-003",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "subtopic": "Determinants",
-        "concept": "Determinants and rank",
-        "taxonomy_confidence": 0.907,
-        "question_type": "MSQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.895,
-        "reasoning_depth": "Deep",
-        "calculation_load": "High",
-        "expected_time_seconds": 357,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Linear Algebra",
-          "Determinants",
-          "Determinants and rank"
-        ],
-        "prerequisites": [
-          "Matrix operations"
-        ],
-        "signals": [
-          "determinant",
-          "det(",
-          "rank"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.979,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.907,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2571,
-        "matched_id": "TMB-GATE-EE-EM-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 871,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-004",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "subtopic": "Limits and continuity",
-        "concept": "Limits and continuity",
-        "taxonomy_confidence": 0.798,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.6,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 215,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Calculus",
-          "Limits and continuity",
-          "Limits and continuity"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "limit",
-          "exponential limit"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.9,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.798,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.4229,
-        "matched_id": "TMB-GATE-EE-EM-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 461,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-005",
-      "source_revision": 3,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "subtopic": "Differential calculus",
-        "concept": "Differentiation",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.78,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 259,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Calculus",
-          "Differential calculus",
-          "Differentiation"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "derivative",
-          "minimum",
-          "optimization",
-          "critical point"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.938,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3339,
-        "matched_id": "TMB-GATE-EE-EM-004"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 530,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-006",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "status": "AUTO",
-        "confidence": 0.82
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "subtopic": "Integral calculus",
-        "concept": "Integration",
-        "taxonomy_confidence": 0.77,
-        "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.705,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 210,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Calculus",
-          "Integral calculus",
-          "Integration"
-        ],
-        "prerequisites": [
-          "Differentiation"
-        ],
-        "signals": [
-          "integral",
-          "integration"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.918,
-        "grade": "A",
-        "components": {
-          "classification": 0.82,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.77,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.4259,
-        "matched_id": "TMB-GATE-EE-EM-004"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 426,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-007",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
-        "subtopic": "Ordinary differential equations",
-        "concept": "ODE solution",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.93,
-        "reasoning_depth": "Deep",
-        "calculation_load": "High",
-        "expected_time_seconds": 308,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Differential Equations",
-          "Ordinary differential equations",
-          "ODE solution"
-        ],
-        "prerequisites": [
-          "Differentiation",
-          "Integration"
-        ],
-        "signals": [
-          "ode",
-          "linear ode",
-          "first-order",
-          "initial-value problem"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.938,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3416,
-        "matched_id": "TMB-GATE-EE-EM-005"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 464,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-008",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
-        "status": "AUTO",
-        "confidence": 0.82
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
-        "subtopic": "Ordinary differential equations",
-        "concept": "ODE solution",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.785,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 269,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Differential Equations",
-          "Ordinary differential equations",
-          "ODE solution"
-        ],
-        "prerequisites": [
-          "Differentiation",
-          "Integration"
-        ],
-        "signals": [
-          "differential equation",
-          "ordinary differential equation",
-          "ode",
-          "linear ode",
-          "second-order"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.962,
-        "grade": "A",
-        "components": {
-          "classification": 0.82,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.402,
-        "matched_id": "TMB-GATE-EE-EM-007"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 636,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-009",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "subtopic": "Complex algebra",
-        "concept": "Complex numbers",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
         "taxonomy_confidence": 0.825,
         "question_type": "MCQ",
         "marks": 1,
-        "difficulty": "Hard",
-        "difficulty_score": 0.705,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 192,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Complex Variables",
-          "Complex algebra",
-          "Complex numbers"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "complex number",
-          "complex algebra"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.905,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.825,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.455,
-        "matched_id": "TMB-GATE-EE-EM-004"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 337,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-010",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "subtopic": "Complex algebra",
-        "concept": "Complex numbers",
-        "taxonomy_confidence": 0.935,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.775,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 246,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Complex Variables",
-          "Complex algebra",
-          "Complex numbers"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "complex roots",
-          "quadratic roots",
-          "conjugate"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.927,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.935,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3101,
-        "matched_id": "TMB-GATE-EE-EM-009"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 463,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-011",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "subtopic": "Probability",
-        "concept": "Conditional probability",
-        "taxonomy_confidence": 0.935,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Hard",
-        "difficulty_score": 0.78,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 260,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Probability and Statistics",
-          "Probability",
-          "Conditional probability"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "probability",
-          "probability axioms",
-          "independent events"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.927,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.935,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3249,
-        "matched_id": "TMB-GATE-EE-EM-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 468,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-012",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "status": "AUTO",
-        "confidence": 0.82
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
-        "taxonomy_confidence": 0.688,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.67,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 205,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "random variable"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.902,
-        "grade": "A",
-        "components": {
-          "classification": 0.82,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.688,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3438,
-        "matched_id": "TMB-GATE-EE-EM-005"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 406,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-013",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 2,
         "difficulty": "Hard",
         "difficulty_score": 0.745,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 253,
+        "expected_time_seconds": 222,
         "syllabus_path": [
           "GATE_EE",
-          "Engineering Mathematics",
-          "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
         ],
         "prerequisites": [],
         "signals": [
-          "random variable",
-          "expectation",
-          "mean",
-          "variance"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.4114,
-        "matched_id": "TMB-GATE-EE-EM-012"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 719,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-014",
-      "source_revision": 3,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "status": "AUTO",
-        "confidence": 0.94
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "subtopic": "Fourier series",
-        "concept": "Fourier-series representation",
-        "taxonomy_confidence": 0.688,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.86,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 275,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Calculus",
-          "Fourier series",
-          "Fourier-series representation"
-        ],
-        "prerequisites": [
-          "Integration"
-        ],
-        "signals": [
-          "fourier series"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.926,
-        "grade": "A",
-        "components": {
-          "classification": 0.94,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.688,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3065,
-        "matched_id": "TMB-GATE-EE-EM-005"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 612,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-015",
-      "source_revision": 3,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "status": "AUTO",
-        "confidence": 0.94
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Complex Variables",
-        "subtopic": "Complex integration",
-        "concept": "Cauchy and residue theorems",
-        "taxonomy_confidence": 0.825,
-        "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.705,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 227,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Complex Variables",
-          "Complex integration",
-          "Cauchy and residue theorems"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "contour integral",
-          "residue theorem"
+          "mutual inductance",
+          "coupled inductors"
         ],
         "review_required": false
       },
@@ -1341,12 +172,12 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2979,
-        "matched_id": "TMB-GATE-EE-EM-005"
+        "similarity": 0.3151,
+        "matched_id": "TMB-GATE-EE-NT-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 558,
+        "bytes": 550,
         "source_markup_exposed": false
       },
       "diagram_contract": {
@@ -1360,222 +191,45 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-EM-016",
-      "source_revision": 3,
+      "question_id": "TMB-GATE-EE-NT-003",
+      "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Linear Algebra",
-        "subtopic": "Matrices",
-        "concept": "Matrix operations",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.81,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 251,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Linear Algebra",
-          "Matrices",
-          "Matrix operations"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "matrix",
-          "linear system",
-          "coefficient matrix",
-          "proportional rows"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.938,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3076,
-        "matched_id": "TMB-GATE-EE-EM-008"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 548,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-017",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "status": "AUTO",
-        "confidence": 0.7
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
-        "subtopic": "Differential calculus",
-        "concept": "Differentiation",
-        "taxonomy_confidence": 0.798,
-        "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.775,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 267,
-        "syllabus_path": [
-          "GATE_EE",
-          "Engineering Mathematics",
-          "Calculus",
-          "Differential calculus",
-          "Differentiation"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "derivative",
-          "directional derivative"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.9,
-        "grade": "A",
-        "components": {
-          "classification": 0.7,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.798,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3364,
-        "matched_id": "TMB-GATE-EE-EM-005"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 537,
-        "source_markup_exposed": false
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-EM-018",
-      "source_revision": 2,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Calculus",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
         "status": "AUTO",
         "confidence": 0.94
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Vector Calculus",
-        "subtopic": "Vector calculus",
-        "concept": "Gradient divergence curl",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "Dependent-source port analysis",
         "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
+        "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.71,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.72,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 261,
+        "expected_time_seconds": 318,
         "syllabus_path": [
           "GATE_EE",
-          "Engineering Mathematics",
-          "Vector Calculus",
-          "Vector calculus",
-          "Gradient divergence curl"
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "Dependent-source port analysis"
         ],
-        "prerequisites": [],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
         "signals": [
-          "vector calculus",
-          "vector field",
-          "divergence",
-          "curl",
-          "nabla",
-          "green's theorem"
+          "dependent source",
+          "dependent current source",
+          "driving-point resistance",
+          "test voltage",
+          "input port"
         ],
         "review_required": false
       },
@@ -1611,12 +265,12 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3041,
-        "matched_id": "TMB-GATE-EE-EM-017"
+        "similarity": 0.2434,
+        "matched_id": "TMB-GATE-EE-NT-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 789,
+        "bytes": 759,
         "source_markup_exposed": false
       },
       "diagram_contract": {
@@ -1630,41 +284,40 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-EM-019",
-      "source_revision": 2,
+      "question_id": "TMB-GATE-EE-NT-004",
+      "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.99
+        "confidence": 0.94
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
-        "taxonomy_confidence": 0.907,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.705,
-        "reasoning_depth": "Direct",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network elements",
+        "concept": "Passive elements and coupled coils",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.565,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 205,
+        "expected_time_seconds": 288,
         "syllabus_path": [
           "GATE_EE",
-          "Engineering Mathematics",
-          "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network elements",
+          "Passive elements and coupled coils"
         ],
         "prerequisites": [],
         "signals": [
-          "random variable",
-          "variance",
-          "distribution"
+          "capacitor",
+          "inductor"
         ],
         "review_required": false
       },
@@ -1687,25 +340,25 @@
         }
       },
       "quality": {
-        "score": 0.979,
+        "score": 0.942,
         "grade": "A",
         "components": {
-          "classification": 0.99,
+          "classification": 0.94,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.907,
+          "taxonomy": 0.77,
           "validation": 1.0
         },
         "blockers": []
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.3485,
-        "matched_id": "TMB-GATE-EE-EM-013"
+        "similarity": 0.3084,
+        "matched_id": "TMB-GATE-EE-NT-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 449,
+        "bytes": 873,
         "source_markup_exposed": false
       },
       "diagram_contract": {
@@ -1719,43 +372,843 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-EM-020",
-      "source_revision": 3,
+      "question_id": "TMB-GATE-EE-NT-005",
+      "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
         "status": "AUTO",
         "confidence": 0.94
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "Engineering Mathematics",
-        "topic": "Differential Equations",
-        "subtopic": "Partial differential equations",
-        "concept": "PDE solution",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.83,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 309,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3178,
+        "matched_id": "TMB-GATE-EE-NT-003"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 675,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-006",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.795,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 267,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3246,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 678,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-007",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.795,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 261,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kvl",
+          "mesh current"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3447,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 620,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-008",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network laws",
+        "concept": "KCL and KVL",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.508,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 285,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network laws",
+          "KCL and KVL"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "kcl"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.92,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2568,
+        "matched_id": "TMB-GATE-EE-NT-007"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 942,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-009",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.86,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 312,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2808,
+        "matched_id": "TMB-GATE-EE-NT-007"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 728,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-010",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.6,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 221,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.388,
+        "matched_id": "TMB-GATE-EE-NT-009"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 559,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-011",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.798,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 213,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "maximum power transfer"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3711,
+        "matched_id": "TMB-GATE-EE-NT-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 556,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-012",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Network theorems",
+        "concept": "Thevenin and Norton",
+        "taxonomy_confidence": 0.88,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.484,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 290,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Network theorems",
+          "Thevenin and Norton"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "thevenin",
+          "norton",
+          "superposition"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.964,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.88,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.306,
+        "matched_id": "TMB-GATE-EE-NT-008"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1047,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-013",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Transient analysis",
+        "concept": "First-order RC and RL response",
+        "taxonomy_confidence": 0.963,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.815,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 267,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Transient analysis",
+          "First-order RC and RL response"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "rc network",
+          "time constant",
+          "steady-state value"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.981,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.963,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3604,
+        "matched_id": "TMB-GATE-EE-NT-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 626,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-014",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Transient analysis",
+        "concept": "First-order RC and RL response",
         "taxonomy_confidence": 0.825,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.94,
-        "reasoning_depth": "Deep",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 333,
+        "expected_time_seconds": 269,
         "syllabus_path": [
           "GATE_EE",
-          "Engineering Mathematics",
-          "Differential Equations",
-          "Partial differential equations",
-          "PDE solution"
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Transient analysis",
+          "First-order RC and RL response"
         ],
         "prerequisites": [
-          "Differentiation",
-          "Integration"
+          "KCL and KVL"
         ],
         "signals": [
-          "partial differential equation",
-          "heat equation"
+          "rl network",
+          "time constant"
         ],
         "review_required": false
       },
@@ -1791,12 +1244,557 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2779,
-        "matched_id": "TMB-GATE-EE-EM-007"
+        "similarity": 0.4194,
+        "matched_id": "TMB-GATE-EE-NT-013"
       },
       "render": {
         "status": "PASS",
-        "bytes": 650,
+        "bytes": 577,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-015",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 218,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "resonance",
+          "rlc"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3376,
+        "matched_id": "TMB-GATE-EE-NT-011"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 564,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-016",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 213,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "resonance",
+          "rlc"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.942,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3524,
+        "matched_id": "TMB-GATE-EE-NT-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 527,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-017",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "AC circuits",
+        "concept": "Phasor impedance and resonance",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.705,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 306,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "AC circuits",
+          "Phasor impedance and resonance"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "impedance",
+          "power factor"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.948,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2677,
+        "matched_id": "TMB-GATE-EE-NT-012"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 928,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-018",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Three-phase circuits",
+        "concept": "Balanced loads and complex power",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 234,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Three-phase circuits",
+          "Balanced loads and complex power"
+        ],
+        "prerequisites": [
+          "Phasor impedance and resonance"
+        ],
+        "signals": [
+          "three-phase",
+          "star-connected",
+          "complex power",
+          "line voltage"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.986,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2857,
+        "matched_id": "TMB-GATE-EE-NT-014"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 662,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-019",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Two-port networks",
+        "concept": "Network parameters",
+        "taxonomy_confidence": 0.825,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 262,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Two-port networks",
+          "Network parameters"
+        ],
+        "prerequisites": [
+          "KCL and KVL"
+        ],
+        "signals": [
+          "two-port",
+          "z-parameter"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.953,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3788,
+        "matched_id": "TMB-GATE-EE-NT-016"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 575,
+        "source_markup_exposed": false
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-NT-020",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "status": "AUTO",
+        "confidence": 0.94
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electric Circuits",
+        "subtopic": "Three-phase circuits",
+        "concept": "Balanced loads and complex power",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 240,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electric Circuits",
+          "Three-phase circuits",
+          "Balanced loads and complex power"
+        ],
+        "prerequisites": [
+          "Phasor impedance and resonance"
+        ],
+        "signals": [
+          "three-phase",
+          "delta-connected",
+          "complex power",
+          "line voltage",
+          "phase voltage"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.986,
+        "grade": "A",
+        "components": {
+          "classification": 0.94,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3896,
+        "matched_id": "TMB-GATE-EE-NT-018"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 714,
         "source_markup_exposed": false
       },
       "diagram_contract": {

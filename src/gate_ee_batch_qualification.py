@@ -4,6 +4,7 @@ from dataclasses import asdict
 from pathlib import Path
 import hashlib
 import json
+import re
 import tempfile
 
 from .question_ingest import ingest
@@ -11,6 +12,12 @@ from .question_duplicate_detector import find_duplicate
 from .question_quality_score import score_question
 from .question_formatter import format_document
 from .human_math import humanize_math, has_source_math_markup
+
+
+_EXPLICIT_VISUAL_REFERENCE = re.compile(
+    r"\b(?:diagram|figure|shown\s+(?:below|above|in)|as\s+shown|draw|sketch)\b",
+    re.I,
+)
 
 
 def _sha256(path: Path) -> str:
@@ -54,6 +61,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
     jsonl_path = Path(jsonl_path)
     handoff_path = Path(handoff_path)
     handoff = json.loads(handoff_path.read_text(encoding="utf-8"))
+    batch_id = handoff.get("batch_id", "UNSPECIFIED_BATCH")
 
     errors = []
     if handoff.get("formatter_required_version") != "2.0.0":
@@ -61,13 +69,25 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
     if _sha256(jsonl_path) != handoff.get("source_sha256"):
         errors.append("Question Bank handoff checksum mismatch.")
     if errors:
-        return {"status":"BLOCKED","errors":errors,"questions":[]}
+        return {
+            "batch_id": batch_id,
+            "status": "BLOCKED",
+            "errors": errors,
+            "question_count": 0,
+            "formatter_pass_count": 0,
+            "formatter_review_count": 0,
+            "invalid_count": 0,
+            "paper_eligible_count": 0,
+            "independent_human_review_required": True,
+            "release_gate": "BLOCKED",
+            "questions": [],
+        }
 
     questions = [json.loads(x) for x in jsonl_path.read_text(encoding="utf-8").splitlines() if x.strip()]
     results = []
     prior = []
 
-    with tempfile.TemporaryDirectory(prefix="tmb-batch001-") as tmp:
+    with tempfile.TemporaryDirectory(prefix=f"tmb-{str(batch_id).lower()}-") as tmp:
         tmp = Path(tmp)
         for q in questions:
             md = _question_markdown(q)
@@ -75,6 +95,17 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
             path.write_text(md, encoding="utf-8")
 
             record = ingest(path, exam_hint="GATE_EE")
+
+            # Canonical Question Bank records carry an explicit diagram field.
+            # Component words such as "resistor" are useful visual-intelligence
+            # cues, but they do not make a fully text-defined problem depend on
+            # a missing figure.  Respect diagram=null unless the stem itself
+            # explicitly requests or references a visual.
+            diagram_declared = q.get("diagram") is not None
+            visual_referenced = bool(_EXPLICIT_VISUAL_REFERENCE.search(q["stem"]))
+            if not diagram_declared and not visual_referenced:
+                record.metadata["requires_visual_review"] = False
+
             quality = score_question(record)
             dup = find_duplicate(md, prior)
             formatted = humanize_math(format_document(md))
@@ -132,6 +163,11 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                     "bytes": len(formatted.encode("utf-8")),
                     "source_markup_exposed": has_source_math_markup(formatted),
                 },
+                "diagram_contract": {
+                    "declared": diagram_declared,
+                    "explicitly_referenced": visual_referenced,
+                    "review_required": record.metadata.get("requires_visual_review", False),
+                },
                 "syllabus_match": syllabus_match,
                 "formatter_qualification": (
                     "PASS" if formatter_pass else "INVALID" if invalid else "REVIEW"
@@ -146,6 +182,9 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
     invalid = sum(r["formatter_qualification"] == "INVALID" for r in results)
     return {
         "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+        "batch_id": batch_id,
+        "corpus": handoff.get("corpus"),
+        "domain": handoff.get("domain"),
         "formatter_version": "2.0.0",
         "source_sha256": _sha256(jsonl_path),
         "question_count": len(results),
@@ -166,5 +205,5 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
 
 def write_qualification(jsonl_path: str | Path, handoff_path: str | Path, output_path: str | Path) -> dict:
     result = qualify_batch(jsonl_path, handoff_path)
-    Path(output_path).write_text(json.dumps(result, indent=2), encoding="utf-8")
+    Path(output_path).write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     return result

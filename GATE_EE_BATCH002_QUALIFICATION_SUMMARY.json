@@ -1,0 +1,15 @@
+{
+  "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+  "batch_id": "BATCH_002",
+  "domain": "Electric Circuits",
+  "formatter_version": "2.0.0",
+  "source_sha256": "23b749225f9128864b1e1545c865ba1d08b8ee706b3faf69e6202099b913db36",
+  "evidence_sha256": "78bab267e0abc034fc0927952b39b0a6328bda0a82d32e1ce877e92c56eaa342",
+  "question_count": 20,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
+  "paper_eligible_count": 0,
+  "independent_human_review_required": true,
+  "release_gate": "BLOCKED"
+}
