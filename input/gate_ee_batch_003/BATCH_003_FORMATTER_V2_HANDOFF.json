@@ -1,0 +1,33 @@
+{
+  "handoff_version": "1.0.0",
+  "handoff_id": "GATE_EE_BATCH_003_TO_FORMATTER_V2",
+  "source_repository": "TheMITbro_Question_Bank",
+  "target_repository": "TheMITBro_Formatter",
+  "formatter_required_version": "2.0.0",
+  "batch_id": "BATCH_003",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "General Aptitude",
+  "question_count": 20,
+  "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_003_GENERAL_APTITUDE.jsonl",
+  "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_003_GENERAL_APTITUDE.md",
+  "source_sha256": "b00075f2ae17951baccc382ea59d149e8d0df73a21fd6398bc8e2af9038c902b",
+  "official_scope_reference": "references/GATE_2027/GATE_2027_GA_SYLLABUS.json",
+  "required_formatter_checks": [
+    "schema/ingestion compatibility",
+    "question intelligence classification",
+    "answer/solution structural validation",
+    "duplicate/family detection",
+    "quality scoring",
+    "canonical LaTeX mathematics source contract",
+    "professional rendering smoke test",
+    "mobile human-review PDF rendering"
+  ],
+  "math_render_contract": {
+    "canonical_source": "LaTeX math delimited with $...$",
+    "pdf_engine": "Pandoc + XeLaTeX",
+    "math_font": "Latin Modern Math",
+    "ascii_formula_fallback_allowed": false
+  },
+  "promotion_rule": "Formatter PASS and independent technical recomputation are machine evidence only. Named human final QA is required before PAPER_ELIGIBLE promotion.",
+  "release_gate": "BLOCKED"
+}

@@ -20,15 +20,36 @@ RULES = (
     # GATE General Aptitude (common to every paper)
     TopicRule(
         "GATE_EE", "General Aptitude", "Verbal Aptitude",
-        ("sentence completion", "verbal analogy", "word groups", "reading comprehension", "verbal deduction"),
+        (
+            "sentence completion", "grammar", "vocabulary", "words in context",
+            "idioms", "phrases in context", "reading comprehension",
+            "narrative sequencing", "verbal analogy", "word groups",
+            "verbal deduction",
+        ),
     ),
     TopicRule(
         "GATE_EE", "General Aptitude", "Quantitative Aptitude",
-        ("data interpretation", "numerical computation", "numerical estimation", "mensuration", "percentage change"),
+        (
+            "data interpretation", "numerical computation", "numerical estimation",
+            "ratios", "percentages", "percentage change", "exponents",
+            "logarithms", "permutations", "combinations", "mensuration",
+            "geometry", "elementary statistics",
+        ),
     ),
     TopicRule(
         "GATE_EE", "General Aptitude", "Analytical Aptitude",
-        ("logic deduction", "analytical aptitude", "spatial aptitude", "paper folding", "paper cutting"),
+        (
+            "logic deduction", "deduction", "induction", "analytical aptitude",
+            "analogy", "numerical relations", "numerical reasoning",
+        ),
+    ),
+    TopicRule(
+        "GATE_EE", "General Aptitude", "Spatial Aptitude",
+        (
+            "spatial aptitude", "translation of shapes", "rotation of shapes", "scaling of shapes",
+            "mirroring of shapes", "assembling shapes", "grouping shapes", "paper folding",
+            "paper cutting", "two-dimensional patterns", "three-dimensional patterns",
+        ),
     ),
     # GATE EE / Engineering Mathematics
     TopicRule(
@@ -353,6 +374,22 @@ def classify_question(
 ) -> Classification:
     t = _normalize(text)
     ee_hint = bool(exam_hint and exam_hint.lower().replace(" ", "_") in {"gate", "gate_ee", "gate-ee"})
+
+    # Canonical Question Bank markdown carries an explicit subject/topic route.
+    # Preserve that route when it names one of the four official GA sections;
+    # the strict batch qualifier separately verifies the route against source.
+    if ee_hint and re.search(r"subject:\*{0,2}\s*general aptitude\b", t):
+        for ga_topic in (
+            "Verbal Aptitude",
+            "Quantitative Aptitude",
+            "Analytical Aptitude",
+            "Spatial Aptitude",
+        ):
+            if re.search(rf"topic:\*{{0,2}}\s*{re.escape(ga_topic.lower())}\b", t):
+                return Classification(
+                    "GATE_EE", "General Aptitude", ga_topic, 0.99,
+                    ["explicit canonical general-aptitude route"], "AUTO",
+                )
 
     # Explicit GATE 2027 EE scope guards.  Numerical Methods belongs to XE,
     # while Laplace/Fourier/Z transforms belong to EE Signals and Systems.

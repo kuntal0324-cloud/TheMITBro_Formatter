@@ -1,0 +1,1877 @@
+{
+  "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+  "batch_id": "BATCH_003",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "General Aptitude",
+  "formatter_version": "2.0.0",
+  "source_sha256": "b00075f2ae17951baccc382ea59d149e8d0df73a21fd6398bc8e2af9038c902b",
+  "question_count": 20,
+  "formatter_pass_count": 20,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
+  "paper_eligible_count": 0,
+  "independent_human_review_required": true,
+  "release_gate": "BLOCKED",
+  "status": "PASS",
+  "questions": [
+    {
+      "question_id": "TMB-GATE-EE-GA-001",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "subtopic": "Language and comprehension",
+        "concept": "Verbal reasoning",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.434,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 217,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Verbal Aptitude",
+          "Language and comprehension",
+          "Verbal reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "grammar"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.93,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.0,
+        "matched_id": null
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 638,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-002",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "subtopic": "Language and comprehension",
+        "concept": "Verbal reasoning",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.434,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 216,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Verbal Aptitude",
+          "Language and comprehension",
+          "Verbal reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "vocabulary"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.93,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2458,
+        "matched_id": "TMB-GATE-EE-GA-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 687,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-003",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Sampling",
+        "concept": "Sampling theorem",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.518,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 270,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Sampling",
+          "Sampling theorem"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "sampling"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.93,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.173,
+        "matched_id": "TMB-GATE-EE-GA-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1219,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-004",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electrical and Electronic Measurements",
+        "subtopic": "Measurement systems",
+        "concept": "Errors and instruments",
+        "taxonomy_confidence": 0.66,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.6,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 270,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electrical and Electronic Measurements",
+          "Measurement systems",
+          "Errors and instruments"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "accuracy"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.93,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.66,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.1693,
+        "matched_id": "TMB-GATE-EE-GA-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1141,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 3,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-005",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Verbal Aptitude",
+        "subtopic": "Language and comprehension",
+        "concept": "Verbal reasoning",
+        "taxonomy_confidence": 0.688,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.551,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 291,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Verbal Aptitude",
+          "Language and comprehension",
+          "Verbal reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "narrative sequencing"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.936,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.688,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2303,
+        "matched_id": "TMB-GATE-EE-GA-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 875,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-006",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.77,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.705,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 255,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "ratios",
+          "percentages"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.952,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2833,
+        "matched_id": "TMB-GATE-EE-GA-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 585,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 5,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-007",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.77,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 277,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "ratios",
+          "percentages"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.952,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3102,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 711,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-008",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.688,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 224,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "data interpretation"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.936,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.688,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.254,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 714,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-009",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.88,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.78,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 272,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "powers",
+          "exponents",
+          "logarithms"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.974,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.88,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2795,
+        "matched_id": "TMB-GATE-EE-GA-008"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 593,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 14,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-010",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.77,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 245,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "permutations",
+          "combinations"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.952,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2505,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 769,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 3,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-011",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.77,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.576,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 206,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "mensuration",
+          "geometry"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.952,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.77,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.4838,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 480,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-012",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Quantitative Aptitude",
+        "subtopic": "Numerical reasoning",
+        "concept": "Quantitative reasoning",
+        "taxonomy_confidence": 0.798,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 243,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Quantitative Aptitude",
+          "Numerical reasoning",
+          "Quantitative reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "elementary statistics",
+          "probability"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.958,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2647,
+        "matched_id": "TMB-GATE-EE-GA-011"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 734,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 8,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-013",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "subtopic": "Logic and relations",
+        "concept": "Analytical reasoning",
+        "taxonomy_confidence": 0.907,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.434,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 254,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Analytical Aptitude",
+          "Logic and relations",
+          "Analytical reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "deduction",
+          "induction",
+          "analytical aptitude"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.979,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.907,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.1912,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 915,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-014",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "subtopic": "Logic and relations",
+        "concept": "Analytical reasoning",
+        "taxonomy_confidence": 0.907,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.598,
+        "reasoning_depth": "Deep",
+        "calculation_load": "High",
+        "expected_time_seconds": 350,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Analytical Aptitude",
+          "Logic and relations",
+          "Analytical reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "deduction",
+          "induction",
+          "analytical aptitude"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.979,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.907,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.1896,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 833,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-015",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "subtopic": "Logic and relations",
+        "concept": "Analytical reasoning",
+        "taxonomy_confidence": 0.935,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 215,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Analytical Aptitude",
+          "Logic and relations",
+          "Analytical reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "analytical aptitude",
+          "analogy",
+          "numerical relations"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.985,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.935,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3078,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 502,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-016",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Analytical Aptitude",
+        "subtopic": "Logic and relations",
+        "concept": "Analytical reasoning",
+        "taxonomy_confidence": 0.907,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.434,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 257,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Analytical Aptitude",
+          "Logic and relations",
+          "Analytical reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "deduction",
+          "induction",
+          "analytical aptitude"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.979,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.907,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2626,
+        "matched_id": "TMB-GATE-EE-GA-013"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 954,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-017",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "subtopic": "Spatial transformations and patterns",
+        "concept": "Spatial reasoning",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.481,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 220,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Spatial Aptitude",
+          "Spatial transformations and patterns",
+          "Spatial reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "spatial aptitude",
+          "rotation"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.958,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2894,
+        "matched_id": "TMB-GATE-EE-GA-006"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 647,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 1,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-018",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "subtopic": "Spatial transformations and patterns",
+        "concept": "Spatial reasoning",
+        "taxonomy_confidence": 0.825,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 262,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Spatial Aptitude",
+          "Spatial transformations and patterns",
+          "Spatial reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "spatial aptitude",
+          "paper folding"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.963,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2193,
+        "matched_id": "TMB-GATE-EE-GA-011"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 973,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 2,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-019",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "subtopic": "Spatial transformations and patterns",
+        "concept": "Spatial reasoning",
+        "taxonomy_confidence": 0.798,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.434,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 255,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Spatial Aptitude",
+          "Spatial transformations and patterns",
+          "Spatial reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "spatial aptitude",
+          "grouping"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.958,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.798,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2447,
+        "matched_id": "TMB-GATE-EE-GA-015"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 752,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 0,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-GA-020",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "General Aptitude",
+        "topic": "Spatial Aptitude",
+        "subtopic": "Spatial transformations and patterns",
+        "concept": "Spatial reasoning",
+        "taxonomy_confidence": 0.825,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 234,
+        "syllabus_path": [
+          "GATE_EE",
+          "General Aptitude",
+          "Spatial Aptitude",
+          "Spatial transformations and patterns",
+          "Spatial reasoning"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "spatial aptitude",
+          "three-dimensional patterns"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.963,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.825,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2491,
+        "matched_id": "TMB-GATE-EE-GA-015"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 722,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 5,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    }
+  ]
+}
