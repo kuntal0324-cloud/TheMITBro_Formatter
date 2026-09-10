@@ -14,7 +14,15 @@ class QuestionQuality:
 
 def detect_quality_issues(text:str,question_type:str="UNSPECIFIED")->QuestionQuality:
     low=text.lower(); f=[]
-    if len(re.findall(r"\b(?:find|determine|calculate|which|what|evaluate|prove|show|select|identify|choose)\b",low))==0:
+    explicit_task = re.search(
+        r"\b(?:find|determine|calculate|which|what|evaluate|prove|show|select|identify|choose|enter|arrange)\b",
+        low,
+    )
+    standard_question_form = re.search(
+        r"\b(?:most nearly means|number of [^.?\n]{1,80} is|is paired with|final direction is)\b",
+        low,
+    )
+    if not explicit_task and not standard_question_form:
         f.append(QualityFinding("NO_TASK","REVIEW","No clear task/instruction was detected."))
     if re.search(r"\b(?:insufficient data|cannot be determined|not enough information)\b",low):
         f.append(QualityFinding("EXPLICIT_UNDERDETERMINED","REVIEW","Question explicitly indicates insufficient information."))

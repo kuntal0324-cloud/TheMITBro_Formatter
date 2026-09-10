@@ -1,5 +1,9 @@
 # TheMITbro Formatter v2.0.0 — Production Baseline
 
+## GATE 2027 EE Batch 003 checkpoint
+
+The frozen v2.0 qualification path now distinguishes all four official General Aptitude routes, including Spatial Aptitude, and accepts standard GATE prompt forms such as direct NAT entry instructions. The checksum-bound Batch 003 input reproduces **20 PASS / 0 REVIEW / 0 invalid**. This is Formatter evidence only; named human final QA remains mandatory before paper eligibility.
+
 > **Final architecture status: M45 — Certified / Frozen**
 
 TheMITbro Formatter v2.0.0 is the frozen production baseline for turning original

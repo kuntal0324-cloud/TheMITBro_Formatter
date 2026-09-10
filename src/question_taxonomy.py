@@ -15,11 +15,18 @@ class ConceptNode:
 NODES: tuple[ConceptNode, ...] = (
     # ---------------- GATE: General Aptitude ----------------
     ConceptNode("GATE_EE","General Aptitude","Verbal Aptitude","Language and comprehension","Verbal reasoning",
-                ("sentence completion","verbal analogy","reading comprehension","verbal deduction")),
+                ("sentence completion","grammar","vocabulary","words in context","idioms","phrases in context",
+                 "verbal analogy","reading comprehension","narrative sequencing","verbal deduction")),
     ConceptNode("GATE_EE","General Aptitude","Quantitative Aptitude","Numerical reasoning","Quantitative reasoning",
-                ("data interpretation","numerical computation","numerical estimation","mensuration","percentage change")),
-    ConceptNode("GATE_EE","General Aptitude","Analytical Aptitude","Logic and spatial reasoning","Analytical reasoning",
-                ("logic deduction","analytical aptitude","spatial aptitude","paper folding","paper cutting")),
+                ("data interpretation","numerical computation","numerical estimation","ratios","percentages",
+                 "powers","exponents","logarithms","permutations","combinations","series","mensuration",
+                 "geometry","elementary statistics","probability")),
+    ConceptNode("GATE_EE","General Aptitude","Analytical Aptitude","Logic and relations","Analytical reasoning",
+                ("logic deduction","deduction","induction","analytical aptitude","analogy","numerical relations",
+                 "numerical reasoning")),
+    ConceptNode("GATE_EE","General Aptitude","Spatial Aptitude","Spatial transformations and patterns","Spatial reasoning",
+                ("spatial aptitude","translation of shapes","rotation","scaling","mirroring","assembling","grouping",
+                 "paper folding","paper cutting","two-dimensional patterns","three-dimensional patterns")),
     # ---------------- GATE EE: Engineering Mathematics ----------------
     ConceptNode("GATE_EE","Engineering Mathematics","Linear Algebra","Matrices","Matrix operations",
                 ("matrix","matrices","matrix multiplication","transpose","matrix inverse","inverse matrix","trace",
