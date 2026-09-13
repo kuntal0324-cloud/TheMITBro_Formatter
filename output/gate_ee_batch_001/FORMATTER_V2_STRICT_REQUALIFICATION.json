@@ -28,9 +28,9 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
-        "subtopic": "Eigen systems",
-        "concept": "Eigenvalues and eigenvectors",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Eigenvalues",
+        "concept": "Eigenvalues of a symmetric 2x2 matrix",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -42,15 +42,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Linear Algebra",
-          "Eigen systems",
-          "Eigenvalues and eigenvectors"
+          "Eigenvalues",
+          "Eigenvalues of a symmetric 2x2 matrix"
         ],
-        "prerequisites": [
-          "Determinants and rank"
-        ],
+        "prerequisites": [],
         "signals": [
-          "eigenvalue",
-          "characteristic equation"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -73,13 +70,13 @@
         }
       },
       "quality": {
-        "score": 0.958,
+        "score": 0.996,
         "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -117,15 +114,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
-        "subtopic": "Matrices",
-        "concept": "Matrix operations",
-        "taxonomy_confidence": 0.907,
+        "subtopic": "Matrix inverse",
+        "concept": "Trace of inverse using explicit inverse",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -137,14 +134,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Linear Algebra",
-          "Matrices",
-          "Matrix operations"
+          "Matrix inverse",
+          "Trace of inverse using explicit inverse"
         ],
         "prerequisites": [],
         "signals": [
-          "matrix",
-          "matrix inverse",
-          "trace"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -167,13 +162,13 @@
         }
       },
       "quality": {
-        "score": 0.921,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.907,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -217,9 +212,9 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
-        "subtopic": "Determinants",
-        "concept": "Determinants and rank",
-        "taxonomy_confidence": 0.907,
+        "subtopic": "Idempotent matrices",
+        "concept": "Spectral properties of symmetric idempotent matrices",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -231,16 +226,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Linear Algebra",
-          "Determinants",
-          "Determinants and rank"
+          "Idempotent matrices",
+          "Spectral properties of symmetric idempotent matrices"
         ],
-        "prerequisites": [
-          "Matrix operations"
-        ],
+        "prerequisites": [],
         "signals": [
-          "determinant",
-          "det(",
-          "rank"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -263,13 +254,13 @@
         }
       },
       "quality": {
-        "score": 0.979,
+        "score": 0.996,
         "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.907,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -307,15 +298,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
-        "subtopic": "Limits and continuity",
-        "concept": "Limits and continuity",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Limits",
+        "concept": "Second-order exponential limit",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Medium",
@@ -327,13 +318,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Calculus",
-          "Limits and continuity",
-          "Limits and continuity"
+          "Limits",
+          "Second-order exponential limit"
         ],
         "prerequisites": [],
         "signals": [
-          "limit",
-          "exponential limit"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -356,13 +346,13 @@
         }
       },
       "quality": {
-        "score": 0.9,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -400,14 +390,14 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
-        "subtopic": "Differential calculus",
-        "concept": "Differentiation",
+        "subtopic": "Optimization",
+        "concept": "Absolute minimum on a closed interval",
         "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
@@ -420,15 +410,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Calculus",
-          "Differential calculus",
-          "Differentiation"
+          "Optimization",
+          "Absolute minimum on a closed interval"
         ],
         "prerequisites": [],
         "signals": [
-          "derivative",
-          "minimum",
-          "optimization",
-          "critical point"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -451,10 +438,10 @@
         }
       },
       "quality": {
-        "score": 0.938,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -495,15 +482,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.82
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
-        "subtopic": "Integral calculus",
-        "concept": "Integration",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Integration",
+        "concept": "Substitution in a rational integral",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -515,15 +502,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Calculus",
-          "Integral calculus",
-          "Integration"
+          "Integration",
+          "Substitution in a rational integral"
         ],
-        "prerequisites": [
-          "Differentiation"
-        ],
+        "prerequisites": [],
         "signals": [
-          "integral",
-          "integration"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -546,13 +530,13 @@
         }
       },
       "quality": {
-        "score": 0.918,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.82,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -590,14 +574,14 @@
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
-        "subtopic": "Ordinary differential equations",
-        "concept": "ODE solution",
+        "subtopic": "First-order linear ODE",
+        "concept": "Initial-value problem",
         "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
@@ -610,18 +594,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Differential Equations",
-          "Ordinary differential equations",
-          "ODE solution"
+          "First-order linear ODE",
+          "Initial-value problem"
         ],
-        "prerequisites": [
-          "Differentiation",
-          "Integration"
-        ],
+        "prerequisites": [],
         "signals": [
-          "ode",
-          "linear ode",
-          "first-order",
-          "initial-value problem"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -644,10 +622,10 @@
         }
       },
       "quality": {
-        "score": 0.938,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -688,14 +666,14 @@
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
         "status": "AUTO",
-        "confidence": 0.82
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
-        "subtopic": "Ordinary differential equations",
-        "concept": "ODE solution",
+        "subtopic": "Second-order linear ODE",
+        "concept": "Solution space for distinct real roots",
         "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
@@ -708,19 +686,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Differential Equations",
-          "Ordinary differential equations",
-          "ODE solution"
+          "Second-order linear ODE",
+          "Solution space for distinct real roots"
         ],
-        "prerequisites": [
-          "Differentiation",
-          "Integration"
-        ],
+        "prerequisites": [],
         "signals": [
-          "differential equation",
-          "ordinary differential equation",
-          "ode",
-          "linear ode",
-          "second-order"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -743,10 +714,10 @@
         }
       },
       "quality": {
-        "score": 0.962,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.82,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -787,15 +758,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
         "subtopic": "Complex algebra",
-        "concept": "Complex numbers",
-        "taxonomy_confidence": 0.825,
+        "concept": "Powers of a complex number",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -808,12 +779,11 @@
           "Engineering Mathematics",
           "Complex Variables",
           "Complex algebra",
-          "Complex numbers"
+          "Powers of a complex number"
         ],
         "prerequisites": [],
         "signals": [
-          "complex number",
-          "complex algebra"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -836,13 +806,13 @@
         }
       },
       "quality": {
-        "score": 0.905,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -880,15 +850,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
-        "subtopic": "Complex algebra",
-        "concept": "Complex numbers",
-        "taxonomy_confidence": 0.935,
+        "subtopic": "Quadratic roots",
+        "concept": "Distance between conjugate complex roots",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -900,14 +870,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Complex Variables",
-          "Complex algebra",
-          "Complex numbers"
+          "Quadratic roots",
+          "Distance between conjugate complex roots"
         ],
         "prerequisites": [],
         "signals": [
-          "complex roots",
-          "quadratic roots",
-          "conjugate"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -930,13 +898,13 @@
         }
       },
       "quality": {
-        "score": 0.927,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.935,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -974,15 +942,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
-        "subtopic": "Probability",
-        "concept": "Conditional probability",
-        "taxonomy_confidence": 0.935,
+        "subtopic": "Probability axioms",
+        "concept": "Union of independent events",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -994,14 +962,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Probability and Statistics",
-          "Probability",
-          "Conditional probability"
+          "Probability axioms",
+          "Union of independent events"
         ],
         "prerequisites": [],
         "signals": [
-          "probability",
-          "probability axioms",
-          "independent events"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1024,13 +990,13 @@
         }
       },
       "quality": {
-        "score": 0.927,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.935,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1068,15 +1034,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
         "status": "AUTO",
-        "confidence": 0.82
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
-        "taxonomy_confidence": 0.688,
+        "subtopic": "Discrete random variables",
+        "concept": "Second moment",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1088,12 +1054,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
+          "Discrete random variables",
+          "Second moment"
         ],
         "prerequisites": [],
         "signals": [
-          "random variable"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1116,13 +1082,13 @@
         }
       },
       "quality": {
-        "score": 0.902,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.82,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.688,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1166,8 +1132,8 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
+        "subtopic": "Expectation and variance",
+        "concept": "Basic moment identities",
         "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
@@ -1180,15 +1146,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
+          "Expectation and variance",
+          "Basic moment identities"
         ],
         "prerequisites": [],
         "signals": [
-          "random variable",
-          "expectation",
-          "mean",
-          "variance"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1255,15 +1218,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "subtopic": "Fourier series",
-        "concept": "Fourier-series representation",
-        "taxonomy_confidence": 0.688,
+        "concept": "First sine coefficient of a half-wave function",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1276,13 +1239,11 @@
           "Engineering Mathematics",
           "Calculus",
           "Fourier series",
-          "Fourier-series representation"
+          "First sine coefficient of a half-wave function"
         ],
-        "prerequisites": [
-          "Integration"
-        ],
+        "prerequisites": [],
         "signals": [
-          "fourier series"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1305,13 +1266,13 @@
         }
       },
       "quality": {
-        "score": 0.926,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.688,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1349,15 +1310,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Complex Variables",
-        "subtopic": "Complex integration",
-        "concept": "Cauchy and residue theorems",
-        "taxonomy_confidence": 0.825,
+        "subtopic": "Residue theorem",
+        "concept": "Contour integral containing two simple poles",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -1369,13 +1330,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Complex Variables",
-          "Complex integration",
-          "Cauchy and residue theorems"
+          "Residue theorem",
+          "Contour integral containing two simple poles"
         ],
         "prerequisites": [],
         "signals": [
-          "contour integral",
-          "residue theorem"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1398,13 +1358,13 @@
         }
       },
       "quality": {
-        "score": 0.953,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1442,14 +1402,14 @@
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Linear Algebra",
-        "subtopic": "Matrices",
-        "concept": "Matrix operations",
+        "subtopic": "Linear systems",
+        "concept": "Consistency and infinitely many solutions",
         "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
@@ -1462,15 +1422,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Linear Algebra",
-          "Matrices",
-          "Matrix operations"
+          "Linear systems",
+          "Consistency and infinitely many solutions"
         ],
         "prerequisites": [],
         "signals": [
-          "matrix",
-          "linear system",
-          "coefficient matrix",
-          "proportional rows"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1493,10 +1450,10 @@
         }
       },
       "quality": {
-        "score": 0.938,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -1537,15 +1494,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.7
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
-        "subtopic": "Differential calculus",
-        "concept": "Differentiation",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Multivariable calculus",
+        "concept": "Directional derivative",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -1557,13 +1514,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Calculus",
-          "Differential calculus",
-          "Differentiation"
+          "Multivariable calculus",
+          "Directional derivative"
         ],
         "prerequisites": [],
         "signals": [
-          "derivative",
-          "directional derivative"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1586,13 +1542,13 @@
         }
       },
       "quality": {
-        "score": 0.9,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.7,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1630,14 +1586,14 @@
         "subject": "Engineering Mathematics",
         "topic": "Calculus",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
-        "topic": "Vector Calculus",
+        "topic": "Calculus",
         "subtopic": "Vector calculus",
-        "concept": "Gradient divergence curl",
+        "concept": "Divergence, curl and Green/Stokes circulation",
         "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
@@ -1649,18 +1605,13 @@
         "syllabus_path": [
           "GATE_EE",
           "Engineering Mathematics",
-          "Vector Calculus",
+          "Calculus",
           "Vector calculus",
-          "Gradient divergence curl"
+          "Divergence, curl and Green/Stokes circulation"
         ],
         "prerequisites": [],
         "signals": [
-          "vector calculus",
-          "vector field",
-          "divergence",
-          "curl",
-          "nabla",
-          "green's theorem"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1683,10 +1634,10 @@
         }
       },
       "quality": {
-        "score": 0.986,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -1733,9 +1684,9 @@
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Probability and Statistics",
-        "subtopic": "Random variables",
-        "concept": "Moments and distributions",
-        "taxonomy_confidence": 0.907,
+        "subtopic": "Bernoulli distribution",
+        "concept": "Variance of a Bernoulli random variable",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1747,14 +1698,12 @@
           "GATE_EE",
           "Engineering Mathematics",
           "Probability and Statistics",
-          "Random variables",
-          "Moments and distributions"
+          "Bernoulli distribution",
+          "Variance of a Bernoulli random variable"
         ],
         "prerequisites": [],
         "signals": [
-          "random variable",
-          "variance",
-          "distribution"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1777,13 +1726,13 @@
         }
       },
       "quality": {
-        "score": 0.979,
+        "score": 0.996,
         "grade": "A",
         "components": {
           "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.907,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1821,15 +1770,15 @@
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Engineering Mathematics",
         "topic": "Differential Equations",
         "subtopic": "Partial differential equations",
-        "concept": "PDE solution",
-        "taxonomy_confidence": 0.825,
+        "concept": "Separated heat-equation mode with boundary conditions",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1842,15 +1791,11 @@
           "Engineering Mathematics",
           "Differential Equations",
           "Partial differential equations",
-          "PDE solution"
+          "Separated heat-equation mode with boundary conditions"
         ],
-        "prerequisites": [
-          "Differentiation",
-          "Integration"
-        ],
+        "prerequisites": [],
         "signals": [
-          "partial differential equation",
-          "heat equation"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1873,13 +1818,13 @@
         }
       },
       "quality": {
-        "score": 0.953,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []

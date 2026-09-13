@@ -1,12 +1,12 @@
 {
   "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
-  "batch_id": "BATCH_003",
+  "batch_id": "BATCH_004",
   "corpus": "GATE_EE_CORPUS_V1",
-  "domain": "General Aptitude",
+  "domain": "Signals and Systems",
   "formatter_version": "2.0.0",
-  "source_sha256": "b00075f2ae17951baccc382ea59d149e8d0df73a21fd6398bc8e2af9038c902b",
-  "question_count": 20,
-  "formatter_pass_count": 20,
+  "source_sha256": "0d0eb24d9f82f1f511f8dcb879dd78d5684fa73c444a8319d6bc01bdd7961b66",
+  "question_count": 15,
+  "formatter_pass_count": 15,
   "formatter_review_count": 0,
   "invalid_count": 0,
   "paper_eligible_count": 0,
@@ -15,35 +15,35 @@
   "status": "PASS",
   "questions": [
     {
-      "question_id": "TMB-GATE-EE-GA-001",
+      "question_id": "TMB-GATE-EE-SS-001",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "subtopic": "Basic English Grammar",
-        "concept": "Subject-verb agreement with neither-nor",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Continuous and Discrete Signals",
+        "concept": "Fundamental period of a continuous-time signal",
         "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.434,
+        "difficulty": "Hard",
+        "difficulty_score": 0.705,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 217,
+        "expected_time_seconds": 226,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Verbal Aptitude",
-          "Basic English Grammar",
-          "Subject-verb agreement with neither-nor"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Continuous and Discrete Signals",
+          "Fundamental period of a continuous-time signal"
         ],
         "prerequisites": [],
         "signals": [
@@ -88,12 +88,12 @@
       },
       "render": {
         "status": "PASS",
-        "bytes": 638,
+        "bytes": 565,
         "source_markup_exposed": false
       },
       "source_math_contract": {
         "status": "PASS",
-        "inline_math_segments": 0,
+        "inline_math_segments": 9,
         "violations": []
       },
       "diagram_contract": {
@@ -107,403 +107,35 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-GA-002",
+      "question_id": "TMB-GATE-EE-SS-002",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "subtopic": "Vocabulary in Context",
-        "concept": "Context-dependent meaning of qualified",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.434,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 216,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Verbal Aptitude",
-          "Vocabulary in Context",
-          "Context-dependent meaning of qualified"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2458,
-        "matched_id": "TMB-GATE-EE-GA-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 687,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-003",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "subtopic": "Reading and Comprehension",
-        "concept": "Drawing a conclusion limited by sampling evidence",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.518,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 270,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Verbal Aptitude",
-          "Reading and Comprehension",
-          "Drawing a conclusion limited by sampling evidence"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.173,
-        "matched_id": "TMB-GATE-EE-GA-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 1219,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-004",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "subtopic": "Reading and Comprehension",
-        "concept": "Interpreting percentage-point and relative changes",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.6,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 270,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Verbal Aptitude",
-          "Reading and Comprehension",
-          "Interpreting percentage-point and relative changes"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.1693,
-        "matched_id": "TMB-GATE-EE-GA-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 1141,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 3,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-005",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Verbal Aptitude",
-        "subtopic": "Narrative Sequencing",
-        "concept": "Coherent problem-definition sequence",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.551,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 291,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Verbal Aptitude",
-          "Narrative Sequencing",
-          "Coherent problem-definition sequence"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2303,
-        "matched_id": "TMB-GATE-EE-GA-001"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 875,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-006",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Ratios and Percentages",
-        "concept": "Successive percentage changes",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Continuous and Discrete Signals",
+        "concept": "Energy of a right-sided exponential sequence",
         "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 1,
         "difficulty": "Hard",
-        "difficulty_score": 0.705,
-        "reasoning_depth": "Multi-step",
+        "difficulty_score": 0.745,
+        "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 255,
+        "expected_time_seconds": 220,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Ratios and Percentages",
-          "Successive percentage changes"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Continuous and Discrete Signals",
+          "Energy of a right-sided exponential sequence"
         ],
         "prerequisites": [],
         "signals": [
@@ -543,12 +175,12 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2833,
-        "matched_id": "TMB-GATE-EE-GA-001"
+        "similarity": 0.2936,
+        "matched_id": "TMB-GATE-EE-SS-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 585,
+        "bytes": 544,
         "source_markup_exposed": false
       },
       "source_math_contract": {
@@ -567,127 +199,35 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-GA-007",
+      "question_id": "TMB-GATE-EE-SS-003",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Ratios and Percentages",
-        "concept": "Replacement in a uniform mixture",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Continuous and Discrete Signals",
+        "concept": "Linearity, time variance, memory and causality",
         "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
+        "question_type": "MSQ",
         "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.74,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 277,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Ratios and Percentages",
-          "Replacement in a uniform mixture"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3102,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 711,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 10,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-008",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Data Interpretation",
-        "concept": "Weighted aggregation of tabulated rates",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 1,
         "difficulty": "Medium",
-        "difficulty_score": 0.635,
+        "difficulty_score": 0.54,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 224,
+        "expected_time_seconds": 240,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Data Interpretation",
-          "Weighted aggregation of tabulated rates"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Continuous and Discrete Signals",
+          "Linearity, time variance, memory and causality"
         ],
         "prerequisites": [],
         "signals": [
@@ -727,17 +267,17 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.254,
-        "matched_id": "TMB-GATE-EE-GA-006"
+        "similarity": 0.3171,
+        "matched_id": "TMB-GATE-EE-SS-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 714,
+        "bytes": 762,
         "source_markup_exposed": false
       },
       "source_math_contract": {
         "status": "PASS",
-        "inline_math_segments": 4,
+        "inline_math_segments": 6,
         "violations": []
       },
       "diagram_contract": {
@@ -751,219 +291,35 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-GA-009",
+      "question_id": "TMB-GATE-EE-SS-004",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Powers, Exponents and Logarithms",
-        "concept": "Reciprocal logarithmic equation",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.78,
-        "reasoning_depth": "Multi-step",
-        "calculation_load": "High",
-        "expected_time_seconds": 272,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Powers, Exponents and Logarithms",
-          "Reciprocal logarithmic equation"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2795,
-        "matched_id": "TMB-GATE-EE-GA-008"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 593,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 14,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-010",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Permutations and Combinations",
-        "concept": "Ordering with precedence and non-adjacency constraints",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Continuous and Discrete Signals",
+        "concept": "Energy from a triangular waveform",
         "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.67,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 245,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Permutations and Combinations",
-          "Ordering with precedence and non-adjacency constraints"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2505,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 769,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 3,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-011",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Mensuration and Geometry",
-        "concept": "Linear scale change from area change",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
         "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.576,
+        "difficulty": "Hard",
+        "difficulty_score": 0.755,
         "reasoning_depth": "Direct",
         "calculation_load": "High",
-        "expected_time_seconds": 206,
+        "expected_time_seconds": 261,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Mensuration and Geometry",
-          "Linear scale change from area change"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Continuous and Discrete Signals",
+          "Energy from a triangular waveform"
         ],
         "prerequisites": [],
         "signals": [
@@ -1003,22 +359,29 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.4838,
-        "matched_id": "TMB-GATE-EE-GA-006"
+        "similarity": 0.3859,
+        "matched_id": "TMB-GATE-EE-SS-001"
       },
       "render": {
         "status": "PASS",
-        "bytes": 480,
+        "bytes": 642,
         "source_markup_exposed": false
       },
       "source_math_contract": {
         "status": "PASS",
-        "inline_math_segments": 4,
+        "inline_math_segments": 7,
         "violations": []
       },
       "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
+        "declared": true,
+        "status": "PASS",
+        "type": "waveform",
+        "asset": "GATE_EE/corpus_v1/assets/batch_004/SS-004-triangular-pulse.svg",
+        "asset_sha256": "2b5392b885abdd62db60344a46133e9e9376792ba9ef93d645ce52a0cd69fa02",
+        "alt_text": "Triangular signal with vertices at (-2,0), (0,2), and (2,0).",
+        "caption": "Triangular signal $x(t)$",
+        "errors": [],
+        "explicitly_referenced": true,
         "review_required": false
       },
       "syllabus_match": true,
@@ -1027,35 +390,35 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-GA-012",
+      "question_id": "TMB-GATE-EE-SS-005",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Quantitative Aptitude",
-        "subtopic": "Elementary Statistics and Probability",
-        "concept": "Probability of at least two independent failures",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "LTI Systems and Convolution",
+        "concept": "Convolution of two causal exponentials",
         "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
-        "difficulty_score": 0.74,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.825,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
-        "expected_time_seconds": 243,
+        "expected_time_seconds": 260,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Quantitative Aptitude",
-          "Elementary Statistics and Probability",
-          "Probability of at least two independent failures"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "LTI Systems and Convolution",
+          "Convolution of two causal exponentials"
         ],
         "prerequisites": [],
         "signals": [
@@ -1095,12 +458,12 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2647,
-        "matched_id": "TMB-GATE-EE-GA-011"
+        "similarity": 0.3213,
+        "matched_id": "TMB-GATE-EE-SS-002"
       },
       "render": {
         "status": "PASS",
-        "bytes": 734,
+        "bytes": 467,
         "source_markup_exposed": false
       },
       "source_math_contract": {
@@ -1119,311 +482,35 @@
       "paper_eligible": false
     },
     {
-      "question_id": "TMB-GATE-EE-GA-013",
+      "question_id": "TMB-GATE-EE-SS-006",
       "source_revision": 1,
       "classification": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
         "status": "AUTO",
         "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "subtopic": "Logic: Deduction and Induction",
-        "concept": "Necessary conclusions from quantified premises",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "LTI Systems and Convolution",
+        "concept": "Complex exponential eigenfunction property",
         "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.434,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 254,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Analytical Aptitude",
-          "Logic: Deduction and Induction",
-          "Necessary conclusions from quantified premises"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.1912,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 915,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-014",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "subtopic": "Logic: Deduction and Induction",
-        "concept": "Scheduling under precedence and adjacency constraints",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
-        "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.598,
-        "reasoning_depth": "Deep",
-        "calculation_load": "High",
-        "expected_time_seconds": 350,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Analytical Aptitude",
-          "Logic: Deduction and Induction",
-          "Scheduling under precedence and adjacency constraints"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.1896,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 833,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-015",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "subtopic": "Analogy and Numerical Relations",
-        "concept": "Inferring a numerical mapping",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
+        "question_type": "NAT",
         "marks": 1,
         "difficulty": "Hard",
-        "difficulty_score": 0.67,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 215,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Analytical Aptitude",
-          "Analogy and Numerical Relations",
-          "Inferring a numerical mapping"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.3078,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 502,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 10,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-016",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Analytical Aptitude",
-        "subtopic": "Logic: Deduction and Induction",
-        "concept": "Implication and existential inference",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.434,
-        "reasoning_depth": "Direct",
+        "difficulty_score": 0.83,
+        "reasoning_depth": "Multi-step",
         "calculation_load": "High",
         "expected_time_seconds": 257,
         "syllabus_path": [
           "GATE_EE",
-          "General Aptitude",
-          "Analytical Aptitude",
-          "Logic: Deduction and Induction",
-          "Implication and existential inference"
+          "Electrical Engineering",
+          "Signals and Systems",
+          "LTI Systems and Convolution",
+          "Complex exponential eigenfunction property"
         ],
         "prerequisites": [],
         "signals": [
@@ -1463,385 +550,859 @@
       },
       "duplicate": {
         "status": "ACCEPT",
-        "similarity": 0.2626,
-        "matched_id": "TMB-GATE-EE-GA-013"
+        "similarity": 0.3253,
+        "matched_id": "TMB-GATE-EE-SS-005"
       },
       "render": {
         "status": "PASS",
-        "bytes": 954,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-017",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "subtopic": "Transformation of Shapes",
-        "concept": "Successive rotation and reflection",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MCQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.481,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 220,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Spatial Aptitude",
-          "Transformation of Shapes",
-          "Successive rotation and reflection"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2894,
-        "matched_id": "TMB-GATE-EE-GA-006"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 647,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 1,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-018",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "subtopic": "Paper Folding and Cutting",
-        "concept": "Multiplicity of holes under sequential unfolding",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Medium",
-        "difficulty_score": 0.635,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 262,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Spatial Aptitude",
-          "Paper Folding and Cutting",
-          "Multiplicity of holes under sequential unfolding"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2193,
-        "matched_id": "TMB-GATE-EE-GA-011"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 973,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 2,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-019",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "subtopic": "Three-Dimensional Grouping",
-        "concept": "Selecting mutually adjacent cube faces",
-        "taxonomy_confidence": 0.99,
-        "question_type": "MSQ",
-        "marks": 1,
-        "difficulty": "Medium",
-        "difficulty_score": 0.434,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 255,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Spatial Aptitude",
-          "Three-Dimensional Grouping",
-          "Selecting mutually adjacent cube faces"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2447,
-        "matched_id": "TMB-GATE-EE-GA-015"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 752,
-        "source_markup_exposed": false
-      },
-      "source_math_contract": {
-        "status": "PASS",
-        "inline_math_segments": 0,
-        "violations": []
-      },
-      "diagram_contract": {
-        "declared": false,
-        "explicitly_referenced": false,
-        "review_required": false
-      },
-      "syllabus_match": true,
-      "formatter_qualification": "PASS",
-      "independent_human_review": "PENDING",
-      "paper_eligible": false
-    },
-    {
-      "question_id": "TMB-GATE-EE-GA-020",
-      "source_revision": 1,
-      "classification": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "status": "AUTO",
-        "confidence": 0.99
-      },
-      "question_intelligence": {
-        "exam": "GATE_EE",
-        "subject": "General Aptitude",
-        "topic": "Spatial Aptitude",
-        "subtopic": "Three-Dimensional Patterns",
-        "concept": "Counting painted subcubes by face incidence",
-        "taxonomy_confidence": 0.99,
-        "question_type": "NAT",
-        "marks": 2,
-        "difficulty": "Hard",
-        "difficulty_score": 0.67,
-        "reasoning_depth": "Direct",
-        "calculation_load": "High",
-        "expected_time_seconds": 234,
-        "syllabus_path": [
-          "GATE_EE",
-          "General Aptitude",
-          "Spatial Aptitude",
-          "Three-Dimensional Patterns",
-          "Counting painted subcubes by face incidence"
-        ],
-        "prerequisites": [],
-        "signals": [
-          "explicit canonical GATE EE route"
-        ],
-        "review_required": false
-      },
-      "validation": {
-        "status": "PASS",
-        "answer_status": "PASS",
-        "solution_status": "PASS",
-        "review_required": false,
-        "findings": [],
-        "raw": {
-          "status": "PASS",
-          "answer_status": "PASS",
-          "option_status": "PASS",
-          "solution_status": "PASS",
-          "diagram_text_status": "PASS",
-          "domain_checks": [],
-          "quality_status": "PASS",
-          "findings": [],
-          "review_required": false
-        }
-      },
-      "quality": {
-        "score": 0.996,
-        "grade": "A",
-        "components": {
-          "classification": 0.99,
-          "ocr": 1,
-          "math": 1,
-          "taxonomy": 0.99,
-          "validation": 1.0
-        },
-        "blockers": []
-      },
-      "duplicate": {
-        "status": "ACCEPT",
-        "similarity": 0.2491,
-        "matched_id": "TMB-GATE-EE-GA-015"
-      },
-      "render": {
-        "status": "PASS",
-        "bytes": 722,
+        "bytes": 579,
         "source_markup_exposed": false
       },
       "source_math_contract": {
         "status": "PASS",
         "inline_math_segments": 5,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-007",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "LTI Systems and Convolution",
+        "concept": "Discrete convolution of finite sequences",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.86,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 262,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "LTI Systems and Convolution",
+          "Discrete convolution of finite sequences"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3497,
+        "matched_id": "TMB-GATE-EE-SS-005"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 515,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 12,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-008",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Fourier Analysis",
+        "concept": "Average, RMS and power of a two-level waveform",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.8,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 337,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Fourier Analysis",
+          "Average, RMS and power of a two-level waveform"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2323,
+        "matched_id": "TMB-GATE-EE-SS-004"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 884,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 11,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": true,
+        "status": "PASS",
+        "type": "waveform",
+        "asset": "GATE_EE/corpus_v1/assets/batch_004/SS-008-two-level-waveform.svg",
+        "asset_sha256": "f1646255662d3278e6d96d4a64a222d62885846b89ae33f7c45b30d0c4aa2a0d",
+        "alt_text": "One period of a waveform at +2 for the first quarter-period and -2 for the remaining three quarters.",
+        "caption": "Two-level periodic waveform",
+        "errors": [],
+        "explicitly_referenced": true,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-009",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Fourier Analysis",
+        "concept": "Output power from harmonic gains",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.825,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 271,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Fourier Analysis",
+          "Output power from harmonic gains"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2785,
+        "matched_id": "TMB-GATE-EE-SS-008"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 629,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 8,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-010",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Laplace Transform",
+        "concept": "Region of convergence of a two-sided signal",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.645,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 224,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Laplace Transform",
+          "Region of convergence of a two-sided signal"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3249,
+        "matched_id": "TMB-GATE-EE-SS-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 532,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 8,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-011",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Laplace Transform",
+        "concept": "Final-value theorem",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.855,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 260,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Laplace Transform",
+          "Final-value theorem"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3151,
+        "matched_id": "TMB-GATE-EE-SS-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 543,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-012",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Z Transform",
+        "concept": "Inverse Z transform with a causal region of convergence",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.635,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 238,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Z Transform",
+          "Inverse Z transform with a causal region of convergence"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.984,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 0.92,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2825,
+        "matched_id": "TMB-GATE-EE-SS-002"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 610,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-013",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Z Transform",
+        "concept": "Causality and stability from pole locations and ROC",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Medium",
+        "difficulty_score": 0.565,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 270,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Z Transform",
+          "Causality and stability from pole locations and ROC"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2756,
+        "matched_id": "TMB-GATE-EE-SS-012"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 977,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-014",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Sampling",
+        "concept": "Nyquist rate from a band-limited spectrum",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.695,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 263,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Sampling",
+          "Nyquist rate from a band-limited spectrum"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3166,
+        "matched_id": "TMB-GATE-EE-SS-012"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 741,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": true,
+        "status": "PASS",
+        "type": "signal_diagram",
+        "asset": "GATE_EE/corpus_v1/assets/batch_004/SS-014-bandlimited-spectrum.svg",
+        "asset_sha256": "b5f7b4bf7d593e6817a0ac3cf4f77ff356dd2ee9c0df7a2b28062cda10a2305a",
+        "alt_text": "Two rectangular spectral bands from -4 to -2 kHz and from 2 to 4 kHz.",
+        "caption": "Magnitude spectrum $|X(f)|$",
+        "errors": [],
+        "explicitly_referenced": true,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-015",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Signals and Systems",
+        "subtopic": "Sampling",
+        "concept": "Frequency aliasing under uniform sampling",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.68,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 264,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Signals and Systems",
+          "Sampling",
+          "Frequency aliasing under uniform sampling"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2256,
+        "matched_id": "TMB-GATE-EE-SS-014"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 766,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 17,
         "violations": []
       },
       "diagram_contract": {

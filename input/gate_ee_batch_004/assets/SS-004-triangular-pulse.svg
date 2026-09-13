@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Triangular signal x(t)</title>
+  <desc id="desc">A triangular waveform rises from minus two comma zero to zero comma two and falls to two comma zero.</desc>
+  <rect width="720" height="300" fill="white"/>
+  <g stroke="#173b57" stroke-width="3" fill="none">
+    <line x1="70" y1="235" x2="660" y2="235"/>
+    <line x1="360" y1="265" x2="360" y2="35"/>
+    <polyline points="160,235 360,65 560,235" stroke="#d24b40" stroke-width="5"/>
+  </g>
+  <g fill="#173b57" font-family="DejaVu Sans, sans-serif" font-size="22">
+    <text x="650" y="225">t</text>
+    <text x="375" y="50">x(t)</text>
+    <text x="145" y="265">−2</text>
+    <text x="350" y="265">0</text>
+    <text x="552" y="265">2</text>
+    <text x="330" y="72">2</text>
+  </g>
+  <g stroke="#173b57" stroke-width="2">
+    <line x1="160" y1="228" x2="160" y2="242"/>
+    <line x1="560" y1="228" x2="560" y2="242"/>
+    <line x1="353" y1="65" x2="367" y2="65"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Band-limited magnitude spectrum</title>
+  <desc id="desc">Rectangular spectral bands occupy minus four to minus two kilohertz and two to four kilohertz.</desc>
+  <rect width="720" height="300" fill="white"/>
+  <g stroke="#173b57" stroke-width="3" fill="none">
+    <line x1="60" y1="230" x2="670" y2="230"/>
+    <line x1="365" y1="260" x2="365" y2="40"/>
+  </g>
+  <g fill="#8fc7df" stroke="#173b57" stroke-width="3">
+    <rect x="120" y="90" width="120" height="140"/>
+    <rect x="490" y="90" width="120" height="140"/>
+  </g>
+  <g fill="#173b57" font-family="DejaVu Sans, sans-serif" font-size="21">
+    <text x="660" y="220">f (kHz)</text>
+    <text x="380" y="55">|X(f)|</text>
+    <text x="106" y="258">−4</text>
+    <text x="226" y="258">−2</text>
+    <text x="485" y="258">2</text>
+    <text x="603" y="258">4</text>
+  </g>
+</svg>

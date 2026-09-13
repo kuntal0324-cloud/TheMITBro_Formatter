@@ -4,6 +4,7 @@ from dataclasses import dataclass, asdict, field
 import math
 import re
 
+from .question_classifier import GATE_EE_CANONICAL_ROUTES
 from .question_taxonomy import NODES, ConceptNode
 
 
@@ -49,9 +50,42 @@ def _keyword_hit(text_low: str, keyword: str) -> bool:
     return k in text_low
 
 
+def _explicit_canonical_node(text: str, exam: str | None) -> ConceptNode | None:
+    """Recover a checksum-bound Question Bank taxonomy declaration.
+
+    The strict batch qualification layer validates the JSONL route and source
+    checksum.  This parser only allows official GATE EE subject/topic pairs and
+    therefore cannot manufacture an out-of-contract taxonomy destination.
+    """
+    if exam != "GATE_EE":
+        return None
+
+    def field(name: str) -> str | None:
+        match = re.search(rf"(?mi)^\s*\*\*{name}:\*\*\s*([^\n]+?)\s*$", text)
+        return match.group(1).strip() if match else None
+
+    subject = field("Subject")
+    topic = field("Topic")
+    if not subject or not topic or topic not in GATE_EE_CANONICAL_ROUTES.get(subject, ()):
+        return None
+    subtopic = field("Subtopic") or "Declared canonical subtopic"
+    concept = field("Concept") or "Declared canonical concept"
+    return ConceptNode(
+        "GATE_EE",
+        subject,
+        topic,
+        subtopic,
+        concept,
+        ("explicit canonical GATE EE route",),
+    )
+
+
 def _taxonomy(text: str, exam_hint: str | None) -> tuple[ConceptNode | None, float, tuple[str, ...]]:
     low = text.lower()
     exam = _norm_exam(exam_hint)
+    explicit = _explicit_canonical_node(text, exam)
+    if explicit is not None:
+        return explicit, 0.99, ("explicit canonical GATE EE route",)
     candidates = []
     for node in NODES:
         if exam and node.exam != exam:

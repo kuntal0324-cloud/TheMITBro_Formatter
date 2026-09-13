@@ -290,6 +290,38 @@ RULES = (
 )
 
 
+# Canonical Question Bank imports declare their official route in structured
+# Markdown before Formatter intelligence runs.  Preserve only routes that are
+# part of the GATE EE contract; the strict batch qualifier independently binds
+# the declaration to the checksum-protected JSONL source and handoff.
+GATE_EE_CANONICAL_ROUTES = {
+    "General Aptitude": (
+        "Verbal Aptitude",
+        "Quantitative Aptitude",
+        "Analytical Aptitude",
+        "Spatial Aptitude",
+    ),
+    "Engineering Mathematics": (
+        "Linear Algebra",
+        "Calculus",
+        "Differential Equations",
+        "Complex Variables",
+        "Probability and Statistics",
+    ),
+    "Electrical Engineering": (
+        "Electric Circuits",
+        "Signals and Systems",
+        "Electromagnetic Fields",
+        "Electrical Machines",
+        "Power Systems",
+        "Control Systems",
+        "Electrical and Electronic Measurements",
+        "Analog and Digital Electronics",
+        "Power Electronics",
+    ),
+}
+
+
 def _normalize(text: str) -> str:
     text = text.lower().replace("−", "-")
 
@@ -376,20 +408,18 @@ def classify_question(
     ee_hint = bool(exam_hint and exam_hint.lower().replace(" ", "_") in {"gate", "gate_ee", "gate-ee"})
 
     # Canonical Question Bank markdown carries an explicit subject/topic route.
-    # Preserve that route when it names one of the four official GA sections;
-    # the strict batch qualifier separately verifies the route against source.
-    if ee_hint and re.search(r"subject:\*{0,2}\s*general aptitude\b", t):
-        for ga_topic in (
-            "Verbal Aptitude",
-            "Quantitative Aptitude",
-            "Analytical Aptitude",
-            "Spatial Aptitude",
-        ):
-            if re.search(rf"topic:\*{{0,2}}\s*{re.escape(ga_topic.lower())}\b", t):
-                return Classification(
-                    "GATE_EE", "General Aptitude", ga_topic, 0.99,
-                    ["explicit canonical general-aptitude route"], "AUTO",
-                )
+    # Preserve any checksum-bound official GATE EE route before keyword guards
+    # resolve ambiguous language such as Fourier series or induction.
+    if ee_hint:
+        for subject, topics in GATE_EE_CANONICAL_ROUTES.items():
+            if not re.search(rf"subject:\*{{0,2}}\s*{re.escape(subject.lower())}\b", t):
+                continue
+            for topic in topics:
+                if re.search(rf"topic:\*{{0,2}}\s*{re.escape(topic.lower())}\b", t):
+                    return Classification(
+                        "GATE_EE", subject, topic, 0.99,
+                        ["explicit canonical GATE EE route"], "AUTO",
+                    )
 
     # Explicit GATE 2027 EE scope guards.  Numerical Methods belongs to XE,
     # while Laplace/Fourier/Z transforms belong to EE Signals and Systems.

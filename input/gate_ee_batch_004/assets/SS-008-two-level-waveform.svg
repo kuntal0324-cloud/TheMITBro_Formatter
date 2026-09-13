@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Two-level periodic waveform</title>
+  <desc id="desc">Over one period, the waveform is plus two from zero to T over four and minus two from T over four to T.</desc>
+  <rect width="720" height="300" fill="white"/>
+  <g stroke="#173b57" stroke-width="3" fill="none">
+    <line x1="80" y1="150" x2="660" y2="150"/>
+    <line x1="110" y1="260" x2="110" y2="35"/>
+  </g>
+  <path d="M110 70 H245 V230 H650" fill="none" stroke="#d24b40" stroke-width="5"/>
+  <g stroke="#173b57" stroke-width="2">
+    <line x1="245" y1="143" x2="245" y2="157"/>
+    <line x1="650" y1="143" x2="650" y2="157"/>
+  </g>
+  <g fill="#173b57" font-family="DejaVu Sans, sans-serif" font-size="22">
+    <text x="650" y="140">t</text>
+    <text x="123" y="45">x(t)</text>
+    <text x="72" y="78">+2</text>
+    <text x="78" y="238">−2</text>
+    <text x="220" y="180">T/4</text>
+    <text x="642" y="180">T</text>
+  </g>
+</svg>

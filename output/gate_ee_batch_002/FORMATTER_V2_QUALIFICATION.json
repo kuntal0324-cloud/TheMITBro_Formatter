@@ -22,15 +22,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.82
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network elements",
-        "concept": "Passive elements and coupled coils",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Network Elements",
+        "concept": "Capacitance and stored energy",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 1,
         "difficulty": "Hard",
@@ -42,13 +42,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network elements",
-          "Passive elements and coupled coils"
+          "Network Elements",
+          "Capacitance and stored energy"
         ],
         "prerequisites": [],
         "signals": [
-          "capacitor",
-          "stored energy"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -71,13 +70,13 @@
         }
       },
       "quality": {
-        "score": 0.924,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.82,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -115,15 +114,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network elements",
-        "concept": "Passive elements and coupled coils",
-        "taxonomy_confidence": 0.825,
+        "subtopic": "Network Elements",
+        "concept": "Mutual inductance of coupled inductors",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -135,13 +134,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network elements",
-          "Passive elements and coupled coils"
+          "Network Elements",
+          "Mutual inductance of coupled inductors"
         ],
         "prerequisites": [],
         "signals": [
-          "mutual inductance",
-          "coupled inductors"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -164,13 +162,13 @@
         }
       },
       "quality": {
-        "score": 0.953,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -208,14 +206,14 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network laws",
-        "concept": "Dependent-source port analysis",
+        "subtopic": "Circuit Laws and Analysis",
+        "concept": "Driving-point resistance with a dependent source",
         "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
@@ -228,18 +226,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network laws",
-          "Dependent-source port analysis"
+          "Circuit Laws and Analysis",
+          "Driving-point resistance with a dependent source"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "dependent source",
-          "dependent current source",
-          "driving-point resistance",
-          "test voltage",
-          "input port"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -262,10 +254,10 @@
         }
       },
       "quality": {
-        "score": 0.986,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
           "taxonomy": 0.99,
@@ -306,15 +298,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network elements",
-        "concept": "Passive elements and coupled coils",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Network Elements",
+        "concept": "Energy and instantaneous-change properties of ideal elements",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 1,
         "difficulty": "Medium",
@@ -326,13 +318,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network elements",
-          "Passive elements and coupled coils"
+          "Network Elements",
+          "Energy and instantaneous-change properties of ideal elements"
         ],
         "prerequisites": [],
         "signals": [
-          "capacitor",
-          "inductor"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -355,13 +346,13 @@
         }
       },
       "quality": {
-        "score": 0.942,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -399,15 +390,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network laws",
-        "concept": "KCL and KVL",
-        "taxonomy_confidence": 0.66,
+        "subtopic": "Circuit Laws and Analysis",
+        "concept": "KCL node-voltage analysis",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -419,12 +410,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network laws",
-          "KCL and KVL"
+          "Circuit Laws and Analysis",
+          "KCL node-voltage analysis"
         ],
         "prerequisites": [],
         "signals": [
-          "kcl"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -447,13 +438,13 @@
         }
       },
       "quality": {
-        "score": 0.92,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -491,15 +482,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network laws",
-        "concept": "KCL and KVL",
-        "taxonomy_confidence": 0.66,
+        "subtopic": "Circuit Laws and Analysis",
+        "concept": "Supernode analysis",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -511,12 +502,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network laws",
-          "KCL and KVL"
+          "Circuit Laws and Analysis",
+          "Supernode analysis"
         ],
         "prerequisites": [],
         "signals": [
-          "kcl"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -539,13 +530,13 @@
         }
       },
       "quality": {
-        "score": 0.92,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -583,15 +574,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network laws",
-        "concept": "KCL and KVL",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Circuit Laws and Analysis",
+        "concept": "KVL and mesh current solution",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -603,13 +594,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network laws",
-          "KCL and KVL"
+          "Circuit Laws and Analysis",
+          "KVL and mesh current solution"
         ],
         "prerequisites": [],
         "signals": [
-          "kvl",
-          "mesh current"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -632,13 +622,13 @@
         }
       },
       "quality": {
-        "score": 0.948,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -676,15 +666,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network laws",
-        "concept": "KCL and KVL",
-        "taxonomy_confidence": 0.66,
+        "subtopic": "Circuit Laws and Analysis",
+        "concept": "Node-voltage method principles",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 1,
         "difficulty": "Medium",
@@ -696,12 +686,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network laws",
-          "KCL and KVL"
+          "Circuit Laws and Analysis",
+          "Node-voltage method principles"
         ],
         "prerequisites": [],
         "signals": [
-          "kcl"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -724,13 +714,13 @@
         }
       },
       "quality": {
-        "score": 0.92,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.66,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -768,15 +758,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network theorems",
-        "concept": "Thevenin and Norton",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Network Theorems",
+        "concept": "Thevenin and Norton equivalent load current",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -788,15 +778,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network theorems",
-          "Thevenin and Norton"
+          "Network Theorems",
+          "Thevenin and Norton equivalent load current"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "thevenin",
-          "norton"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -819,13 +806,13 @@
         }
       },
       "quality": {
-        "score": 0.942,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -863,15 +850,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network theorems",
-        "concept": "Thevenin and Norton",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Network Theorems",
+        "concept": "Thevenin and Norton equivalent current division",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Medium",
@@ -883,15 +870,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network theorems",
-          "Thevenin and Norton"
+          "Network Theorems",
+          "Thevenin and Norton equivalent current division"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "thevenin",
-          "norton"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -914,13 +898,13 @@
         }
       },
       "quality": {
-        "score": 0.942,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -958,15 +942,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network theorems",
-        "concept": "Thevenin and Norton",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Network Theorems",
+        "concept": "AC maximum power transfer",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -978,15 +962,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network theorems",
-          "Thevenin and Norton"
+          "Network Theorems",
+          "AC maximum power transfer"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "thevenin",
-          "maximum power transfer"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1009,13 +990,13 @@
         }
       },
       "quality": {
-        "score": 0.948,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1053,15 +1034,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Network theorems",
-        "concept": "Thevenin and Norton",
-        "taxonomy_confidence": 0.88,
+        "subtopic": "Network Theorems",
+        "concept": "Thevenin and Norton superposition rules",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 1,
         "difficulty": "Medium",
@@ -1073,16 +1054,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Network theorems",
-          "Thevenin and Norton"
+          "Network Theorems",
+          "Thevenin and Norton superposition rules"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "thevenin",
-          "norton",
-          "superposition"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1105,13 +1082,13 @@
         }
       },
       "quality": {
-        "score": 0.964,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.88,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1149,15 +1126,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Transient analysis",
-        "concept": "First-order RC and RL response",
-        "taxonomy_confidence": 0.963,
+        "subtopic": "Transient Analysis",
+        "concept": "First-order RC response",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1169,16 +1146,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Transient analysis",
-          "First-order RC and RL response"
+          "Transient Analysis",
+          "First-order RC response"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "rc network",
-          "time constant",
-          "steady-state value"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1201,13 +1174,13 @@
         }
       },
       "quality": {
-        "score": 0.981,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.963,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1245,15 +1218,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Transient analysis",
-        "concept": "First-order RC and RL response",
-        "taxonomy_confidence": 0.825,
+        "subtopic": "Transient Analysis",
+        "concept": "First-order RL response",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1265,15 +1238,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Transient analysis",
-          "First-order RC and RL response"
+          "Transient Analysis",
+          "First-order RL response"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "rl network",
-          "time constant"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1296,13 +1266,13 @@
         }
       },
       "quality": {
-        "score": 0.953,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1340,15 +1310,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "AC circuits",
-        "concept": "Phasor impedance and resonance",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Resonance and Two-Port Networks",
+        "concept": "Series RLC resonant frequency",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -1360,15 +1330,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "AC circuits",
-          "Phasor impedance and resonance"
+          "Resonance and Two-Port Networks",
+          "Series RLC resonant frequency"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "resonance",
-          "rlc"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1391,13 +1358,13 @@
         }
       },
       "quality": {
-        "score": 0.942,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1435,15 +1402,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "AC circuits",
-        "concept": "Phasor impedance and resonance",
-        "taxonomy_confidence": 0.77,
+        "subtopic": "Resonance and Two-Port Networks",
+        "concept": "Series RLC bandwidth",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 1,
         "difficulty": "Hard",
@@ -1455,15 +1422,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "AC circuits",
-          "Phasor impedance and resonance"
+          "Resonance and Two-Port Networks",
+          "Series RLC bandwidth"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "resonance",
-          "rlc"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1486,13 +1450,13 @@
         }
       },
       "quality": {
-        "score": 0.942,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.77,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1530,15 +1494,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "AC circuits",
-        "concept": "Phasor impedance and resonance",
-        "taxonomy_confidence": 0.798,
+        "subtopic": "Sinusoidal Steady State",
+        "concept": "Complex power and power-factor correction",
+        "taxonomy_confidence": 0.99,
         "question_type": "MSQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -1550,15 +1514,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "AC circuits",
-          "Phasor impedance and resonance"
+          "Sinusoidal Steady State",
+          "Complex power and power-factor correction"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "impedance",
-          "power factor"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1581,13 +1542,13 @@
         }
       },
       "quality": {
-        "score": 0.948,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.798,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1625,15 +1586,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Three-phase circuits",
-        "concept": "Balanced loads and complex power",
-        "taxonomy_confidence": 0.963,
+        "subtopic": "Balanced Three-Phase Circuits and Complex Power",
+        "concept": "Power in a balanced star load",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1645,16 +1606,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Three-phase circuits",
-          "Balanced loads and complex power"
+          "Balanced Three-Phase Circuits and Complex Power",
+          "Power in a balanced star load"
         ],
-        "prerequisites": [
-          "Phasor impedance and resonance"
-        ],
+        "prerequisites": [],
         "signals": [
-          "three-phase",
-          "star-connected",
-          "complex power"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1677,13 +1634,13 @@
         }
       },
       "quality": {
-        "score": 0.981,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.963,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1721,15 +1678,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Two-port networks",
-        "concept": "Network parameters",
-        "taxonomy_confidence": 0.825,
+        "subtopic": "Resonance and Two-Port Networks",
+        "concept": "Input impedance from z-parameters",
+        "taxonomy_confidence": 0.99,
         "question_type": "NAT",
         "marks": 2,
         "difficulty": "Hard",
@@ -1741,15 +1698,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Two-port networks",
-          "Network parameters"
+          "Resonance and Two-Port Networks",
+          "Input impedance from z-parameters"
         ],
-        "prerequisites": [
-          "KCL and KVL"
-        ],
+        "prerequisites": [],
         "signals": [
-          "two-port",
-          "z-parameter"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1772,13 +1726,13 @@
         }
       },
       "quality": {
-        "score": 0.953,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.825,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []
@@ -1816,15 +1770,15 @@
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
         "status": "AUTO",
-        "confidence": 0.94
+        "confidence": 0.99
       },
       "question_intelligence": {
         "exam": "GATE_EE",
         "subject": "Electrical Engineering",
         "topic": "Electric Circuits",
-        "subtopic": "Three-phase circuits",
-        "concept": "Balanced loads and complex power",
-        "taxonomy_confidence": 0.963,
+        "subtopic": "Balanced Three-Phase Circuits and Complex Power",
+        "concept": "Power in a balanced delta load",
+        "taxonomy_confidence": 0.99,
         "question_type": "MCQ",
         "marks": 2,
         "difficulty": "Hard",
@@ -1836,16 +1790,12 @@
           "GATE_EE",
           "Electrical Engineering",
           "Electric Circuits",
-          "Three-phase circuits",
-          "Balanced loads and complex power"
+          "Balanced Three-Phase Circuits and Complex Power",
+          "Power in a balanced delta load"
         ],
-        "prerequisites": [
-          "Phasor impedance and resonance"
-        ],
+        "prerequisites": [],
         "signals": [
-          "three-phase",
-          "delta-connected",
-          "complex power"
+          "explicit canonical GATE EE route"
         ],
         "review_required": false
       },
@@ -1868,13 +1818,13 @@
         }
       },
       "quality": {
-        "score": 0.981,
+        "score": 0.996,
         "grade": "A",
         "components": {
-          "classification": 0.94,
+          "classification": 0.99,
           "ocr": 1,
           "math": 1,
-          "taxonomy": 0.963,
+          "taxonomy": 0.99,
           "validation": 1.0
         },
         "blockers": []

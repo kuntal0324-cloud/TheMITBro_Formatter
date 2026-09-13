@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" viewBox="0 0 720 340" role="img" aria-labelledby="title desc">
+  <title id="title">Charge-free dielectric interface</title>
+  <desc id="desc">A horizontal interface separates dielectric one below from dielectric two above. Normal and tangential field components are shown.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#d24b40"/></marker></defs>
+  <rect width="720" height="170" fill="#eaf2f7"/>
+  <rect y="170" width="720" height="170" fill="#fff5dc"/>
+  <line x1="40" y1="170" x2="680" y2="170" stroke="#173b57" stroke-width="4"/>
+  <g stroke="#d24b40" stroke-width="5" marker-end="url(#arrow)">
+    <line x1="350" y1="240" x2="350" y2="92"/>
+    <line x1="350" y1="240" x2="520" y2="240"/>
+  </g>
+  <g fill="#173b57" font-family="DejaVu Sans, sans-serif" font-size="22">
+    <text x="55" y="75">Medium 2: εᵣ₂ = 5</text>
+    <text x="55" y="295">Medium 1: εᵣ₁ = 2</text>
+    <text x="365" y="105">E₁ₙ = 3 V/m</text>
+    <text x="455" y="270">E₁ₜ = 4 V/m</text>
+    <text x="545" y="160">interface</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" viewBox="0 0 720 340" role="img" aria-labelledby="title desc">
+  <title id="title">Solenoid cross-section and observation path</title>
+  <desc id="desc">Concentric circles show the solenoid radius zero point one metre and an observation path of radius zero point two metre. Axial magnetic field is increasing out of the page.</desc>
+  <defs><marker id="arrow2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#d24b40"/></marker></defs>
+  <rect width="720" height="340" fill="white"/>
+  <circle cx="330" cy="170" r="85" fill="#eaf2f7" stroke="#173b57" stroke-width="4"/>
+  <circle cx="330" cy="170" r="150" fill="none" stroke="#173b57" stroke-width="3" stroke-dasharray="12 9"/>
+  <g fill="#d24b40">
+    <circle cx="300" cy="140" r="7"/><circle cx="360" cy="140" r="7"/><circle cx="300" cy="200" r="7"/><circle cx="360" cy="200" r="7"/>
+  </g>
+  <g stroke="#d24b40" stroke-width="4" fill="none" marker-end="url(#arrow2)"><path d="M520 170 A190 190 0 0 1 480 285"/></g>
+  <g stroke="#173b57" stroke-width="2"><line x1="330" y1="170" x2="415" y2="170"/><line x1="330" y1="170" x2="480" y2="170"/></g>
+  <g fill="#173b57" font-family="DejaVu Sans, sans-serif" font-size="21">
+    <text x="345" y="157">a = 0.1 m</text><text x="420" y="205">r = 0.2 m</text>
+    <text x="65" y="65">dB/dt = 2 T/s (out of page)</text><text x="515" y="305">induced E</text>
+  </g>
+</svg>
