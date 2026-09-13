@@ -1,0 +1,1143 @@
+{
+  "qualification_contract": "GATE_EE_2027_FORMATTER_STRICT_R1",
+  "batch_id": "BATCH_005",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "Electromagnetic Fields",
+  "formatter_version": "2.0.0",
+  "source_sha256": "f30c6d8b1a522d75effdc46b147c87a723e57ecc0a43ef74624daa9da25fb89e",
+  "question_count": 12,
+  "formatter_pass_count": 12,
+  "formatter_review_count": 0,
+  "invalid_count": 0,
+  "paper_eligible_count": 0,
+  "independent_human_review_required": true,
+  "release_gate": "BLOCKED",
+  "status": "PASS",
+  "questions": [
+    {
+      "question_id": "TMB-GATE-EE-EMFT-001",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Gauss law for electric flux density",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.505,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 218,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Gauss law for electric flux density"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.0,
+        "matched_id": null
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 590,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 8,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-002",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Electric field of an infinite line charge",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 234,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Electric field of an infinite line charge"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3194,
+        "matched_id": "TMB-GATE-EE-EMFT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 622,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 6,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-003",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Boundary conditions at a dielectric interface",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MSQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.795,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 300,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Boundary conditions at a dielectric interface"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2183,
+        "matched_id": "TMB-GATE-EE-EMFT-002"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1087,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 14,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": true,
+        "status": "PASS",
+        "type": "vector_diagram",
+        "asset": "GATE_EE/corpus_v1/assets/batch_005/EMFT-003-dielectric-interface.svg",
+        "asset_sha256": "ddc129f8a5fb9ccab868cae1de525b7c4484e4cd015ca4f279c6c9fdb8c7f595",
+        "alt_text": "Horizontal dielectric interface with a normal axis, a tangential axis, and electric-field components in medium 1.",
+        "caption": "Charge-free dielectric interface",
+        "errors": [],
+        "explicitly_referenced": true,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-004",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Capacitance of concentric spherical conductors",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.67,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 239,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Capacitance of concentric spherical conductors"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2476,
+        "matched_id": "TMB-GATE-EE-EMFT-002"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 700,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 11,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-005",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Potential inside a uniformly charged solid sphere",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.705,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 278,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Potential inside a uniformly charged solid sphere"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.4227,
+        "matched_id": "TMB-GATE-EE-EMFT-002"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 708,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 5,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-006",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electrostatics",
+        "concept": "Parallel combination of dielectric-filled capacitor regions",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.6,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 228,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electrostatics",
+          "Parallel combination of dielectric-filled capacitor regions"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3274,
+        "matched_id": "TMB-GATE-EE-EMFT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 712,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 4,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-007",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Magnetostatics",
+        "concept": "Magnetic field between oppositely directed parallel currents",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.755,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 340,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Magnetostatics",
+          "Magnetic field between oppositely directed parallel currents"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2633,
+        "matched_id": "TMB-GATE-EE-EMFT-003"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 972,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": true,
+        "status": "PASS",
+        "type": "vector_diagram",
+        "asset": "GATE_EE/corpus_v1/assets/batch_005/EMFT-007-parallel-conductors.svg",
+        "asset_sha256": "2154a4fcc35d3a56a88eafb1308f34599ad3379a4764b934c44fbc8aaa9b9249",
+        "alt_text": "Two conductors 0.2 m apart, with 5 A out of the page on the left and 10 A into the page on the right; midpoint P is marked.",
+        "caption": "Parallel conductors and midpoint $P$",
+        "errors": [],
+        "explicitly_referenced": true,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-008",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Magnetostatics",
+        "concept": "Magnetostatic integral and boundary relations",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MSQ",
+        "marks": 1,
+        "difficulty": "Medium",
+        "difficulty_score": 0.633,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 301,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Magnetostatics",
+          "Magnetostatic integral and boundary relations"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2626,
+        "matched_id": "TMB-GATE-EE-EMFT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 963,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 9,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-009",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Magnetic Circuits",
+        "concept": "Flux density of a gapped toroidal core",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.755,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 271,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Magnetic Circuits",
+          "Flux density of a gapped toroidal core"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2774,
+        "matched_id": "TMB-GATE-EE-EMFT-001"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 748,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 7,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-010",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electromagnetic Induction",
+        "concept": "Faraday law for a time-varying linked flux",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 1,
+        "difficulty": "Hard",
+        "difficulty_score": 0.74,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 226,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electromagnetic Induction",
+          "Faraday law for a time-varying linked flux"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.2377,
+        "matched_id": "TMB-GATE-EE-EMFT-008"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 519,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-011",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electromagnetic Induction",
+        "concept": "Mechanical force in a motional-emf system",
+        "taxonomy_confidence": 0.99,
+        "question_type": "NAT",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.76,
+        "reasoning_depth": "Direct",
+        "calculation_load": "High",
+        "expected_time_seconds": 269,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electromagnetic Induction",
+          "Mechanical force in a motional-emf system"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3579,
+        "matched_id": "TMB-GATE-EE-EMFT-010"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 661,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 7,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": false,
+        "explicitly_referenced": false,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    },
+    {
+      "question_id": "TMB-GATE-EE-EMFT-012",
+      "source_revision": 1,
+      "classification": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "status": "AUTO",
+        "confidence": 0.99
+      },
+      "question_intelligence": {
+        "exam": "GATE_EE",
+        "subject": "Electrical Engineering",
+        "topic": "Electromagnetic Fields",
+        "subtopic": "Electromagnetic Induction",
+        "concept": "Induced electric field outside a long solenoid",
+        "taxonomy_confidence": 0.99,
+        "question_type": "MCQ",
+        "marks": 2,
+        "difficulty": "Hard",
+        "difficulty_score": 0.825,
+        "reasoning_depth": "Multi-step",
+        "calculation_load": "High",
+        "expected_time_seconds": 340,
+        "syllabus_path": [
+          "GATE_EE",
+          "Electrical Engineering",
+          "Electromagnetic Fields",
+          "Electromagnetic Induction",
+          "Induced electric field outside a long solenoid"
+        ],
+        "prerequisites": [],
+        "signals": [
+          "explicit canonical GATE EE route"
+        ],
+        "review_required": false
+      },
+      "validation": {
+        "status": "PASS",
+        "answer_status": "PASS",
+        "solution_status": "PASS",
+        "review_required": false,
+        "findings": [],
+        "raw": {
+          "status": "PASS",
+          "answer_status": "PASS",
+          "option_status": "PASS",
+          "solution_status": "PASS",
+          "diagram_text_status": "PASS",
+          "domain_checks": [],
+          "quality_status": "PASS",
+          "findings": [],
+          "review_required": false
+        }
+      },
+      "quality": {
+        "score": 0.996,
+        "grade": "A",
+        "components": {
+          "classification": 0.99,
+          "ocr": 1,
+          "math": 1,
+          "taxonomy": 0.99,
+          "validation": 1.0
+        },
+        "blockers": []
+      },
+      "duplicate": {
+        "status": "ACCEPT",
+        "similarity": 0.3081,
+        "matched_id": "TMB-GATE-EE-EMFT-003"
+      },
+      "render": {
+        "status": "PASS",
+        "bytes": 1007,
+        "source_markup_exposed": false
+      },
+      "source_math_contract": {
+        "status": "PASS",
+        "inline_math_segments": 10,
+        "violations": []
+      },
+      "diagram_contract": {
+        "declared": true,
+        "status": "PASS",
+        "type": "vector_diagram",
+        "asset": "GATE_EE/corpus_v1/assets/batch_005/EMFT-012-solenoid-cross-section.svg",
+        "asset_sha256": "03dd9ee5b5de5b9159d5213d7e402a5bf4868b768ce1b75b080e62621a4534f9",
+        "alt_text": "Concentric circles of radii 0.1 m and 0.2 m representing the solenoid cross-section and the integration path, with increasing axial magnetic field.",
+        "caption": "Solenoid cross-section and circular observation path",
+        "errors": [],
+        "explicitly_referenced": true,
+        "review_required": false
+      },
+      "syllabus_match": true,
+      "formatter_qualification": "PASS",
+      "independent_human_review": "PENDING",
+      "paper_eligible": false
+    }
+  ]
+}

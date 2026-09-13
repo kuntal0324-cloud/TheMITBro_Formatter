@@ -1,0 +1,51 @@
+{
+  "handoff_version": "1.0.0",
+  "handoff_id": "GATE_EE_BATCH_004_TO_FORMATTER_V2",
+  "source_repository": "TheMITbro_Question_Bank",
+  "target_repository": "TheMITBro_Formatter",
+  "formatter_required_version": "2.0.0",
+  "batch_id": "BATCH_004",
+  "corpus": "GATE_EE_CORPUS_V1",
+  "domain": "Signals and Systems",
+  "question_count": 15,
+  "source_jsonl": "GATE_EE/corpus_v1/source_batches/BATCH_004_SIGNALS_AND_SYSTEMS.jsonl",
+  "source_markdown": "GATE_EE/corpus_v1/source_batches/BATCH_004_SIGNALS_AND_SYSTEMS.md",
+  "source_sha256": "0d0eb24d9f82f1f511f8dcb879dd78d5684fa73c444a8319d6bc01bdd7961b66",
+  "official_scope_reference": "references/GATE_2027/GATE_2027_EE_SYLLABUS.json",
+  "required_formatter_checks": [
+    "schema/ingestion compatibility",
+    "question intelligence classification",
+    "answer/solution structural validation",
+    "duplicate/family detection",
+    "quality scoring",
+    "canonical LaTeX mathematics source contract",
+    "declared-diagram and visual-reference consistency",
+    "professional rendering smoke test",
+    "mobile human-review PDF rendering"
+  ],
+  "math_render_contract": {
+    "canonical_source": "LaTeX math delimited with $...$",
+    "pdf_engine": "Pandoc + XeLaTeX",
+    "math_font": "Latin Modern Math",
+    "ascii_formula_fallback_allowed": false
+  },
+  "diagram_assets": [
+    {
+      "question_id": "TMB-GATE-EE-SS-004",
+      "path": "GATE_EE/corpus_v1/assets/batch_004/SS-004-triangular-pulse.svg",
+      "sha256": "2b5392b885abdd62db60344a46133e9e9376792ba9ef93d645ce52a0cd69fa02"
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-008",
+      "path": "GATE_EE/corpus_v1/assets/batch_004/SS-008-two-level-waveform.svg",
+      "sha256": "f1646255662d3278e6d96d4a64a222d62885846b89ae33f7c45b30d0c4aa2a0d"
+    },
+    {
+      "question_id": "TMB-GATE-EE-SS-014",
+      "path": "GATE_EE/corpus_v1/assets/batch_004/SS-014-bandlimited-spectrum.svg",
+      "sha256": "b5f7b4bf7d593e6817a0ac3cf4f77ff356dd2ee9c0df7a2b28062cda10a2305a"
+    }
+  ],
+  "promotion_rule": "Formatter PASS and independent technical recomputation are machine evidence only. Named human final QA is required before PAPER_ELIGIBLE promotion.",
+  "release_gate": "BLOCKED"
+}

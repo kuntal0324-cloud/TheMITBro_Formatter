@@ -1,5 +1,9 @@
 # TheMITbro Formatter v2.0.0 — Production Baseline
 
+## GATE 2027 EE Batches 004–005 checkpoint
+
+The frozen v2.0 qualification path now preserves explicit canonical GATE EE routes and validates checksum-bound SVG declarations before granting Formatter PASS. Batch 004 reproduces **15 PASS / 0 REVIEW / 0 invalid** for Signals and Systems; Batch 005 reproduces **12 PASS / 0 REVIEW / 0 invalid** for Electromagnetic Fields. Their six declared diagrams pass asset, checksum, type, caption and alt-text contracts. These 27 records are Formatter evidence only and remain blocked pending named human final QA.
+
 ## GATE 2027 EE Batch 003 checkpoint
 
 The frozen v2.0 qualification path now distinguishes all four official General Aptitude routes, including Spatial Aptitude, and accepts standard GATE prompt forms such as direct NAT entry instructions. The checksum-bound Batch 003 input reproduces **20 PASS / 0 REVIEW / 0 invalid**. This is Formatter evidence only; named human final QA remains mandatory before paper eligibility.
@@ -45,7 +49,7 @@ See:
 
 ## Current production integration
 
-The frozen v2.0 architecture now has checksum-bound production coverage for two GATE 2027 EE source batches. Batch 001 Engineering Mathematics and Batch 002 Electric Circuits each reproduce 20 PASS / 0 REVIEW / 0 invalid. Formatter PASS is machine evidence only: Batch 002 remains blocked pending independent technical recomputation and named human final QA.
+The frozen v2.0 architecture now has checksum-bound production coverage for five GATE 2027 EE source batches: 20 Engineering Mathematics, 20 Electric Circuits, 20 General Aptitude, 15 Signals and Systems and 12 Electromagnetic Fields records. All 87 reproduce strict Formatter PASS with zero review or invalid rows. The merged Question Bank has separately certified and admitted Batches 001–003 (60 records); Batches 004–005 remain machine-qualified only, so Formatter does not authorize paper eligibility, assembly, release or sale.
 
 ## Historical milestone notes
 

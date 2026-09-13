@@ -49,6 +49,18 @@ def _question_markdown(q: dict) -> str:
         q["stem"],
         "",
     ]
+    diagram = q.get("diagram")
+    if diagram:
+        diagram_type = str(diagram.get("type", "diagram")).replace("_", " ")
+        asset_name = Path(str(diagram.get("asset", "diagram.svg"))).name
+        lines += [
+            f"**Diagram type:** {diagram_type}",
+            "",
+            f"![{diagram.get('alt_text', '')}](assets/{asset_name})",
+            "",
+            f"*{diagram.get('caption', '')}*",
+            "",
+        ]
     for label, option in zip(("A","B","C","D"), q.get("options", [])):
         lines.append(f"{label}. {option}")
     if q.get("options"):
@@ -66,6 +78,60 @@ def _question_markdown(q: dict) -> str:
     return "\n".join(lines)
 
 
+def _declared_diagram_contract(q: dict, jsonl_path: Path, handoff: dict) -> dict:
+    """Verify canonical SVG evidence carried with a Question Bank handoff."""
+    declared = q.get("diagram")
+    entries = [
+        row for row in handoff.get("diagram_assets", [])
+        if row.get("question_id") == q.get("id")
+    ]
+    if not declared:
+        errors = ["handoff lists a diagram for a question that declares none"] if entries else []
+        return {
+            "declared": False,
+            "status": "FAIL" if errors else "PASS",
+            "errors": errors,
+        }
+
+    errors: list[str] = []
+    asset_ref = str(declared.get("asset", "")).strip()
+    alt_text = str(declared.get("alt_text", "")).strip()
+    caption = str(declared.get("caption", "")).strip()
+    diagram_type = str(declared.get("type", "")).strip()
+    if not asset_ref:
+        errors.append("diagram asset path is missing")
+    if not alt_text:
+        errors.append("diagram alt text is missing")
+    if not caption:
+        errors.append("diagram caption is missing")
+    if not diagram_type:
+        errors.append("diagram type is missing")
+    if len(entries) != 1:
+        errors.append("handoff must contain exactly one matching diagram evidence row")
+
+    evidence = entries[0] if len(entries) == 1 else {}
+    if evidence and evidence.get("path") != asset_ref:
+        errors.append("handoff diagram path does not match the source declaration")
+
+    asset_path = jsonl_path.parent / "assets" / Path(asset_ref).name
+    actual_sha = _sha256(asset_path) if asset_path.is_file() else None
+    if actual_sha is None:
+        errors.append("declared diagram asset is missing from the Formatter input")
+    elif evidence.get("sha256") != actual_sha:
+        errors.append("diagram checksum does not match the handoff")
+
+    return {
+        "declared": True,
+        "status": "FAIL" if errors else "PASS",
+        "type": diagram_type,
+        "asset": asset_ref,
+        "asset_sha256": actual_sha,
+        "alt_text": alt_text,
+        "caption": caption,
+        "errors": errors,
+    }
+
+
 def _source_math_contract(q: dict) -> dict:
     values = [str(q.get("stem", "")), str(q.get("solution", ""))]
     values.extend(str(option) for option in q.get("options", []))
@@ -76,6 +142,8 @@ def _source_math_contract(q: dict) -> dict:
         if len(parts) % 2 == 0:
             violations.append("unbalanced inline-math delimiter")
             continue
+        if any(any(control in segment for control in ("\n", "\r", "\t")) for segment in parts[1::2]):
+            violations.append("control character inside inline math")
         segments += (len(parts) - 1) // 2
         outside_math = " ".join(parts[::2])
         for label, pattern in _ASCII_MATH_PATTERNS:
@@ -135,7 +203,12 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
             # explicitly requests or references a visual.
             diagram_declared = q.get("diagram") is not None
             visual_referenced = bool(_EXPLICIT_VISUAL_REFERENCE.search(q["stem"]))
+            diagram_contract = _declared_diagram_contract(q, jsonl_path, handoff)
             if not diagram_declared and not visual_referenced:
+                record.metadata["requires_visual_review"] = False
+            elif diagram_contract["status"] == "PASS":
+                # A declared vector asset with checksum, alt text and caption is
+                # stronger evidence than the generic text-only visual heuristic.
                 record.metadata["requires_visual_review"] = False
 
             quality = score_question(record)
@@ -159,6 +232,7 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                 or dup.status == "REJECT"
                 or not render_pass
                 or source_math["status"] != "PASS"
+                or diagram_contract["status"] != "PASS"
             )
             formatter_pass = (
                 not invalid
@@ -199,7 +273,11 @@ def qualify_batch(jsonl_path: str | Path, handoff_path: str | Path) -> dict:
                 },
                 "source_math_contract": source_math,
                 "diagram_contract": {
-                    "declared": diagram_declared,
+                    **(
+                        diagram_contract
+                        if diagram_contract["declared"] or diagram_contract["status"] != "PASS"
+                        else {"declared": False}
+                    ),
                     "explicitly_referenced": visual_referenced,
                     "review_required": record.metadata.get("requires_visual_review", False),
                 },

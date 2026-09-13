@@ -1,0 +1,44 @@
+name: GATE EE Batches 004-005 Formatter Qualification
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qualify-core-ee-recovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install Formatter dependencies
+        run: pip install -r requirements.txt
+      - name: Run all production-batch qualification regressions
+        run: |
+          python -m pytest -q \
+            tests/test_gate_ee_batch001_qualification.py \
+            tests/test_gate_ee_electric_circuits_production.py \
+            tests/test_gate_ee_batch002_qualification.py \
+            tests/test_gate_ee_batch003_qualification.py \
+            tests/test_gate_ee_batch004_qualification.py \
+            tests/test_gate_ee_batch005_qualification.py
+      - name: Reproduce strict Batch 004 and 005 qualifications
+        run: |
+          python -m src.run_gate_ee_batch_qualification \
+            --jsonl input/gate_ee_batch_004/BATCH_004_SIGNALS_AND_SYSTEMS.jsonl \
+            --handoff input/gate_ee_batch_004/BATCH_004_FORMATTER_V2_HANDOFF.json \
+            --output output/gate_ee_batch_004/FORMATTER_V2_QUALIFICATION.json
+          python -m src.run_gate_ee_batch_qualification \
+            --jsonl input/gate_ee_batch_005/BATCH_005_ELECTROMAGNETIC_FIELDS.jsonl \
+            --handoff input/gate_ee_batch_005/BATCH_005_FORMATTER_V2_HANDOFF.json \
+            --output output/gate_ee_batch_005/FORMATTER_V2_QUALIFICATION.json
+          git diff --exit-code -- \
+            output/gate_ee_batch_004/FORMATTER_V2_QUALIFICATION.json \
+            output/gate_ee_batch_005/FORMATTER_V2_QUALIFICATION.json
