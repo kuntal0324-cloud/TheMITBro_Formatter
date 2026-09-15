@@ -2,7 +2,7 @@
 
 ## GATE 2027 EE Batches 004–005 checkpoint
 
-The frozen v2.0 qualification path now preserves explicit canonical GATE EE routes and validates checksum-bound SVG declarations before granting Formatter PASS. Batch 004 reproduces **15 PASS / 0 REVIEW / 0 invalid** for Signals and Systems; Batch 005 reproduces **12 PASS / 0 REVIEW / 0 invalid** for Electromagnetic Fields. Their six declared diagrams pass asset, checksum, type, caption and alt-text contracts. These 27 records are Formatter evidence only and remain blocked pending named human final QA.
+The frozen v2.0 qualification path preserves explicit canonical GATE EE routes and validates checksum-bound SVG declarations before granting Formatter PASS. Batch 004 reproduces **15 PASS / 0 REVIEW / 0 invalid** for Signals and Systems; Batch 005 reproduces **12 PASS / 0 REVIEW / 0 invalid** for Electromagnetic Fields. Their six declared diagrams pass asset, checksum, type, caption and alt-text contracts. These results remain Formatter evidence only. The Question Bank now separately records named-human final QA, paper-eligibility certification and Corpus V1 admission for all 27 records; complete-paper QA and release authorization remain downstream gates.
 
 ## GATE 2027 EE Batch 003 checkpoint
 
@@ -49,7 +49,7 @@ See:
 
 ## Current production integration
 
-The frozen v2.0 architecture now has checksum-bound production coverage for five GATE 2027 EE source batches: 20 Engineering Mathematics, 20 Electric Circuits, 20 General Aptitude, 15 Signals and Systems and 12 Electromagnetic Fields records. All 87 reproduce strict Formatter PASS with zero review or invalid rows. The merged Question Bank has separately certified and admitted Batches 001–003 (60 records); Batches 004–005 remain machine-qualified only, so Formatter does not authorize paper eligibility, assembly, release or sale.
+The frozen v2.0 architecture has checksum-bound production coverage for five GATE 2027 EE source batches: 20 Engineering Mathematics, 20 Electric Circuits, 20 General Aptitude, 15 Signals and Systems and 12 Electromagnetic Fields records. All 87 reproduce strict Formatter PASS with zero review or invalid rows. The Question Bank has separately certified and admitted all 87 records and now assembles an exact 65-record Set 01 review manifest. Formatter still does not authorize paper eligibility, complete-paper approval, release or sale; those decisions remain evidence-gated in the Question Bank and website repositories.
 
 ## Historical milestone notes
 
