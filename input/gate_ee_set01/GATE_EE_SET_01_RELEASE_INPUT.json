@@ -1,0 +1,402 @@
+{
+  "input_contract": "GATE_EE_SET01_FORMATTER_RELEASE_INPUT_V1",
+  "paper_id": "GATE_2027_EE_SET_01",
+  "review_manifest_content_sha256": "0a5a9c14cdca6c92db41317239a36afe73da6efda2b5ae642625649a94b03cc8",
+  "review_handoff_content_sha256": "429a79bfc3d7f215fe838a5da79f14df8b143863dc98258d1540f2422da8ed4e",
+  "question_count": 65,
+  "questions": [
+    {
+      "position": 1,
+      "question_id": "TMB-GATE-EE-GA-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 2,
+      "question_id": "TMB-GATE-EE-GA-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 3,
+      "question_id": "TMB-GATE-EE-GA-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 4,
+      "question_id": "TMB-GATE-EE-GA-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 5,
+      "question_id": "TMB-GATE-EE-GA-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 6,
+      "question_id": "TMB-GATE-EE-GA-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 7,
+      "question_id": "TMB-GATE-EE-GA-013",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 8,
+      "question_id": "TMB-GATE-EE-GA-014",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 9,
+      "question_id": "TMB-GATE-EE-GA-016",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 10,
+      "question_id": "TMB-GATE-EE-GA-019",
+      "source_revision": 1,
+      "batch_id": "BATCH_003"
+    },
+    {
+      "position": 11,
+      "question_id": "TMB-GATE-EE-EM-001",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 12,
+      "question_id": "TMB-GATE-EE-EM-003",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 13,
+      "question_id": "TMB-GATE-EE-EM-004",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 14,
+      "question_id": "TMB-GATE-EE-EM-008",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 15,
+      "question_id": "TMB-GATE-EE-EM-009",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 16,
+      "question_id": "TMB-GATE-EE-EM-013",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 17,
+      "question_id": "TMB-GATE-EE-EM-015",
+      "source_revision": 3,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 18,
+      "question_id": "TMB-GATE-EE-EM-018",
+      "source_revision": 2,
+      "batch_id": "BATCH_001"
+    },
+    {
+      "position": 19,
+      "question_id": "TMB-GATE-EE-NT-001",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 20,
+      "question_id": "TMB-GATE-EE-NT-002",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 21,
+      "question_id": "TMB-GATE-EE-NT-003",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 22,
+      "question_id": "TMB-GATE-EE-NT-004",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 23,
+      "question_id": "TMB-GATE-EE-NT-005",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 24,
+      "question_id": "TMB-GATE-EE-NT-006",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 25,
+      "question_id": "TMB-GATE-EE-NT-007",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 26,
+      "question_id": "TMB-GATE-EE-NT-008",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 27,
+      "question_id": "TMB-GATE-EE-NT-009",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 28,
+      "question_id": "TMB-GATE-EE-NT-010",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 29,
+      "question_id": "TMB-GATE-EE-NT-011",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 30,
+      "question_id": "TMB-GATE-EE-NT-012",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 31,
+      "question_id": "TMB-GATE-EE-NT-013",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 32,
+      "question_id": "TMB-GATE-EE-NT-014",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 33,
+      "question_id": "TMB-GATE-EE-NT-015",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 34,
+      "question_id": "TMB-GATE-EE-NT-016",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 35,
+      "question_id": "TMB-GATE-EE-NT-017",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 36,
+      "question_id": "TMB-GATE-EE-NT-018",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 37,
+      "question_id": "TMB-GATE-EE-NT-019",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 38,
+      "question_id": "TMB-GATE-EE-NT-020",
+      "source_revision": 2,
+      "batch_id": "BATCH_002"
+    },
+    {
+      "position": 39,
+      "question_id": "TMB-GATE-EE-SS-001",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 40,
+      "question_id": "TMB-GATE-EE-SS-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 41,
+      "question_id": "TMB-GATE-EE-SS-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 42,
+      "question_id": "TMB-GATE-EE-SS-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 43,
+      "question_id": "TMB-GATE-EE-SS-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 44,
+      "question_id": "TMB-GATE-EE-SS-006",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 45,
+      "question_id": "TMB-GATE-EE-SS-007",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 46,
+      "question_id": "TMB-GATE-EE-SS-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 47,
+      "question_id": "TMB-GATE-EE-SS-009",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 48,
+      "question_id": "TMB-GATE-EE-SS-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 49,
+      "question_id": "TMB-GATE-EE-SS-011",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 50,
+      "question_id": "TMB-GATE-EE-SS-012",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 51,
+      "question_id": "TMB-GATE-EE-SS-013",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 52,
+      "question_id": "TMB-GATE-EE-SS-014",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 53,
+      "question_id": "TMB-GATE-EE-SS-015",
+      "source_revision": 1,
+      "batch_id": "BATCH_004"
+    },
+    {
+      "position": 54,
+      "question_id": "TMB-GATE-EE-EMFT-001",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 55,
+      "question_id": "TMB-GATE-EE-EMFT-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 56,
+      "question_id": "TMB-GATE-EE-EMFT-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 57,
+      "question_id": "TMB-GATE-EE-EMFT-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 58,
+      "question_id": "TMB-GATE-EE-EMFT-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 59,
+      "question_id": "TMB-GATE-EE-EMFT-006",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 60,
+      "question_id": "TMB-GATE-EE-EMFT-007",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 61,
+      "question_id": "TMB-GATE-EE-EMFT-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 62,
+      "question_id": "TMB-GATE-EE-EMFT-009",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 63,
+      "question_id": "TMB-GATE-EE-EMFT-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 64,
+      "question_id": "TMB-GATE-EE-EMFT-011",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    },
+    {
+      "position": 65,
+      "question_id": "TMB-GATE-EE-EMFT-012",
+      "source_revision": 1,
+      "batch_id": "BATCH_005"
+    }
+  ],
+  "release_authorized": false,
+  "sale_authorized": false,
+  "input_content_sha256": "97d5b133ec5af4f4111a32fb99d3b08f0ab9fd25d28fb7944936d3b654009588"
+}

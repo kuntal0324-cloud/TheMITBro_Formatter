@@ -1,0 +1,569 @@
+{
+  "evidence_contract": "GATE_EE_SET01_FORMATTER_RELEASE_CANDIDATE_EVIDENCE_V1",
+  "paper_id": "GATE_2027_EE_SET_01",
+  "review_manifest_content_sha256": "0a5a9c14cdca6c92db41317239a36afe73da6efda2b5ae642625649a94b03cc8",
+  "review_handoff_content_sha256": "429a79bfc3d7f215fe838a5da79f14df8b143863dc98258d1540f2422da8ed4e",
+  "input": {
+    "path": "input/gate_ee_set01/GATE_EE_SET_01_RELEASE_INPUT.json",
+    "sha256": "31f3bd06d7ae6fc2db45061c14902398a3c4b2e1b514bce5bea9f8a3f116b8a5",
+    "content_sha256": "97d5b133ec5af4f4111a32fb99d3b08f0ab9fd25d28fb7944936d3b654009588"
+  },
+  "batch_reports": {
+    "BATCH_001": {
+      "path": "output/gate_ee_batch_001/FORMATTER_V2_STRICT_REQUALIFICATION.json",
+      "sha256": "443982871169803ee2692d46c30d47268c585e545da97d8a35615c44a771dedd",
+      "status": "PASS"
+    },
+    "BATCH_002": {
+      "path": "output/gate_ee_batch_002/FORMATTER_V2_QUALIFICATION.json",
+      "sha256": "050ae54ccb21d2fb0588804b3bf1c94f688402c4a608a5f01b59ca03ac6773df",
+      "status": "PASS"
+    },
+    "BATCH_003": {
+      "path": "output/gate_ee_batch_003/FORMATTER_V2_QUALIFICATION.json",
+      "sha256": "19f159a3e684d3c7f4830d6ed3afeb7da2adcf5d34c61e3472521c33deeb024d",
+      "status": "PASS"
+    },
+    "BATCH_004": {
+      "path": "output/gate_ee_batch_004/FORMATTER_V2_QUALIFICATION.json",
+      "sha256": "25f128b7778a9504e0ddd76380b91be92fea82511952f400ede72f827b201834",
+      "status": "PASS"
+    },
+    "BATCH_005": {
+      "path": "output/gate_ee_batch_005/FORMATTER_V2_QUALIFICATION.json",
+      "sha256": "d1ed63b24f739b5df1b81ca035b3b52b5ecee81c56c6b72036143e12ec96dd8b",
+      "status": "PASS"
+    }
+  },
+  "question_count": 65,
+  "formatter_pass_count": 65,
+  "formatter_blocked_count": 0,
+  "status": "PASS",
+  "errors": [],
+  "questions": [
+    {
+      "position": 1,
+      "question_id": "TMB-GATE-EE-GA-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 2,
+      "question_id": "TMB-GATE-EE-GA-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 3,
+      "question_id": "TMB-GATE-EE-GA-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 4,
+      "question_id": "TMB-GATE-EE-GA-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 5,
+      "question_id": "TMB-GATE-EE-GA-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 6,
+      "question_id": "TMB-GATE-EE-GA-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 7,
+      "question_id": "TMB-GATE-EE-GA-013",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 8,
+      "question_id": "TMB-GATE-EE-GA-014",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 9,
+      "question_id": "TMB-GATE-EE-GA-016",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 10,
+      "question_id": "TMB-GATE-EE-GA-019",
+      "source_revision": 1,
+      "batch_id": "BATCH_003",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 11,
+      "question_id": "TMB-GATE-EE-EM-001",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 12,
+      "question_id": "TMB-GATE-EE-EM-003",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 13,
+      "question_id": "TMB-GATE-EE-EM-004",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 14,
+      "question_id": "TMB-GATE-EE-EM-008",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 15,
+      "question_id": "TMB-GATE-EE-EM-009",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 16,
+      "question_id": "TMB-GATE-EE-EM-013",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 17,
+      "question_id": "TMB-GATE-EE-EM-015",
+      "source_revision": 3,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 18,
+      "question_id": "TMB-GATE-EE-EM-018",
+      "source_revision": 2,
+      "batch_id": "BATCH_001",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 19,
+      "question_id": "TMB-GATE-EE-NT-001",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 20,
+      "question_id": "TMB-GATE-EE-NT-002",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 21,
+      "question_id": "TMB-GATE-EE-NT-003",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 22,
+      "question_id": "TMB-GATE-EE-NT-004",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 23,
+      "question_id": "TMB-GATE-EE-NT-005",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 24,
+      "question_id": "TMB-GATE-EE-NT-006",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 25,
+      "question_id": "TMB-GATE-EE-NT-007",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 26,
+      "question_id": "TMB-GATE-EE-NT-008",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 27,
+      "question_id": "TMB-GATE-EE-NT-009",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 28,
+      "question_id": "TMB-GATE-EE-NT-010",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 29,
+      "question_id": "TMB-GATE-EE-NT-011",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 30,
+      "question_id": "TMB-GATE-EE-NT-012",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 31,
+      "question_id": "TMB-GATE-EE-NT-013",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 32,
+      "question_id": "TMB-GATE-EE-NT-014",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 33,
+      "question_id": "TMB-GATE-EE-NT-015",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 34,
+      "question_id": "TMB-GATE-EE-NT-016",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 35,
+      "question_id": "TMB-GATE-EE-NT-017",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 36,
+      "question_id": "TMB-GATE-EE-NT-018",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 37,
+      "question_id": "TMB-GATE-EE-NT-019",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 38,
+      "question_id": "TMB-GATE-EE-NT-020",
+      "source_revision": 2,
+      "batch_id": "BATCH_002",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 39,
+      "question_id": "TMB-GATE-EE-SS-001",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 40,
+      "question_id": "TMB-GATE-EE-SS-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 41,
+      "question_id": "TMB-GATE-EE-SS-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 42,
+      "question_id": "TMB-GATE-EE-SS-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 43,
+      "question_id": "TMB-GATE-EE-SS-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 44,
+      "question_id": "TMB-GATE-EE-SS-006",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 45,
+      "question_id": "TMB-GATE-EE-SS-007",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 46,
+      "question_id": "TMB-GATE-EE-SS-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 47,
+      "question_id": "TMB-GATE-EE-SS-009",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 48,
+      "question_id": "TMB-GATE-EE-SS-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 49,
+      "question_id": "TMB-GATE-EE-SS-011",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 50,
+      "question_id": "TMB-GATE-EE-SS-012",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 51,
+      "question_id": "TMB-GATE-EE-SS-013",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 52,
+      "question_id": "TMB-GATE-EE-SS-014",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 53,
+      "question_id": "TMB-GATE-EE-SS-015",
+      "source_revision": 1,
+      "batch_id": "BATCH_004",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 54,
+      "question_id": "TMB-GATE-EE-EMFT-001",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 55,
+      "question_id": "TMB-GATE-EE-EMFT-002",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 56,
+      "question_id": "TMB-GATE-EE-EMFT-003",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 57,
+      "question_id": "TMB-GATE-EE-EMFT-004",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 58,
+      "question_id": "TMB-GATE-EE-EMFT-005",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 59,
+      "question_id": "TMB-GATE-EE-EMFT-006",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 60,
+      "question_id": "TMB-GATE-EE-EMFT-007",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 61,
+      "question_id": "TMB-GATE-EE-EMFT-008",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 62,
+      "question_id": "TMB-GATE-EE-EMFT-009",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 63,
+      "question_id": "TMB-GATE-EE-EMFT-010",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 64,
+      "question_id": "TMB-GATE-EE-EMFT-011",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    },
+    {
+      "position": 65,
+      "question_id": "TMB-GATE-EE-EMFT-012",
+      "source_revision": 1,
+      "batch_id": "BATCH_005",
+      "formatter_release_qualification": "PASS",
+      "failures": []
+    }
+  ],
+  "release_gate": "BLOCKED_PENDING_EXACT_ARTIFACT_RELEASE_AUTHORIZATION",
+  "release_authorized": false,
+  "sale_authorized": false,
+  "evidence_content_sha256": "abd01b08ca49ff7683933c32d079d43b9a9ef59397b33766df92ea5de421a51a"
+}

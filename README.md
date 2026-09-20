@@ -49,7 +49,9 @@ See:
 
 ## Current production integration
 
-The frozen v2.0 architecture has checksum-bound production coverage for five GATE 2027 EE source batches: 20 Engineering Mathematics, 20 Electric Circuits, 20 General Aptitude, 15 Signals and Systems and 12 Electromagnetic Fields records. All 87 reproduce strict Formatter PASS with zero review or invalid rows. The Question Bank has separately certified and admitted all 87 records and now assembles an exact 65-record Set 01 review manifest. Formatter still does not authorize paper eligibility, complete-paper approval, release or sale; those decisions remain evidence-gated in the Question Bank and website repositories.
+The frozen v2.0 architecture has checksum-bound production coverage for five GATE 2027 EE source batches: 20 Engineering Mathematics, 20 Electric Circuits, 20 General Aptitude, 15 Signals and Systems and 12 Electromagnetic Fields records. All 87 reproduce strict Formatter PASS with zero review or invalid rows. The new Set 01 release-candidate qualifier binds the exact 65 selected IDs and revisions to those batch reports and reproduces **65 PASS / 0 blocked** in `output/gate_ee_set01/FORMATTER_RELEASE_CANDIDATE_EVIDENCE.json`.
+
+Run `python scripts/qualify_gate_ee_set01_release.py --check` to enforce that aggregate evidence. Formatter still does not authorize paper eligibility, whole-paper approval, release or sale; the evidence explicitly keeps those gates blocked for the Question Bank and website repositories.
 
 ## Historical milestone notes
 
